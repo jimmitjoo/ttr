@@ -2,7 +2,9 @@
 
 @section('content')
 
-    {!! Form::open(['route' => 'saveRace']) !!}
+    @include('errors.list')
+
+    {!! Form::open(['method' => 'post', 'route' => 'saveRace', 'enctype' => 'multipart/form-data']) !!}
     <div class="form-group">
         <label for="name">{{ Lang::get('race.name') }}</label>
         {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => Lang::get('race.name') ]) !!}
@@ -17,7 +19,7 @@
     </div>
     <div class="form-group">
         <label for="name">{{ Lang::get('race.date') }}</label>
-        {!! Form::text('date', null, ['class' => 'form-control', 'placeholder' => Lang::get('race.date') ]) !!}
+        {!! Form::input('date', 'date', date('Y-m-d', strtotime('+2 months')), ['class' => 'form-control', 'placeholder' => Lang::get('race.date') ]) !!}
     </div>
     <div class="form-group">
         <label for="name">{{ Lang::get('race.country') }}</label>
@@ -48,5 +50,6 @@
     </div>
     {!! Form::submit( Lang::get('race.save') ) !!}
     {!! Form::close() !!}
+
 
 @stop

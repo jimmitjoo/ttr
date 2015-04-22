@@ -11,7 +11,7 @@ class CreateRaceRequest extends Request {
 	 */
 	public function authorize()
 	{
-		return false;
+		return true;
 	}
 
 	/**
@@ -22,9 +22,9 @@ class CreateRaceRequest extends Request {
 	public function rules()
 	{
 		return [
-			'name',
-            'date',
-            'town'
+			'name' => 'required',
+            'date' => 'required|date',
+            'town' => 'required',
 		];
 	}
 
