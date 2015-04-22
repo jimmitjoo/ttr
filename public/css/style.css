@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+    font-size: 1.5vw;
+    font-size: 16px;
+    color: #111;
+}
+.unsplash {
+    background: url('http://timetorun.se/images/unsplash1.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 85%;
+}
+h1 {
+    font-weight: 700;
+    font-size: 700%;
+    font-size: 10vw;
+    color: white;
+    line-height: 1.2;
+}
+h2 {
+    font-weight: 400;
+}
+h3 {
+}
+.small {
+    font-size: 90%;
+}
+a {
+    color: #00baff;
+    transition: color .2s linear;
+    -webkit-transition: color .2 linear;
+    -moz-transition: color .2 linear;
+}
+a:active, a:hover {
+    color: #008aff;
+    text-decoration: none;
+}
+.btn {
+    border: 1px solid #00baff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    padding: 6px 10px;
+    font-size: 80%;
+    transition: border .2s linear;
+    -webkit-transition: border .2 linear;
+    -moz-transition: border .2 linear;
+}
+.btn:hover {
+    border: 1px solid #008aff;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.height-full {
+    height: 100%;
+}
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.product-label {
+    background: rgba(255,255,255,.92);
+    padding: 6px 10px;
+    display: block;
+    float: left;
+}
+.product-pricetag {
+    background-color: #69e16c;
+    color: white;
+    padding: 5px 10px 8px;
+    font-weight: 700;
+    display: block;
+    float: left;
+}
+
+/*
+ * Header and topnavigation
+ */
+header {
+    position: absolute;
+    z-index: 5000;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 14px 0;
+    color: white;
+    background: #51565d;
+    background: rgba(0,0,0,.0);
+}
+.topnav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 13px 0;
+    background: rgba(255,255,255,.9);
+    z-index: 6000;
+}
+.topnav-subpage {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(255,255,255,.9);
+    z-index: 6000;
+    color: white;
+    background: -webkit-linear-gradient(left, #1a439f , #ab2c94); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #1a439f, #ab2c94); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #1a439f, #ab2c94); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #1a439f , #ab2c94); /* Standard syntax */
+}
+
+/*
+ * Footer
+ */
+footer {
+    color: #777;
+    padding: 60px 0;
+}
+footer a {
+    color: #777;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+footer li {
+    padding-bottom: 4px;
+}
