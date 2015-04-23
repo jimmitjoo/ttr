@@ -6,9 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a style="color: black;"
-                                                                                             href="http://timetorun.se">timetorun</a></span><span
-                            style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
+                    <span style="font-weight: 900; padding-right: 30px; font-size: 180%; letter-spacing: -1px"><a href="http://timetorun.se"><img src="/images/test.gif"></a></a></span><span style="font-weight: 700;"><a href="/auth/register">Registrera</a></span>
                 </div>
                 <div class="col-lg-6 text-right">
                 </div>
@@ -21,9 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a style="color: black;"
-                                                                                                 href="http://timetorun.se">timetorun</a></span><span
-                                style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
+                        <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a href="http://timetorun.se"><img src="/images/timetorun.png"></a></span><span style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
                     </div>
                     <div class="col-lg-6 text-right">
                     </div>
@@ -34,9 +30,9 @@
             <div class="row height-full">
                 <div class="col-lg-12 height-full">
                     <div class="table">
-                        <div class="table-cell text-center">
-                            <h1 style="font-weight: 900; margin: 4px; letter-spacing: -3px; color: #fff716;">Gilla att
-                                springa</h1>
+                        <div class="table-cell text-center" style="position: relative;">
+                            <h1 style="font-weight: 900; margin: 4px; letter-spacing: -3px; color: #fff716;">Gilla att springa</h1>
+                            <div style="position: absolute; bottom: 0; left: 0;">Upptäck nya lopp</div>
                         </div>
                     </div>
                 </div>
@@ -65,6 +61,12 @@
             </div>
             -->
             <div class="row">
+
+                <div class="col-lg-12 text-center" style="padding-top: 40px; padding-bottom: 40px; border-top: 1px solid #ededed;">
+                    <h2 style="font-size: 400%; font-weight: 900; margin: 4px; letter-spacing: -1px;">Upptäck nya lopp</h2>
+                    Läs mer eller anmäl dig direkt
+                </div>
+
                 <div class="col-lg-2"><h3>Stad</h3></div>
                 <div class="col-lg-2"><h3>Datum</h3></div>
                 <div class="col-lg-3"><h3>Namn</h3></div>
@@ -148,9 +150,8 @@
         <div class="row">
             <div class="col-lg-12 text-center"
                  style="padding-top: 40px; padding-bottom: 40px; border-top: 1px solid #ededed;">
-                <h2 style="font-size: 400%; font-weight: 900; margin: 4px; letter-spacing: -1px;">Få ut mer av din
-                    löpning</h2>
-                Ge dig själva bästa förutsättningarna med löparskor och bra träningskläder
+                <h2 style="font-size: 400%; font-weight: 900; margin: 4px; letter-spacing: -1px;">Maxxa din löpning</h2>
+                Ge dig själva bästa förutsättningarna med löparskor och bra löparkläder
             </div>
 
             <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a

@@ -31,32 +31,44 @@ h2 {
 }
 h3 {
 }
+.title-big {
+    font-size: 400%;
+    font-weight: 900;
+    margin: 4px;
+    letter-spacing: -1px;
+}
 .small {
     font-size: 90%;
 }
 a {
     color: #00baff;
     transition: color .2s linear;
-    -webkit-transition: color .2 linear;
-    -moz-transition: color .2 linear;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
 }
 a:active, a:hover {
     color: #008aff;
     text-decoration: none;
 }
 .btn {
-    border: 1px solid #00baff;
+    border: 2px solid;
+    border-color: #00baff;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     padding: 6px 10px;
     font-size: 80%;
-    transition: border .2s linear;
-    -webkit-transition: border .2 linear;
-    -moz-transition: border .2 linear;
+    font-weight: 700;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
 }
 .btn:hover {
-    border: 1px solid #008aff;
+    border-color: #008aff;
+    color: #008aff;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
 }
 .text-center {
     text-align: center;
@@ -80,7 +92,8 @@ a:active, a:hover {
     width: 100%;
 }
 .product-label {
-    background: rgba(255,255,255,.92);
+    background: rgba(0,186,255,.92);
+    color: white;
     padding: 6px 10px;
     display: block;
     float: left;
@@ -94,7 +107,7 @@ a:active, a:hover {
     float: left;
 }
 
-/*
+/* 
  * Header and topnavigation
  */
 header {
@@ -114,7 +127,7 @@ header {
     top: 0;
     width: 100%;
     padding: 13px 0;
-    background: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.97);
     z-index: 6000;
 }
 .topnav-subpage {
@@ -131,22 +144,59 @@ header {
     background: linear-gradient(to right, #1a439f , #ab2c94); /* Standard syntax */
 }
 
-/*
+/* 
  * Footer
  */
 footer {
-    color: #777;
+    color: #999;
     padding: 60px 0;
+    background: #f2f2f2;
 }
 footer a {
-    color: #777;
+    color: #999;
 }
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-weight: 500;
+    font-weight: 700;
 }
 footer li {
     padding-bottom: 4px;
+}
+
+/*
+ * Symbols and badges
+ */
+.social-badge {
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    height: 44px;
+    width: 44px;
+    display: inline-block;
+    padding-top: 13px;
+    font-size: 120%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+.social-badge:hover {
+    background-color: #008aff;
+    color: white;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+/*
+ * Mobile
+ */
+@media screen and (max-width: 500px) {
+    .hide-mobile {
+        display: none;
+    }
 }
