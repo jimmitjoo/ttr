@@ -30,4 +30,32 @@ class Race extends Model
         'signup_link'
     ];
 
+    /**
+     * @param $query
+     * @param $town
+     * @return mixed
+     */
+    public static function scopeTown($query, $town)
+    {
+        return $query->where('town', '=', $town);
+    }
+
+    /**
+     * @param $query
+     * @return mixed
+     */
+    public static function scopeDateAscending($query)
+    {
+        return $query->orderBy('date', 'ASC');
+    }
+
+    /**
+     * @param $query
+     * @return mixed
+     */
+    public static function scopeDateDescending($query)
+    {
+        return $query->orderBy('date', 'DESC');
+    }
+
 }

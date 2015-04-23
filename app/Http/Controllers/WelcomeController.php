@@ -33,9 +33,9 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $races = Race::orderBy('date', 'ASC')->get();
+        $races = Race::dateAscending()->get();
 
-        return view('welcome')->withRaces($races);
+        return view('welcome')->with(['races' => $races]);
     }
 
 }
