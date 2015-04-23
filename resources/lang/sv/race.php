@@ -13,5 +13,6 @@ return [
     'external_link' => 'Extern länk',
     'signup_link'   => 'Länk till anmälan',
     'save'          => 'Spara lopp',
+    'create'        => 'Skapa lopp',
 
 ];
