@@ -12,21 +12,25 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateRaceRequest;
 use App\Race;
 
+/**
+ * Class RacesController
+ * @package App\Http\Controllers
+ */
 class RacesController extends Controller
 {
 
+    /**
+     * @return \Illuminate\View\View
+     */
     public function create()
     {
         return view('race.create');
     }
 
-    public function listing()
-    {
-        $races = Race::all();
-
-        return view('race.list')->withRaces($races);
-    }
-
+    /**
+     * @param CreateRaceRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function store(CreateRaceRequest $request)
     {
         if ($request->hasFile('logo_src') && $request->file('logo_src')->isValid()) {

@@ -2,10 +2,21 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Race extends Model {
+/**
+ * Class Race
+ * @package App
+ */
+class Race extends Model
+{
 
+    /**
+     * @var string
+     */
     protected $table = 'races';
 
+    /**
+     * @var array
+     */
     protected $fillable = [
         'name',
         'logo_src',
