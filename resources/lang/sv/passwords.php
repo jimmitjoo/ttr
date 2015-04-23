@@ -19,4 +19,7 @@ return [
 	"sent" => "Vi har mailat dig återställnings instruktioner!",
 	"reset" => "Ditt lösenord har återställts!",
 
+    "reset_password" => "Återställ lösenord",
+    "send_reset_link" => "Skicka länk för återställning"
+
 ];

@@ -71,6 +71,9 @@
                 <div class="col-lg-3"><h3>Distans</h3></div>
                 <div class="col-lg-2 text-right"><h3>Anmälan</h3></div>
             </div>
+
+            @include('race.list')
+
             <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
                 <div class="col-lg-2">Kalmar</div>
                 <div class="col-lg-2">Sön 3 maj</div>

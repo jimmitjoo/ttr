@@ -20,6 +20,13 @@ class RacesController extends Controller
         return view('race.create');
     }
 
+    public function listing()
+    {
+        $races = Race::all();
+
+        return view('race.list')->withRaces($races);
+    }
+
     public function store(CreateRaceRequest $request)
     {
         if ($request->hasFile('logo_src') && $request->file('logo_src')->isValid()) {
