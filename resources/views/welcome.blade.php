@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <span style="font-weight: 900; padding-right: 30px; font-size: 180%; letter-spacing: -1px"><a href="http://timetorun.se"><img src="/images/test.gif"></a></a></span><span style="font-weight: 700;"><a href="/auth/register">Registrera</a></span>
+                    <span style="font-weight: 900; padding-right: 30px; font-size: 180%; letter-spacing: -1px"><a href="/"><img src="/images/test.gif"></a></a></span><span style="font-weight: 700;"><a href="/auth/register">Registrera</a></span>
                 </div>
                 <div class="col-lg-6 text-right">
                 </div>
@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a href="http://timetorun.se"><img src="/images/timetorun.png"></a></span><span style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
+                        <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a href="/"><img src="/images/timetorun.png"></a></span><span style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
                     </div>
                     <div class="col-lg-6 text-right">
                     </div>
