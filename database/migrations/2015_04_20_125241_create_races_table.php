@@ -18,7 +18,6 @@ class CreateRacesTable extends Migration {
             $table->string('name');
             $table->string('logo_src');
             $table->string('cover_src');
-            $table->date('date');
             $table->string('country');
             $table->string('county');
             $table->string('town');
