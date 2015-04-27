@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
@@ -21,3 +23,19 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('login/facebook', function(){
+
+    return Socialize::with('facebook')->scopes(['email'])->redirect();
+
+});
+
+Route::get('receive/facebook', function(){
+
+    $socialUser = Socialize::with('facebook')->user();
+    $user = User::socialUser($socialUser);
+
+    Auth::login($user);
+
+    return Redirect::to('/');
+});

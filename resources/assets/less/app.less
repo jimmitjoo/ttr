@@ -1,8 +1,329 @@
 @import "bootstrap/bootstrap";
 
 @btn-font-weight: 300;
-@font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: 'Raleway', sans-serif;
+
+@light-blue: rgba(0,186,255,.92);
+@dark-blue: rgba(27,67,129,1);
+@purple: rgba(171,44,148,1);
 
 body, label, .checkbox label {
 	font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+
+  font-size: 1.5vw;
+  font-size: 16px;
+  color: #111;
+}
+.unsplash {
+  background: url('http://timetorun.se/images/unsplash1.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 85%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 700%;
+  font-size: 10vw;
+  color: white;
+  line-height: 1.2;
+}
+h2 {
+  font-weight: 400;
+}
+h3 {
+}
+.title-big {
+  font-size: 400%;
+  font-weight: 900;
+  margin: 4px;
+  letter-spacing: -1px;
+}
+.medium {
+  font-weight: 700;
+}
+.small {
+  font-size: 90%;
+}
+.gray {
+  color: gray;
+}
+a {
+  color: #00baff;
+  transition: color .2s linear;
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+}
+a:active, a:hover {
+  color: #008aff;
+  text-decoration: underline;
+}
+.btn {
+  border: 2px solid;
+  border-color: #00baff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 80%;
+  font-weight: 700;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+.btn:hover {
+  border-color: #008aff;
+  color: #008aff;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.height-full {
+  height: 100%;
+}
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.product-label {
+  background: rgba(0,186,255,.92);
+  color: white;
+  padding: 6px 10px;
+  display: block;
+  float: left;
+}
+.product-pricetag {
+  background-color: #69e16c;
+  color: white;
+  padding: 5px 10px 8px;
+  font-weight: 700;
+  display: block;
+  float: left;
+}
+
+/*
+ * Header and topnavigation
+ */
+header {
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 14px 0;
+  color: white;
+  background: #51565d;
+  background: rgba(0,0,0,.0);
+}
+.topnav {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 13px 0;
+  background: rgba(255,255,255,.97);
+  z-index: 6000;
+}
+.topnav-subpage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(255,255,255,.9);
+  z-index: 6000;
+  color: white;
+  background: -webkit-linear-gradient(left, #1a439f , #ab2c94); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #1a439f, #ab2c94); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #1a439f, #ab2c94); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #1a439f , #ab2c94); /* Standard syntax */
+}
+.topnav-light {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  background: rgba(255,255,255,.9);
+  z-index: 6000;
+}
+.topnav-light-border {
+  height: 1px;
+  background: -webkit-linear-gradient(left, #1a439f , #ab2c94); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #1a439f, #ab2c94); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #1a439f, #ab2c94); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #1a439f , #ab2c94); /* Standard syntax */
+
+}
+
+/*
+ * Login
+ */
+.login {
+  padding-top: 60px;
+  max-width: 400px;
+}
+.login-title {
+  margin-bottom: 30px;
+}
+.login-remember {
+  padding: 0 0 15px;
+}
+.login-forgot {
+  padding: 20px 0 0;
+}
+.login-register {
+  padding: 20px 0;
+}
+.login-submit {
+  padding: 0;
+}
+.login-information {
+  border-top: 1px solid #ededed;
+}
+h1 {
+  font-size: 160%;
+  color: black;
+}
+
+/*
+ * Footer
+ */
+footer {
+  color: #999;
+  padding: 60px 0;
+  background: #f2f2f2;
+}
+footer a {
+  color: #999;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+footer li {
+  padding-bottom: 4px;
+}
+
+/*
+ * Divs and blocks
+ */
+.center {
+  float: none;
+  margin: auto;
+}
+.block-top {
+  padding: 120px 0 60px;
+}
+
+/*
+ * Form and inputs
+ */
+input[type="text"], input[type="password"] {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border: 1px solid #ededed;
+  /*
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  */
+  padding: 15px;
+  background-color: #ededed;
+  -webkit-appearance: none;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  background-color: #fff;
+  border-color: #ccc;
+  -webkit-appearance: none;
+  outline-width: 0;
+}
+input[type="submit"] {
+  color: white;
+  display: block;
+  font-weight: 700;
+  width: 100%;
+  background-color: #008aff;
+  border: 1px solid #008aff;
+  /*
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  */
+  padding: 15px 35px;
+  margin: 0;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+}
+input[type="submit"]:hover {
+  background-color: #0073d4;
+  border: 1px solid #0073d4;
+}
+input[type="submit"].fb {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+/*
+ * Symbols and badges
+ */
+.social-badge {
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  height: 44px;
+  width: 44px;
+  display: inline-block;
+  padding-top: 13px;
+  font-size: 120%;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+.social-badge:hover {
+  background-color: #008aff;
+  color: white;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+
+/*
+ * Mobile
+ */
+@media screen and (max-width: 500px) {
+  .hide-mobile {
+    display: none;
+  }
 }

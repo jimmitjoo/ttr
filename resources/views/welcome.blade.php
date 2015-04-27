@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="topnav">
+    <div class="topnav animated">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -47,7 +47,6 @@
                     <ul class="nav nav-pills">
                         <li><a href="/auth/login">{{ Lang::get('auth.login') }}</a></li>
                         <li><a href="/auth/register">{{ Lang::get('auth.register') }}</a></li>
-                        <li><a href="/lopp/skapa">{{ Lang::get('race.create') }}</a></li>
                     </ul>
                 </nav>
             </div>

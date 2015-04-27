@@ -11,9 +11,9 @@
     <meta name="keywords" content="">
 
     <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900" rel="stylesheet" type="text/css">
+
 
 </head>
 <body>

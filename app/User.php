@@ -31,4 +31,23 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+    public static function socialUser($userObject)
+    {
+        $user = User::where('facebook_provider_id', $userObject->id)->first();
+        if (!$user) $user = User::where('email', $userObject->email)->first();
+
+        if (!$user) {
+            $user = new User;
+
+            $user->name = $userObject->name;
+            $user->email = $userObject->email;
+            $user->facebook_provider_id = $userObject->id;
+            $user->avatar = $userObject->avatar;
+
+            $user->save();
+        }
+        
+        return $user;
+    }
+
 }
