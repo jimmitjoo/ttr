@@ -32,6 +32,8 @@ Route::get('/receive/facebook', function(){
 
     $socialUser = Socialize::with('facebook')->user();
 
+    print_r($socialUser);
+
     if (!User::where('email', $socialUser->email) && !User::where('facebook_provider_id', $socialUser->id)) {
         $user = User::create([
             'name' => $socialUser->name,
@@ -39,6 +41,8 @@ Route::get('/receive/facebook', function(){
             'facebook_provider_id' => $socialUser->id,
             'avatar' => $socialUser->avatar
         ]);
+
+        echo 'användare skapad';
 
         dd($user);
 
@@ -51,6 +55,8 @@ Route::get('/receive/facebook', function(){
     if (!$user) $user = User::where('facebook_provider_id', $socialUser->id);
 
     $user->facebook_provider_id = $socialUser->id;
+
+    echo 'existerande användar provider satt';
 
     dd($user);
 
