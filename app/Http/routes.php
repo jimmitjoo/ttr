@@ -40,6 +40,8 @@ Route::get('/receive/facebook', function(){
             'avatar' => $socialUser->avatar
         ]);
 
+        dd($user);
+
         Auth::login($user);
 
         return Redirect::to('/');
@@ -49,6 +51,8 @@ Route::get('/receive/facebook', function(){
     if (!$user) $user = User::where('facebook_provider_id', $socialUser->id);
 
     $user->facebook_provider_id = $socialUser->id;
+
+    dd($user);
 
     Auth::login($user);
 
