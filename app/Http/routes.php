@@ -30,7 +30,30 @@ Route::get('login/facebook', function(){
 
 Route::get('/receive/facebook', function(){
 
-    $user = Socialize::with('facebook')->user();
+    $socialUser = Socialize::with('facebook')->user();
+
+    if (!User::where('email', $socialUser->email) && !User::where('facebook_provider_id', $socialUser->id)) {
+        $user = User::create([
+            'name' => $socialUser->name,
+            'email' => $socialUser->email,
+            'facebook_provider_id' => $socialUser->id,
+            'avatar' => $socialUser->avatar
+        ]);
+
+        Auth::login($user);
+
+        return redirect('/');
+    }
+
+    $user = User::where('email', $socialUser->email);
+    if (!$user) $user = User::where('facebook_provider_id', $socialUser->id);
+
+    $user->facebook_provider_id = $socialUser->id;
+
+    Auth::login($user);
+
+    return redirect('/');
+
 
     return $user->email;
 
