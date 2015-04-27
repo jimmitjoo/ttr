@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateRaceRequest;
 use App\Race;
+use App\Run;
 
 /**
  * Class RacesController
@@ -44,7 +45,28 @@ class RacesController extends Controller
             $request->file('cover_src')->move(public_path() . '/uploads/images', $filename);
         }
 
-        Race::create($request->all());
+        $postArray = $request->all();
+        $runArray = [];
+
+        foreach ($request->all() as $key => $value) {
+            if (strpos($key, 'run_') !== false) {
+                unset($postArray[$key]);
+
+                $runKey = str_replace('run_', '', $key);
+
+                $runArray[$runKey] = $value;
+            }
+        }
+
+        //dd($runArray);
+        //dd($postArray);
+
+        $race = Race::create($postArray);
+        $runArray['race_id'] = $race->id;
+
+        Run::create($runArray);
+
+        dd($runArray);
 
         return redirect(route('home'));
     }
