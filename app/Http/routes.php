@@ -34,8 +34,7 @@ Route::get('/receive/facebook', function(){
 
     $user = User::findOrCreate($socialUser);
 
-    dd($user);
-    dd($socialUser);
+    dd([$user, $socialUser]);
 
     if (!User::where('email', $socialUser->email) && !User::where('facebook_provider_id', $socialUser->id)) {
         $user = User::create([
