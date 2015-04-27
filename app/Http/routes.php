@@ -10,6 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use Laravel\Socialite\Facades\Socialite;
 
 Route::get('/', 'WelcomeController@index');
 
@@ -21,3 +22,9 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('login/facebook', function(){
+
+    return Socialite::with('facebook')->redirect();
+
+});
