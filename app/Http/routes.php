@@ -28,3 +28,9 @@ Route::get('login/facebook', function(){
     return Socialite::with('facebook')->redirect();
 
 });
+
+Route::get('/receive/facebook', function(){
+
+    dd(Auth::user());
+
+});
