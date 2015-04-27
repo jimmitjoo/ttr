@@ -32,7 +32,7 @@ class HomeController extends Controller
     public function index()
     {
         $currentUser = \Auth::getUser();
-        return view('home')->view('user', $currentUser);
+        return view('home')->with('user', $currentUser);
     }
 
 }
