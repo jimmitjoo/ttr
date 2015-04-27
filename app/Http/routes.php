@@ -32,7 +32,7 @@ Route::get('/receive/facebook', function(){
 
     $user = Socialize::with('facebook')->user();
 
-    $user->save();
+    return $user->email;
 
     dd($user);
     return Socialize::with('facebook')->user();
