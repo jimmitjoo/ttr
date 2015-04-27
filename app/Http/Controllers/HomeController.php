@@ -31,9 +31,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user = Auth::user();
-
-        return view('home')->with(['user' => $user]);
+        $currentUser = \Auth::getUser();
+        return view('home')->view('user', $currentUser);
     }
 
 }
