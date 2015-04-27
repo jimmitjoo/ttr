@@ -1,6 +1,8 @@
-@extends('app')
+@extends('master.master')
 
 @section('content')
+
+    <!--
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
@@ -62,4 +64,44 @@
 		</div>
 	</div>
 </div>
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 center login">
+            <div class="col-lg-12 col-md-12 col-xs-12 login-submit" style="margin-bottom: 10px;">
+                <input type="submit" name="login" class="fb" value="{{ Lang::get('auth.signup_with_facebook') }}"/>
+            </div>
+
+            <div class="text-center" style="margin-bottom: 10px;">
+                {{ Lang::get('default.or') }}
+            </div>
+
+            <form method="post">
+                <input type="text" placeholder="{{ Lang::get('auth.email') }}" value="{{ old('email') }}"/>
+
+                <!--
+                --
+                -- Disabled untill user click the email input or verify available email
+                --
+                <input type="password" placeholder="{{ Lang::get('auth.password') }}"/>
+                <input type="password" placeholder="{{ Lang::get('auth.confirm_password') }}"/>
+                -->
+
+                <div class="col-lg-12 col-md-12 col-xs-12 small gray" style="margin-bottom: 20px;">
+                    {{ Lang::get('auth.by_register_accepting_terms') }} <a href="#">{{ Lang::get('auth.ttr_terms') }}</a> {{ Lang::get('default.and') }} <a href="#">{{ Lang::get('auth.policy') }}</a>.
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-xs-12 login-submit">
+                    <input type="submit" name="register" value="{{ Lang::get('default.start_now') }}"/>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-xs-12 login-register text-center small">
+                    {{ Lang::get('auth.do_you_have_an_account') }} <a href="index.php">{{ Lang::get('auth.sign_in_here') }}</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 @endsection

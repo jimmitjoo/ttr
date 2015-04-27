@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="topnav">
+    <div class="topnav animated">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
