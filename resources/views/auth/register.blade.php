@@ -42,8 +42,8 @@
                         --
                         -- Disabled untill user click the email input or verify available email
                         --
-                        <input type="password" placeholder="Lösenord"/>
-                        <input type="password" placeholder="Bekräfta lösenord"/>
+                        <input type="password" placeholder="{{ Lang::get('auth.password') }}"/>
+                        <input type="password" placeholder="{{ Lang::get('auth.password_confirm') }}"/>
                         -->
 
                         <div class="col-lg-12 col-md-12 col-xs-12 small gray" style="margin-bottom: 20px;">

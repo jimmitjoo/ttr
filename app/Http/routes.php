@@ -31,6 +31,9 @@ Route::get('login/facebook', function(){
 Route::get('/receive/facebook', function(){
 
     $user = Socialize::with('facebook')->user();
+
+    $userData = new User;
+    //$userData->name = $user->get
     print_r($user);
     dd(Input::all());
     return Socialize::with('facebook')->user();
