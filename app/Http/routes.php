@@ -25,12 +25,12 @@ Route::controllers([
 
 Route::get('login/facebook', function(){
 
-    return Socialite::with('facebook')->redirect();
+    return Socialite::with('facebook')->scopes(['email'])->redirect();
 
 });
 
 Route::get('/receive/facebook', function(){
 
-    dd(Auth::user());
+    return Socialite::with('facebook')->user();
 
 });
