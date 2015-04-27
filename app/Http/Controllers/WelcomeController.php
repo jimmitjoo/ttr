@@ -33,7 +33,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $races = Race::dateAscending()->get();
+        $races = Race::all();
 
         return view('welcome')->with(['races' => $races]);
     }
