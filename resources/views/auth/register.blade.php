@@ -23,8 +23,10 @@
                     @endif
 
                     <div class="col-lg-12 col-md-12 col-xs-12 login-submit" style="margin-bottom: 10px;">
-                        <input type="submit" name="login" class="fb"
-                               value="{{ Lang::get('auth.sign_up_with_facebook') }}"/>
+                        <form method="GET" action="{{ url('login/facebook') }}">
+                            <input type="submit" name="login" class="fb"
+                                   value="{{ Lang::get('auth.sign_up_with_facebook') }}"/>
+                        </form>
                     </div>
 
                     <div class="text-center" style="margin-bottom: 10px;">
