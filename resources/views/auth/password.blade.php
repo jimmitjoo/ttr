@@ -1,9 +1,10 @@
 @extends('app')
 
+@section('title', Lang::get('passwords.reset_password') )
+
 @section('content')
 
     <div class="block-top">
-
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 center login">
@@ -45,8 +46,13 @@
                     <div class="col-lg-12 col-md-12 col-xs-12 login-register text-center small">
                         {{ Lang::get('default.or') }} <a href="{{ url('/auth/login') }}">{{ Lang::get('auth.sign_in_here') }}</a>
                     </div>
+
+                    <div class="col-lg-12 col-md-12 col-xs-12 login-information gray small">
+                        <p>Lorem ipsum dolor sit amet dores</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 @endsection

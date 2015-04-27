@@ -16,7 +16,9 @@ return [
     'policy' => 'policy',
 
 
-    'signup_with_facebook' => 'Registrera dig med Facebook',
+    'sign_up_with_facebook' => 'Registrera dig med Facebook',
+    'sign_in_with_facebook' => 'Logga in med Facebook',
+
     'do_you_have_an_account' => 'Har du redan ett konto?',
     'sign_in_here' => 'Logga in här',
     'sign_up_here' => 'Registrera dig här'
