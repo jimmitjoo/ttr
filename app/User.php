@@ -31,11 +31,11 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
-    public static function findOrCreate(array $userObject)
+    public function findOrCreate(array $userObject)
     {
-        $obj = static::find($userObject[0]);
-        if (!$obj) $obj = static::where('email', $userObject[1]);
-        return $obj ?: new static;
+        $obj = User::find($userObject[0]);
+        if (!$obj) $obj = User::where('email', $userObject[1]);
+        return $obj ?: new User;
     }
 
 }
