@@ -38,10 +38,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
         if (!$obj) {
             $obj = User::create([
-                'name' => $socialUser->name,
-                'email' => $socialUser->email,
-                'facebook_provider_id' => $socialUser->id,
-                'avatar' => $socialUser->avatar
+                'name' => $userObject->name,
+                'email' => $userObject->email,
+                'facebook_provider_id' => $userObject->id,
+                'avatar' => $userObject->avatar
             ]);
         }
         
