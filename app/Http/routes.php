@@ -42,7 +42,7 @@ Route::get('/receive/facebook', function(){
 
         Auth::login($user);
 
-        return redirect('/');
+        return Redirect::to('/');
     }
 
     $user = User::where('email', $socialUser->email);
@@ -52,7 +52,7 @@ Route::get('/receive/facebook', function(){
 
     Auth::login($user);
 
-    return redirect('/');
+    return Redirect::to('/');
 
 
     return $user->email;
