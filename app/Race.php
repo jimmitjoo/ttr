@@ -21,7 +21,6 @@ class Race extends Model
         'name',
         'logo_src',
         'cover_src',
-        'date',
         'country',
         'county',
         'town',
@@ -38,24 +37,6 @@ class Race extends Model
     public static function scopeTown($query, $town)
     {
         return $query->where('town', '=', $town);
-    }
-
-    /**
-     * @param $query
-     * @return mixed
-     */
-    public static function scopeDateAscending($query)
-    {
-        return $query->orderBy('date', 'ASC');
-    }
-
-    /**
-     * @param $query
-     * @return mixed
-     */
-    public static function scopeDateDescending($query)
-    {
-        return $query->orderBy('date', 'DESC');
     }
 
 }
