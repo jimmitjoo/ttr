@@ -1,50 +1,46 @@
 @extends('app')
 
 @section('content')
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">{{ Lang::get('passwords.reset_password') }}</div>
-				<div class="panel-body">
-					@if (session('status'))
-						<div class="alert alert-success">
-							{{ session('status') }}
-						</div>
-					@endif
 
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>{{ Lang::get('errors.whoops') }}</strong> {{ Lang::get('errors.some_problem') }}<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
+    <div class="block-top">
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 center login">
+                    <div class="login-title text-center">
+                        <h1>{{ Lang::get('passwords.reset_password') }}</h1>
+                    </div>
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">{{ Lang::get('auth.email') }}</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                    @endif
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									{{ Lang::get('passwords.send_reset_link') }}
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <strong>{{ Lang::get('errors.whoops') }}</strong> {{ Lang::get('errors.some_problem') }}
+                            .<br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                        <input type="text" name="email" placeholder="{{ Lang::get('auth.email') }}"
+                               value="{{ old('email') }}"/>
+
+                        <div class="col-lg-12 col-md-12 col-xs-12 login-submit">
+                            <input type="submit" name="register" value="{{ Lang::get('passwords.send_reset_link') }}"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
