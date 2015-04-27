@@ -30,7 +30,9 @@ Route::get('login/facebook', function(){
 
 Route::get('/receive/facebook', function(){
 
+    $user = Socialize::with('facebook')->user();
+    print_r($user);
     dd(Input::all());
-    return Socialize::with('github')->user();
+    return Socialize::with('facebook')->user();
 
 });
