@@ -28,7 +28,7 @@ Route::get('login/facebook', function(){
 
 });
 
-Route::get('/receive/facebook', function(){
+Route::get('receive/facebook', function(){
 
     $socialUser = Socialize::with('facebook')->user();
 
