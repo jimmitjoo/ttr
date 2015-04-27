@@ -10,7 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-use Laravel\Socialite\Facades\Socialite;
 
 Route::get('/', 'WelcomeController@index');
 
@@ -25,12 +24,13 @@ Route::controllers([
 
 Route::get('login/facebook', function(){
 
-    return Socialite::with('facebook')->scopes(['email'])->redirect();
+    return Socialize::with('facebook')->scopes(['email'])->redirect();
 
 });
 
 Route::get('/receive/facebook', function(){
 
-    return Socialite::with('facebook')->user();
+    dd(Input::all());
+    return Socialize::with('github')->user();
 
 });
