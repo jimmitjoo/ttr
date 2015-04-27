@@ -19,6 +19,18 @@
     <![endif]-->
 </head>
 <body>
+
+<div class="topnav-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center" style="padding: 20px 30px;">
+                <a href="/"><img src="/images/test.gif"></a>
+            </div>
+        </div>
+    </div>
+    <div class="topnav-light-border"></div>
+</div>
+<!--
 <nav class="navbar navbar-default topnav-subpage">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -54,7 +66,7 @@
         </div>
     </div>
 </nav>
-
+-->
 @yield('content')
 
 <!-- Scripts -->

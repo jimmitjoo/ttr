@@ -53,7 +53,7 @@
 
                         <div class="col-lg-12 col-md-12 col-xs-12 login-register text-center small">
                             {{ Lang::get('auth.do_you_have_an_account') }} <a
-                                    href="{{ url('/auth/register') }}">{{ Lang::get('auth.register_here') }}</a>
+                                    href="{{ url('/auth/register') }}">{{ Lang::get('auth.sign_up_here') }}</a>
                         </div>
 
                         <div class="col-lg-12 col-md-12 col-xs-12 login-information gray small">

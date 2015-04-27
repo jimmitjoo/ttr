@@ -19,6 +19,7 @@ return [
     'signup_with_facebook' => 'Registrera dig med Facebook',
     'do_you_have_an_account' => 'Har du redan ett konto?',
     'sign_in_here' => 'Logga in här',
+    'sign_up_here' => 'Registrera dig här'
 
 
 ];

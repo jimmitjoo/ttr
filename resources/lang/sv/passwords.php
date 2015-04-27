@@ -20,6 +20,8 @@ return [
 	"reset" => "Ditt lösenord har återställts!",
 
     "reset_password" => "Återställ lösenord",
-    "send_reset_link" => "Skicka länk för återställning"
+    "send_reset_link" => "Skicka länk för återställning",
+
+    "reset_password_explanation" => "Ange den e-postadress som du registrerade dig med. Vi skickar ett e-postmeddelande med en länk där du kan återställa ditt lösenord."
 
 ];
