@@ -33,7 +33,7 @@ Route::get('receive/facebook', function(){
     $socialUser = Socialize::with('facebook')->user();
     dd([$socialUser]);
 
-    $user = User::findOrCreate($socialUser);
+    $user = User::findOrCreate([$socialUser->id, $socialUser->email]);
 
     dd([$user, $socialUser]);
 
