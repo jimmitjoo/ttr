@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
