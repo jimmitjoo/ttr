@@ -34,9 +34,8 @@ class WelcomeController extends Controller
     public function index()
     {
         $races = Race::all();
-        $user = Auth::user();
 
-        return view('welcome')->with(['races' => $races, 'user' => $user]);
+        return view('welcome')->with(['races' => $races]);
     }
 
 }
