@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use App\Race;
+use App\Run;
 
 class WelcomeController extends Controller
 {
@@ -33,7 +33,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $races = Race::all();
+        $races = Run::all();
 
         return view('welcome')->with(['races' => $races]);
     }
