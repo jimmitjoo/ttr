@@ -17,6 +17,7 @@ class CreateRaceadministratorsTable extends Migration {
             $table->increments('id');
             $table->integer('race_id');
             $table->integer('user_id');
+            $table->timestamps();
         });
 	}
 

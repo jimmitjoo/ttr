@@ -26,6 +26,7 @@ class CreateRunsTable extends Migration {
             $table->dateTime('start_datetime');
             $table->string('cover_src');
             $table->integer('map_id');
+            $table->timestamps();
         });
 	}
 
