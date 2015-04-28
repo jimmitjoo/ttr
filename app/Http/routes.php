@@ -37,5 +37,6 @@ Route::get('receive/facebook', function(){
 
     Auth::login($user);
 
-    return Redirect::to('/');
+    return Redirect::to('/hem');
+
 });
