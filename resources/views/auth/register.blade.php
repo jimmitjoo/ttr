@@ -35,16 +35,14 @@
 
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <input type="text" name="email" placeholder="{{ Lang::get('auth.email') }}"
+                        <input type="text" id="registerEmail" name="email" placeholder="{{ Lang::get('auth.email') }}"
                                value="{{ old('email') }}"/>
 
-                        <!--
-                        --
-                        -- Disabled untill user click the email input or verify available email
-                        --
-                        <input type="password" placeholder="{{ Lang::get('auth.password') }}"/>
-                        <input type="password" placeholder="{{ Lang::get('auth.password_confirm') }}"/>
-                        -->
+                        <div id="registerPasswords" class="hidden">
+                            <input type="text" name="name" placeholder="{{ Lang::get('auth.name') }}">
+                            <input type="password" name="password" placeholder="{{ Lang::get('auth.password') }}"/>
+                            <input type="password" name="password_confirmation" placeholder="{{ Lang::get('auth.password_confirm') }}"/>
+                        </div>
 
                         <div class="col-lg-12 col-md-12 col-xs-12 small gray" style="margin-bottom: 20px;">
                             {{ Lang::get('auth.by_register_accepting_terms') }} <a

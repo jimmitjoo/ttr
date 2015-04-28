@@ -39,4 +39,9 @@ class Race extends Model
         return $query->where('town', '=', $town);
     }
 
+    public function administrator()
+    {
+
+    }
+
 }

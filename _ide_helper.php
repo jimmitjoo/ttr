@@ -576,11 +576,7 @@ namespace {
          * @static
          */
         public static function when($concrete){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::when($concrete);
         }
 
@@ -592,11 +588,7 @@ namespace {
          * @static
          */
         public static function resolved($abstract){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::resolved($abstract);
         }
 
@@ -608,11 +600,7 @@ namespace {
          * @static
          */
         public static function isAlias($name){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::isAlias($name);
         }
 
@@ -626,11 +614,7 @@ namespace {
          * @static
          */
         public static function bind($abstract, $concrete = null, $shared = false){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::bind($abstract, $concrete, $shared);
         }
 
@@ -643,11 +627,7 @@ namespace {
          * @static
          */
         public static function addContextualBinding($concrete, $abstract, $implementation){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::addContextualBinding($concrete, $abstract, $implementation);
         }
 
@@ -661,11 +641,7 @@ namespace {
          * @static
          */
         public static function bindIf($abstract, $concrete = null, $shared = false){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::bindIf($abstract, $concrete, $shared);
         }
 
@@ -678,11 +654,7 @@ namespace {
          * @static
          */
         public static function singleton($abstract, $concrete = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::singleton($abstract, $concrete);
         }
 
@@ -694,11 +666,7 @@ namespace {
          * @static
          */
         public static function share($closure){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::share($closure);
         }
 
@@ -711,11 +679,7 @@ namespace {
          * @static
          */
         public static function bindShared($abstract, $closure){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::bindShared($abstract, $closure);
         }
 
@@ -729,11 +693,7 @@ namespace {
          * @static
          */
         public static function extend($abstract, $closure){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::extend($abstract, $closure);
         }
 
@@ -746,11 +706,7 @@ namespace {
          * @static
          */
         public static function instance($abstract, $instance){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::instance($abstract, $instance);
         }
 
@@ -763,11 +719,7 @@ namespace {
          * @static
          */
         public static function tag($abstracts, $tags){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::tag($abstracts, $tags);
         }
 
@@ -779,11 +731,7 @@ namespace {
          * @static
          */
         public static function tagged($tag){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::tagged($tag);
         }
 
@@ -796,11 +744,7 @@ namespace {
          * @static
          */
         public static function alias($abstract, $alias){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::alias($abstract, $alias);
         }
 
@@ -813,11 +757,7 @@ namespace {
          * @static
          */
         public static function rebinding($abstract, $callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::rebinding($abstract, $callback);
         }
 
@@ -831,11 +771,7 @@ namespace {
          * @static
          */
         public static function refresh($abstract, $target, $method){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::refresh($abstract, $target, $method);
         }
 
@@ -848,11 +784,7 @@ namespace {
          * @static
          */
         public static function wrap($callback, $parameters = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::wrap($callback, $parameters);
         }
 
@@ -866,11 +798,7 @@ namespace {
          * @static
          */
         public static function call($callback, $parameters = array(), $defaultMethod = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::call($callback, $parameters, $defaultMethod);
         }
 
@@ -884,11 +812,7 @@ namespace {
          * @static
          */
         public static function build($concrete, $parameters = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::build($concrete, $parameters);
         }
 
@@ -901,11 +825,7 @@ namespace {
          * @static
          */
         public static function resolving($abstract, $callback = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::resolving($abstract, $callback);
         }
 
@@ -918,11 +838,7 @@ namespace {
          * @static
          */
         public static function afterResolving($abstract, $callback = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::afterResolving($abstract, $callback);
         }
 
@@ -934,11 +850,7 @@ namespace {
          * @static
          */
         public static function isShared($abstract){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::isShared($abstract);
         }
 
@@ -949,11 +861,7 @@ namespace {
          * @static
          */
         public static function getBindings(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::getBindings();
         }
 
@@ -965,11 +873,7 @@ namespace {
          * @static
          */
         public static function forgetInstance($abstract){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::forgetInstance($abstract);
         }
 
@@ -980,11 +884,7 @@ namespace {
          * @static
          */
         public static function forgetInstances(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::forgetInstances();
         }
 
@@ -995,11 +895,7 @@ namespace {
          * @static
          */
         public static function getInstance(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::getInstance();
         }
 
@@ -1011,11 +907,7 @@ namespace {
          * @static
          */
         public static function setInstance($container){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::setInstance($container);
         }
 
@@ -1027,11 +919,7 @@ namespace {
          * @static
          */
         public static function offsetExists($key){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::offsetExists($key);
         }
 
@@ -1043,11 +931,7 @@ namespace {
          * @static
          */
         public static function offsetGet($key){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Foundation\Application::offsetGet($key);
         }
 
@@ -1060,11 +944,7 @@ namespace {
          * @static
          */
         public static function offsetSet($key, $value){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::offsetSet($key, $value);
         }
 
@@ -1076,11 +956,7 @@ namespace {
          * @static
          */
         public static function offsetUnset($key){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Container\Container            
-=======
             //Method inherited from \Illuminate\Container\Container
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Foundation\Application::offsetUnset($key);
         }
 
@@ -1098,11 +974,7 @@ namespace {
          * @static
          */
         public static function handle($input, $output = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \App\Console\Kernel::handle($input, $output);
         }
 
@@ -1115,11 +987,7 @@ namespace {
          * @static
          */
         public static function terminate($input, $status){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \App\Console\Kernel::terminate($input, $status);
         }
 
@@ -1132,11 +1000,7 @@ namespace {
          * @static
          */
         public static function call($command, $parameters = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \App\Console\Kernel::call($command, $parameters);
         }
 
@@ -1149,11 +1013,7 @@ namespace {
          * @static
          */
         public static function queue($command, $parameters = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \App\Console\Kernel::queue($command, $parameters);
         }
 
@@ -1164,11 +1024,7 @@ namespace {
          * @static
          */
         public static function all(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \App\Console\Kernel::all();
         }
 
@@ -1179,11 +1035,7 @@ namespace {
          * @static
          */
         public static function output(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \App\Console\Kernel::output();
         }
 
@@ -1194,11 +1046,7 @@ namespace {
          * @static
          */
         public static function bootstrap(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Foundation\Console\Kernel            
-=======
             //Method inherited from \Illuminate\Foundation\Console\Kernel
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \App\Console\Kernel::bootstrap();
         }
 
@@ -1256,11 +1104,7 @@ namespace {
          * @static
          */
         public static function driver($driver = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\Manager            
-=======
             //Method inherited from \Illuminate\Support\Manager
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Auth\AuthManager::driver($driver);
         }
 
@@ -1273,11 +1117,7 @@ namespace {
          * @static
          */
         public static function extend($driver, $callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\Manager            
-=======
             //Method inherited from \Illuminate\Support\Manager
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Auth\AuthManager::extend($driver, $callback);
         }
 
@@ -1288,11 +1128,7 @@ namespace {
          * @static
          */
         public static function getDrivers(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\Manager            
-=======
             //Method inherited from \Illuminate\Support\Manager
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Auth\AuthManager::getDrivers();
         }
 
@@ -1784,11 +1620,7 @@ namespace {
          * @static
          */
         public static function getCompiledPath($path){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\View\Compilers\Compiler            
-=======
             //Method inherited from \Illuminate\View\Compilers\Compiler
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\View\Compilers\BladeCompiler::getCompiledPath($path);
         }
 
@@ -1800,11 +1632,7 @@ namespace {
          * @static
          */
         public static function isExpired($path){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\View\Compilers\Compiler            
-=======
             //Method inherited from \Illuminate\View\Compilers\Compiler
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\View\Compilers\BladeCompiler::isExpired($path);
         }
 
@@ -2737,11 +2565,7 @@ namespace {
          * @static
          */
         public static function useDefaultQueryGrammar(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::useDefaultQueryGrammar();
         }
 
@@ -2752,11 +2576,7 @@ namespace {
          * @static
          */
         public static function useDefaultSchemaGrammar(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::useDefaultSchemaGrammar();
         }
 
@@ -2767,11 +2587,7 @@ namespace {
          * @static
          */
         public static function useDefaultPostProcessor(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::useDefaultPostProcessor();
         }
 
@@ -2783,11 +2599,7 @@ namespace {
          * @static
          */
         public static function table($table){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::table($table);
         }
 
@@ -2799,11 +2611,7 @@ namespace {
          * @static
          */
         public static function raw($value){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::raw($value);
         }
 
@@ -2816,11 +2624,7 @@ namespace {
          * @static
          */
         public static function selectOne($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::selectOne($query, $bindings);
         }
 
@@ -2833,11 +2637,7 @@ namespace {
          * @static
          */
         public static function selectFromWriteConnection($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::selectFromWriteConnection($query, $bindings);
         }
 
@@ -2851,11 +2651,7 @@ namespace {
          * @static
          */
         public static function select($query, $bindings = array(), $useReadPdo = true){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::select($query, $bindings, $useReadPdo);
         }
 
@@ -2868,11 +2664,7 @@ namespace {
          * @static
          */
         public static function insert($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::insert($query, $bindings);
         }
 
@@ -2885,11 +2677,7 @@ namespace {
          * @static
          */
         public static function update($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::update($query, $bindings);
         }
 
@@ -2902,11 +2690,7 @@ namespace {
          * @static
          */
         public static function delete($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::delete($query, $bindings);
         }
 
@@ -2919,11 +2703,7 @@ namespace {
          * @static
          */
         public static function statement($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::statement($query, $bindings);
         }
 
@@ -2936,11 +2716,7 @@ namespace {
          * @static
          */
         public static function affectingStatement($query, $bindings = array()){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::affectingStatement($query, $bindings);
         }
 
@@ -2952,11 +2728,7 @@ namespace {
          * @static
          */
         public static function unprepared($query){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::unprepared($query);
         }
 
@@ -2968,11 +2740,7 @@ namespace {
          * @static
          */
         public static function prepareBindings($bindings){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::prepareBindings($bindings);
         }
 
@@ -2985,11 +2753,7 @@ namespace {
          * @static
          */
         public static function transaction($callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::transaction($callback);
         }
 
@@ -3000,11 +2764,7 @@ namespace {
          * @static
          */
         public static function beginTransaction(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::beginTransaction();
         }
 
@@ -3015,11 +2775,7 @@ namespace {
          * @static
          */
         public static function commit(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::commit();
         }
 
@@ -3030,11 +2786,7 @@ namespace {
          * @static
          */
         public static function rollBack(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::rollBack();
         }
 
@@ -3045,11 +2797,7 @@ namespace {
          * @static
          */
         public static function transactionLevel(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::transactionLevel();
         }
 
@@ -3061,11 +2809,7 @@ namespace {
          * @static
          */
         public static function pretend($callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::pretend($callback);
         }
 
@@ -3079,11 +2823,7 @@ namespace {
          * @static
          */
         public static function logQuery($query, $bindings, $time = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::logQuery($query, $bindings, $time);
         }
 
@@ -3095,11 +2835,7 @@ namespace {
          * @static
          */
         public static function listen($callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::listen($callback);
         }
 
@@ -3112,11 +2848,7 @@ namespace {
          * @static
          */
         public static function getDoctrineColumn($table, $column){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getDoctrineColumn($table, $column);
         }
 
@@ -3127,11 +2859,7 @@ namespace {
          * @static
          */
         public static function getDoctrineSchemaManager(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getDoctrineSchemaManager();
         }
 
@@ -3142,11 +2870,7 @@ namespace {
          * @static
          */
         public static function getDoctrineConnection(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getDoctrineConnection();
         }
 
@@ -3157,11 +2881,7 @@ namespace {
          * @static
          */
         public static function getPdo(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getPdo();
         }
 
@@ -3172,11 +2892,7 @@ namespace {
          * @static
          */
         public static function getReadPdo(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getReadPdo();
         }
 
@@ -3188,11 +2904,7 @@ namespace {
          * @static
          */
         public static function setPdo($pdo){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::setPdo($pdo);
         }
 
@@ -3204,11 +2916,7 @@ namespace {
          * @static
          */
         public static function setReadPdo($pdo){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::setReadPdo($pdo);
         }
 
@@ -3220,11 +2928,7 @@ namespace {
          * @static
          */
         public static function setReconnector($reconnector){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::setReconnector($reconnector);
         }
 
@@ -3235,11 +2939,7 @@ namespace {
          * @static
          */
         public static function getName(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getName();
         }
 
@@ -3251,11 +2951,7 @@ namespace {
          * @static
          */
         public static function getConfig($option){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getConfig($option);
         }
 
@@ -3266,11 +2962,7 @@ namespace {
          * @static
          */
         public static function getDriverName(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getDriverName();
         }
 
@@ -3281,11 +2973,7 @@ namespace {
          * @static
          */
         public static function getQueryGrammar(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getQueryGrammar();
         }
 
@@ -3297,11 +2985,7 @@ namespace {
          * @static
          */
         public static function setQueryGrammar($grammar){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::setQueryGrammar($grammar);
         }
 
@@ -3312,11 +2996,7 @@ namespace {
          * @static
          */
         public static function getSchemaGrammar(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getSchemaGrammar();
         }
 
@@ -3328,11 +3008,7 @@ namespace {
          * @static
          */
         public static function setSchemaGrammar($grammar){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::setSchemaGrammar($grammar);
         }
 
@@ -3343,11 +3019,7 @@ namespace {
          * @static
          */
         public static function getPostProcessor(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getPostProcessor();
         }
 
@@ -3359,11 +3031,7 @@ namespace {
          * @static
          */
         public static function setPostProcessor($processor){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::setPostProcessor($processor);
         }
 
@@ -3374,11 +3042,7 @@ namespace {
          * @static
          */
         public static function getEventDispatcher(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getEventDispatcher();
         }
 
@@ -3390,11 +3054,7 @@ namespace {
          * @static
          */
         public static function setEventDispatcher($events){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::setEventDispatcher($events);
         }
 
@@ -3405,11 +3065,7 @@ namespace {
          * @static
          */
         public static function pretending(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::pretending();
         }
 
@@ -3420,11 +3076,7 @@ namespace {
          * @static
          */
         public static function getFetchMode(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getFetchMode();
         }
 
@@ -3436,11 +3088,7 @@ namespace {
          * @static
          */
         public static function setFetchMode($fetchMode){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::setFetchMode($fetchMode);
         }
 
@@ -3451,11 +3099,7 @@ namespace {
          * @static
          */
         public static function getQueryLog(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getQueryLog();
         }
 
@@ -3466,11 +3110,7 @@ namespace {
          * @static
          */
         public static function flushQueryLog(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::flushQueryLog();
         }
 
@@ -3481,11 +3121,7 @@ namespace {
          * @static
          */
         public static function enableQueryLog(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::enableQueryLog();
         }
 
@@ -3496,11 +3132,7 @@ namespace {
          * @static
          */
         public static function disableQueryLog(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::disableQueryLog();
         }
 
@@ -3511,11 +3143,7 @@ namespace {
          * @static
          */
         public static function logging(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::logging();
         }
 
@@ -3526,11 +3154,7 @@ namespace {
          * @static
          */
         public static function getDatabaseName(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getDatabaseName();
         }
 
@@ -3542,11 +3166,7 @@ namespace {
          * @static
          */
         public static function setDatabaseName($database){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::setDatabaseName($database);
         }
 
@@ -3557,11 +3177,7 @@ namespace {
          * @static
          */
         public static function getTablePrefix(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::getTablePrefix();
         }
 
@@ -3573,11 +3189,7 @@ namespace {
          * @static
          */
         public static function setTablePrefix($prefix){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\MySqlConnection::setTablePrefix($prefix);
         }
 
@@ -3589,11 +3201,7 @@ namespace {
          * @static
          */
         public static function withTablePrefix($grammar){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Connection            
-=======
             //Method inherited from \Illuminate\Database\Connection
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\MySqlConnection::withTablePrefix($grammar);
         }
 
@@ -6055,11 +5663,7 @@ namespace {
          * @static
          */
         public static function initialize($query = array(), $request = array(), $attributes = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::initialize($query, $request, $attributes, $cookies, $files, $server, $content);
         }
 
@@ -6071,11 +5675,7 @@ namespace {
          * @static
          */
         public static function createFromGlobals(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::createFromGlobals();
         }
 
@@ -6097,11 +5697,7 @@ namespace {
          * @static
          */
         public static function create($uri, $method = 'GET', $parameters = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::create($uri, $method, $parameters, $cookies, $files, $server, $content);
         }
 
@@ -6116,11 +5712,7 @@ namespace {
          * @static
          */
         public static function setFactory($callable){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setFactory($callable);
         }
 
@@ -6134,11 +5726,7 @@ namespace {
          * @static
          */
         public static function overrideGlobals(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::overrideGlobals();
         }
 
@@ -6152,11 +5740,7 @@ namespace {
          * @static
          */
         public static function setTrustedProxies($proxies){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setTrustedProxies($proxies);
         }
 
@@ -6167,11 +5751,7 @@ namespace {
          * @static
          */
         public static function getTrustedProxies(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getTrustedProxies();
         }
 
@@ -6184,11 +5764,7 @@ namespace {
          * @static
          */
         public static function setTrustedHosts($hostPatterns){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setTrustedHosts($hostPatterns);
         }
 
@@ -6199,11 +5775,7 @@ namespace {
          * @static
          */
         public static function getTrustedHosts(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getTrustedHosts();
         }
 
@@ -6225,11 +5797,7 @@ namespace {
          * @static
          */
         public static function setTrustedHeaderName($key, $value){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setTrustedHeaderName($key, $value);
         }
 
@@ -6242,11 +5810,7 @@ namespace {
          * @static
          */
         public static function getTrustedHeaderName($key){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getTrustedHeaderName($key);
         }
 
@@ -6261,11 +5825,7 @@ namespace {
          * @static
          */
         public static function normalizeQueryString($qs){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::normalizeQueryString($qs);
         }
 
@@ -6283,11 +5843,7 @@ namespace {
          * @static
          */
         public static function enableHttpMethodParameterOverride(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::enableHttpMethodParameterOverride();
         }
 
@@ -6298,11 +5854,7 @@ namespace {
          * @static
          */
         public static function getHttpMethodParameterOverride(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getHttpMethodParameterOverride();
         }
 
@@ -6328,11 +5880,7 @@ namespace {
          * @static
          */
         public static function get($key, $default = null, $deep = false){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::get($key, $default, $deep);
         }
 
@@ -6344,11 +5892,7 @@ namespace {
          * @static
          */
         public static function getSession(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getSession();
         }
 
@@ -6361,11 +5905,7 @@ namespace {
          * @static
          */
         public static function hasPreviousSession(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::hasPreviousSession();
         }
 
@@ -6381,11 +5921,7 @@ namespace {
          * @static
          */
         public static function hasSession(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::hasSession();
         }
 
@@ -6397,11 +5933,7 @@ namespace {
          * @static
          */
         public static function setSession($session){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setSession($session);
         }
 
@@ -6419,11 +5951,7 @@ namespace {
          * @static
          */
         public static function getClientIps(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getClientIps();
         }
 
@@ -6447,11 +5975,7 @@ namespace {
          * @static
          */
         public static function getClientIp(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getClientIp();
         }
 
@@ -6463,11 +5987,7 @@ namespace {
          * @static
          */
         public static function getScriptName(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getScriptName();
         }
 
@@ -6488,11 +6008,7 @@ namespace {
          * @static
          */
         public static function getPathInfo(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPathInfo();
         }
 
@@ -6511,11 +6027,7 @@ namespace {
          * @static
          */
         public static function getBasePath(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getBasePath();
         }
 
@@ -6532,11 +6044,7 @@ namespace {
          * @static
          */
         public static function getBaseUrl(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getBaseUrl();
         }
 
@@ -6548,11 +6056,7 @@ namespace {
          * @static
          */
         public static function getScheme(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getScheme();
         }
 
@@ -6572,11 +6076,7 @@ namespace {
          * @static
          */
         public static function getPort(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPort();
         }
 
@@ -6587,11 +6087,7 @@ namespace {
          * @static
          */
         public static function getUser(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUser();
         }
 
@@ -6602,11 +6098,7 @@ namespace {
          * @static
          */
         public static function getPassword(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPassword();
         }
 
@@ -6617,11 +6109,7 @@ namespace {
          * @static
          */
         public static function getUserInfo(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUserInfo();
         }
 
@@ -6635,11 +6123,7 @@ namespace {
          * @static
          */
         public static function getHttpHost(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getHttpHost();
         }
 
@@ -6651,11 +6135,7 @@ namespace {
          * @static
          */
         public static function getRequestUri(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getRequestUri();
         }
 
@@ -6669,11 +6149,7 @@ namespace {
          * @static
          */
         public static function getSchemeAndHttpHost(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getSchemeAndHttpHost();
         }
 
@@ -6686,11 +6162,7 @@ namespace {
          * @static
          */
         public static function getUri(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUri();
         }
 
@@ -6703,11 +6175,7 @@ namespace {
          * @static
          */
         public static function getUriForPath($path){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUriForPath($path);
         }
 
@@ -6722,11 +6190,7 @@ namespace {
          * @static
          */
         public static function getQueryString(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getQueryString();
         }
 
@@ -6747,11 +6211,7 @@ namespace {
          * @static
          */
         public static function isSecure(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isSecure();
         }
 
@@ -6772,11 +6232,7 @@ namespace {
          * @static
          */
         public static function getHost(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getHost();
         }
 
@@ -6788,11 +6244,7 @@ namespace {
          * @static
          */
         public static function setMethod($method){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setMethod($method);
         }
 
@@ -6813,11 +6265,7 @@ namespace {
          * @static
          */
         public static function getMethod(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getMethod();
         }
 
@@ -6829,11 +6277,7 @@ namespace {
          * @static
          */
         public static function getRealMethod(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getRealMethod();
         }
 
@@ -6846,11 +6290,7 @@ namespace {
          * @static
          */
         public static function getMimeType($format){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getMimeType($format);
         }
 
@@ -6863,11 +6303,7 @@ namespace {
          * @static
          */
         public static function getFormat($mimeType){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getFormat($mimeType);
         }
 
@@ -6880,11 +6316,7 @@ namespace {
          * @static
          */
         public static function setFormat($format, $mimeTypes){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setFormat($format, $mimeTypes);
         }
 
@@ -6903,11 +6335,7 @@ namespace {
          * @static
          */
         public static function getRequestFormat($default = 'html'){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getRequestFormat($default);
         }
 
@@ -6919,11 +6347,7 @@ namespace {
          * @static
          */
         public static function setRequestFormat($format){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setRequestFormat($format);
         }
 
@@ -6935,11 +6359,7 @@ namespace {
          * @static
          */
         public static function getContentType(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getContentType();
         }
 
@@ -6951,11 +6371,7 @@ namespace {
          * @static
          */
         public static function setDefaultLocale($locale){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setDefaultLocale($locale);
         }
 
@@ -6966,11 +6382,7 @@ namespace {
          * @static
          */
         public static function getDefaultLocale(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getDefaultLocale();
         }
 
@@ -6982,11 +6394,7 @@ namespace {
          * @static
          */
         public static function setLocale($locale){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setLocale($locale);
         }
 
@@ -6997,11 +6405,7 @@ namespace {
          * @static
          */
         public static function getLocale(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getLocale();
         }
 
@@ -7013,11 +6417,7 @@ namespace {
          * @static
          */
         public static function isMethod($method){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isMethod($method);
         }
 
@@ -7029,11 +6429,7 @@ namespace {
          * @static
          */
         public static function isMethodSafe(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isMethodSafe();
         }
 
@@ -7046,11 +6442,7 @@ namespace {
          * @static
          */
         public static function getContent($asResource = false){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getContent($asResource);
         }
 
@@ -7061,11 +6453,7 @@ namespace {
          * @static
          */
         public static function getETags(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getETags();
         }
 
@@ -7076,11 +6464,7 @@ namespace {
          * @static
          */
         public static function isNoCache(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isNoCache();
         }
 
@@ -7093,11 +6477,7 @@ namespace {
          * @static
          */
         public static function getPreferredLanguage($locales = null){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPreferredLanguage($locales);
         }
 
@@ -7109,11 +6489,7 @@ namespace {
          * @static
          */
         public static function getLanguages(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getLanguages();
         }
 
@@ -7125,11 +6501,7 @@ namespace {
          * @static
          */
         public static function getCharsets(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getCharsets();
         }
 
@@ -7140,11 +6512,7 @@ namespace {
          * @static
          */
         public static function getEncodings(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getEncodings();
         }
 
@@ -7156,11 +6524,7 @@ namespace {
          * @static
          */
         public static function getAcceptableContentTypes(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getAcceptableContentTypes();
         }
 
@@ -7176,11 +6540,7 @@ namespace {
          * @static
          */
         public static function isXmlHttpRequest(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isXmlHttpRequest();
         }
 
@@ -7390,11 +6750,7 @@ namespace {
          * @static
          */
         public static function setParsedKey($key, $parsed){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\NamespacedItemResolver            
-=======
             //Method inherited from \Illuminate\Support\NamespacedItemResolver
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Translation\Translator::setParsedKey($key, $parsed);
         }
 
@@ -8101,11 +7457,7 @@ namespace {
          * @static
          */
         public static function pushOn($queue, $job, $data = ''){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Queue\SyncQueue::pushOn($queue, $job, $data);
         }
 
@@ -8120,11 +7472,7 @@ namespace {
          * @static
          */
         public static function laterOn($queue, $delay, $job, $data = ''){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Queue\SyncQueue::laterOn($queue, $delay, $job, $data);
         }
 
@@ -8135,11 +7483,7 @@ namespace {
          * @static
          */
         public static function marshal(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Queue\SyncQueue::marshal();
         }
 
@@ -8153,11 +7497,7 @@ namespace {
          * @static
          */
         public static function bulk($jobs, $data = '', $queue = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Queue\SyncQueue::bulk($jobs, $data, $queue);
         }
 
@@ -8168,11 +7508,7 @@ namespace {
          * @static
          */
         public static function getTime(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Queue\SyncQueue::getTime();
         }
 
@@ -8184,11 +7520,7 @@ namespace {
          * @static
          */
         public static function setContainer($container){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Queue\SyncQueue::setContainer($container);
         }
 
@@ -8200,11 +7532,7 @@ namespace {
          * @static
          */
         public static function setEncrypter($crypt){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Queue\Queue            
-=======
             //Method inherited from \Illuminate\Queue\Queue
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Queue\SyncQueue::setEncrypter($crypt);
         }
 
@@ -8964,11 +8292,7 @@ namespace {
          * @static
          */
         public static function initialize($query = array(), $request = array(), $attributes = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::initialize($query, $request, $attributes, $cookies, $files, $server, $content);
         }
 
@@ -8980,11 +8304,7 @@ namespace {
          * @static
          */
         public static function createFromGlobals(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::createFromGlobals();
         }
 
@@ -9006,11 +8326,7 @@ namespace {
          * @static
          */
         public static function create($uri, $method = 'GET', $parameters = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::create($uri, $method, $parameters, $cookies, $files, $server, $content);
         }
 
@@ -9025,11 +8341,7 @@ namespace {
          * @static
          */
         public static function setFactory($callable){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setFactory($callable);
         }
 
@@ -9043,11 +8355,7 @@ namespace {
          * @static
          */
         public static function overrideGlobals(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::overrideGlobals();
         }
 
@@ -9061,11 +8369,7 @@ namespace {
          * @static
          */
         public static function setTrustedProxies($proxies){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setTrustedProxies($proxies);
         }
 
@@ -9076,11 +8380,7 @@ namespace {
          * @static
          */
         public static function getTrustedProxies(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getTrustedProxies();
         }
 
@@ -9093,11 +8393,7 @@ namespace {
          * @static
          */
         public static function setTrustedHosts($hostPatterns){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setTrustedHosts($hostPatterns);
         }
 
@@ -9108,11 +8404,7 @@ namespace {
          * @static
          */
         public static function getTrustedHosts(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getTrustedHosts();
         }
 
@@ -9134,11 +8426,7 @@ namespace {
          * @static
          */
         public static function setTrustedHeaderName($key, $value){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setTrustedHeaderName($key, $value);
         }
 
@@ -9151,11 +8439,7 @@ namespace {
          * @static
          */
         public static function getTrustedHeaderName($key){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getTrustedHeaderName($key);
         }
 
@@ -9170,11 +8454,7 @@ namespace {
          * @static
          */
         public static function normalizeQueryString($qs){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::normalizeQueryString($qs);
         }
 
@@ -9192,11 +8472,7 @@ namespace {
          * @static
          */
         public static function enableHttpMethodParameterOverride(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::enableHttpMethodParameterOverride();
         }
 
@@ -9207,11 +8483,7 @@ namespace {
          * @static
          */
         public static function getHttpMethodParameterOverride(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getHttpMethodParameterOverride();
         }
 
@@ -9237,11 +8509,7 @@ namespace {
          * @static
          */
         public static function get($key, $default = null, $deep = false){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::get($key, $default, $deep);
         }
 
@@ -9253,11 +8521,7 @@ namespace {
          * @static
          */
         public static function getSession(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getSession();
         }
 
@@ -9270,11 +8534,7 @@ namespace {
          * @static
          */
         public static function hasPreviousSession(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::hasPreviousSession();
         }
 
@@ -9290,11 +8550,7 @@ namespace {
          * @static
          */
         public static function hasSession(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::hasSession();
         }
 
@@ -9306,11 +8562,7 @@ namespace {
          * @static
          */
         public static function setSession($session){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setSession($session);
         }
 
@@ -9328,11 +8580,7 @@ namespace {
          * @static
          */
         public static function getClientIps(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getClientIps();
         }
 
@@ -9356,11 +8604,7 @@ namespace {
          * @static
          */
         public static function getClientIp(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getClientIp();
         }
 
@@ -9372,11 +8616,7 @@ namespace {
          * @static
          */
         public static function getScriptName(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getScriptName();
         }
 
@@ -9397,11 +8637,7 @@ namespace {
          * @static
          */
         public static function getPathInfo(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPathInfo();
         }
 
@@ -9420,11 +8656,7 @@ namespace {
          * @static
          */
         public static function getBasePath(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getBasePath();
         }
 
@@ -9441,11 +8673,7 @@ namespace {
          * @static
          */
         public static function getBaseUrl(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getBaseUrl();
         }
 
@@ -9457,11 +8685,7 @@ namespace {
          * @static
          */
         public static function getScheme(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getScheme();
         }
 
@@ -9481,11 +8705,7 @@ namespace {
          * @static
          */
         public static function getPort(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPort();
         }
 
@@ -9496,11 +8716,7 @@ namespace {
          * @static
          */
         public static function getUser(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUser();
         }
 
@@ -9511,11 +8727,7 @@ namespace {
          * @static
          */
         public static function getPassword(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPassword();
         }
 
@@ -9526,11 +8738,7 @@ namespace {
          * @static
          */
         public static function getUserInfo(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUserInfo();
         }
 
@@ -9544,11 +8752,7 @@ namespace {
          * @static
          */
         public static function getHttpHost(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getHttpHost();
         }
 
@@ -9560,11 +8764,7 @@ namespace {
          * @static
          */
         public static function getRequestUri(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getRequestUri();
         }
 
@@ -9578,11 +8778,7 @@ namespace {
          * @static
          */
         public static function getSchemeAndHttpHost(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getSchemeAndHttpHost();
         }
 
@@ -9595,11 +8791,7 @@ namespace {
          * @static
          */
         public static function getUri(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUri();
         }
 
@@ -9612,11 +8804,7 @@ namespace {
          * @static
          */
         public static function getUriForPath($path){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getUriForPath($path);
         }
 
@@ -9631,11 +8819,7 @@ namespace {
          * @static
          */
         public static function getQueryString(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getQueryString();
         }
 
@@ -9656,11 +8840,7 @@ namespace {
          * @static
          */
         public static function isSecure(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isSecure();
         }
 
@@ -9681,11 +8861,7 @@ namespace {
          * @static
          */
         public static function getHost(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getHost();
         }
 
@@ -9697,11 +8873,7 @@ namespace {
          * @static
          */
         public static function setMethod($method){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setMethod($method);
         }
 
@@ -9722,11 +8894,7 @@ namespace {
          * @static
          */
         public static function getMethod(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getMethod();
         }
 
@@ -9738,11 +8906,7 @@ namespace {
          * @static
          */
         public static function getRealMethod(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getRealMethod();
         }
 
@@ -9755,11 +8919,7 @@ namespace {
          * @static
          */
         public static function getMimeType($format){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getMimeType($format);
         }
 
@@ -9772,11 +8932,7 @@ namespace {
          * @static
          */
         public static function getFormat($mimeType){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getFormat($mimeType);
         }
 
@@ -9789,11 +8945,7 @@ namespace {
          * @static
          */
         public static function setFormat($format, $mimeTypes){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setFormat($format, $mimeTypes);
         }
 
@@ -9812,11 +8964,7 @@ namespace {
          * @static
          */
         public static function getRequestFormat($default = 'html'){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getRequestFormat($default);
         }
 
@@ -9828,11 +8976,7 @@ namespace {
          * @static
          */
         public static function setRequestFormat($format){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setRequestFormat($format);
         }
 
@@ -9844,11 +8988,7 @@ namespace {
          * @static
          */
         public static function getContentType(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getContentType();
         }
 
@@ -9860,11 +9000,7 @@ namespace {
          * @static
          */
         public static function setDefaultLocale($locale){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setDefaultLocale($locale);
         }
 
@@ -9875,11 +9011,7 @@ namespace {
          * @static
          */
         public static function getDefaultLocale(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getDefaultLocale();
         }
 
@@ -9891,11 +9023,7 @@ namespace {
          * @static
          */
         public static function setLocale($locale){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::setLocale($locale);
         }
 
@@ -9906,11 +9034,7 @@ namespace {
          * @static
          */
         public static function getLocale(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getLocale();
         }
 
@@ -9922,11 +9046,7 @@ namespace {
          * @static
          */
         public static function isMethod($method){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isMethod($method);
         }
 
@@ -9938,11 +9058,7 @@ namespace {
          * @static
          */
         public static function isMethodSafe(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isMethodSafe();
         }
 
@@ -9955,11 +9071,7 @@ namespace {
          * @static
          */
         public static function getContent($asResource = false){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getContent($asResource);
         }
 
@@ -9970,11 +9082,7 @@ namespace {
          * @static
          */
         public static function getETags(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getETags();
         }
 
@@ -9985,11 +9093,7 @@ namespace {
          * @static
          */
         public static function isNoCache(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isNoCache();
         }
 
@@ -10002,11 +9106,7 @@ namespace {
          * @static
          */
         public static function getPreferredLanguage($locales = null){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getPreferredLanguage($locales);
         }
 
@@ -10018,11 +9118,7 @@ namespace {
          * @static
          */
         public static function getLanguages(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getLanguages();
         }
 
@@ -10034,11 +9130,7 @@ namespace {
          * @static
          */
         public static function getCharsets(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getCharsets();
         }
 
@@ -10049,11 +9141,7 @@ namespace {
          * @static
          */
         public static function getEncodings(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getEncodings();
         }
 
@@ -10065,11 +9153,7 @@ namespace {
          * @static
          */
         public static function getAcceptableContentTypes(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::getAcceptableContentTypes();
         }
 
@@ -10085,11 +9169,7 @@ namespace {
          * @static
          */
         public static function isXmlHttpRequest(){
-<<<<<<< HEAD
-            //Method inherited from \Symfony\Component\HttpFoundation\Request            
-=======
             //Method inherited from \Symfony\Component\HttpFoundation\Request
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Http\Request::isXmlHttpRequest();
         }
 
@@ -10933,11 +10013,7 @@ namespace {
          * @static
          */
         public static function hasColumn($table, $column){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::hasColumn($table, $column);
         }
 
@@ -10950,11 +10026,7 @@ namespace {
          * @static
          */
         public static function table($table, $callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::table($table, $callback);
         }
 
@@ -10967,11 +10039,7 @@ namespace {
          * @static
          */
         public static function create($table, $callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::create($table, $callback);
         }
 
@@ -10983,11 +10051,7 @@ namespace {
          * @static
          */
         public static function drop($table){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::drop($table);
         }
 
@@ -10999,11 +10063,7 @@ namespace {
          * @static
          */
         public static function dropIfExists($table){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::dropIfExists($table);
         }
 
@@ -11016,11 +10076,7 @@ namespace {
          * @static
          */
         public static function rename($from, $to){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::rename($from, $to);
         }
 
@@ -11031,11 +10087,7 @@ namespace {
          * @static
          */
         public static function getConnection(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::getConnection();
         }
 
@@ -11047,11 +10099,7 @@ namespace {
          * @static
          */
         public static function setConnection($connection){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Database\Schema\MySqlBuilder::setConnection($connection);
         }
 
@@ -11063,11 +10111,7 @@ namespace {
          * @static
          */
         public static function blueprintResolver($resolver){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-=======
             //Method inherited from \Illuminate\Database\Schema\Builder
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             \Illuminate\Database\Schema\MySqlBuilder::blueprintResolver($resolver);
         }
 
@@ -11115,11 +10159,7 @@ namespace {
          * @static
          */
         public static function driver($driver = null){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\Manager            
-=======
             //Method inherited from \Illuminate\Support\Manager
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Session\SessionManager::driver($driver);
         }
 
@@ -11132,11 +10172,7 @@ namespace {
          * @static
          */
         public static function extend($driver, $callback){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\Manager            
-=======
             //Method inherited from \Illuminate\Support\Manager
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Session\SessionManager::extend($driver, $callback);
         }
 
@@ -11147,11 +10183,7 @@ namespace {
          * @static
          */
         public static function getDrivers(){
-<<<<<<< HEAD
-            //Method inherited from \Illuminate\Support\Manager            
-=======
             //Method inherited from \Illuminate\Support\Manager
->>>>>>> 8c97001d542b8d2305ed6c2dbc94fd2c5fe7752c
             return \Illuminate\Session\SessionManager::getDrivers();
         }
 
