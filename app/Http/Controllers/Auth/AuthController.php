@@ -37,9 +37,5 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
-    public function facebook()
-    {
-        return Socialize::with('facebook')->scopes(['email'])->redirect();
-    }
 
 }
