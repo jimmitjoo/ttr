@@ -6231,7 +6231,6 @@ label,
 .checkbox label {
   font-weight: 300;
 }
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -6509,6 +6508,10 @@ input[type="submit"].fb {
   background-color: #3b5998;
   border-color: #3b5998;
 }
+input[type="submit"].green {
+  background-color: #58d45b;
+  border: 1px solid #58d45b;
+}
 /*
  * Symbols and badges
  */
@@ -6543,7 +6546,5 @@ input[type="submit"].fb {
     display: none;
   }
 }
-=======
->>>>>>> 9612d835695bff6505a80384b397763888f2e5fc
 
 /*# sourceMappingURL=app.css.map */
