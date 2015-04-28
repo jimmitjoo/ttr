@@ -26,7 +26,7 @@ Route::controllers([
 
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
 
-Route::get('login/facebook', 'AuthController@facebook');
+Route::get('login/facebook', 'Auth\AuthController@facebook');
 
 Route::get('receive/facebook', function(){
 
