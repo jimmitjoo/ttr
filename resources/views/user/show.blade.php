@@ -7,13 +7,13 @@
     <div class="block-top">
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-md-2">
                     @if (!empty($user->avatar))
 
                         <img src="{{ $user->avatar }}" alt="{{ $user->name }}">
                     @endif
                 </div>
-                <div class="col-10">
+                <div class="col-md-10">
                     <h1>{{ $user->name }}</h1>
                 </div>
             </div>

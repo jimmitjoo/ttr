@@ -7,6 +7,7 @@
         <nav>
             <ul class="nav">
                 <li><a href="/lopp/skapa">{{ Lang::get('race.create') }}</a></li>
+                <li><a href="/profil/{{ Auth::getUser()->id }}">{{ Lang::get('auth.profile') }}</a></li>
                 <li><a href="{{ url('/auth/logout') }}">{{ Lang::get('auth.logout') }}</a></li>
             </ul>
         </nav>
