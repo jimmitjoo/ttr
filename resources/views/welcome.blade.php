@@ -42,14 +42,21 @@
 
     <div>
         <div class="container">
+
+
             <div class="row">
                 <nav>
                     <ul class="nav nav-pills">
+                        @if (!Auth::check())
                         <li><a href="/auth/login">{{ Lang::get('auth.login') }}</a></li>
                         <li><a href="/auth/register">{{ Lang::get('auth.register') }}</a></li>
+                        @else
+                        <li><a href="/hem">{{ Lang::get('default.home') }}</a></li>
+                        @endif
                     </ul>
                 </nav>
             </div>
+
             <!--
             <div class="row">
                 <div class="col-lg-12">vi rekommenderar
