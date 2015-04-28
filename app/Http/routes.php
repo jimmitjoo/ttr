@@ -24,6 +24,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('user/{id}', ['as' => 'profile', 'uses' => 'UserController@show']);
+
 Route::get('login/facebook', function(){
 
     return Socialize::with('facebook')->scopes(['email'])->redirect();
