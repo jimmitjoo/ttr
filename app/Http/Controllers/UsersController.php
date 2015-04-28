@@ -46,7 +46,7 @@ class UsersController extends Controller {
 	 */
 	public function show($id)
 	{
-        $user = User::where(['id', $id])->first();
+        $user = User::where('id', $id)->get();
 
         dd($user);
 
