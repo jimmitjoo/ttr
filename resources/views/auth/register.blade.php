@@ -53,7 +53,7 @@
                         </div>
 
                         <div class="col-lg-12 col-md-12 col-xs-12 login-submit">
-                            <input type="submit" name="register" value="{{ Lang::get('default.start_now') }}"/>
+                            <input type="submit" class="green" name="register" value="{{ Lang::get('default.start_now') }}"/>
                         </div>
 
                         <div class="col-lg-12 col-md-12 col-xs-12 login-register text-center small">

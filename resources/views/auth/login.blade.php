@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="col-lg-12 col-md-12 col-xs-12 login-submit">
-                            <input type="submit" value="{{ Lang::get('auth.login') }}">
+                            <input type="submit" class="green" value="{{ Lang::get('auth.login') }}">
                         </div>
 
                         <div class="col-lg-12 col-md-12 col-xs-12 login-forgot text-center small">
