@@ -1,15 +1,12 @@
 @extends('app')
 
+@section('title', 'Dashboard')
+
 @section('content')
 
     <div class="block-top">
 
-        <nav>
-            <ul class="nav">
-                <li><a href="/lopp/skapa">{{ Lang::get('race.create') }}</a></li>
-                <li><a href="{{ url('/auth/logout') }}">{{ Lang::get('auth.logout') }}</a></li>
-            </ul>
-        </nav>
+        @include('auth.menu')
 
         <div class="container">
             <div class="row">

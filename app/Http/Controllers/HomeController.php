@@ -1,5 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Auth\Guard;
+>>>>>>> 922f537e3f97b6c8bc9b2b70ab54d1b5220040b1
 
 class HomeController extends Controller
 {

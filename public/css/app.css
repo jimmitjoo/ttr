@@ -6508,6 +6508,10 @@ input[type="submit"].fb {
   background-color: #3b5998;
   border-color: #3b5998;
 }
+input[type="submit"].green {
+  background-color: #58d45b;
+  border: 1px solid #58d45b;
+}
 /*
  * Symbols and badges
  */

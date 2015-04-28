@@ -6,7 +6,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <span style="font-weight: 900; padding-right: 30px; font-size: 180%; letter-spacing: -1px"><a href="/"><img src="/images/test.gif"></a></a></span><span style="font-weight: 700;"><a href="/auth/register">Registrera</a></span>
+                    <span style="font-weight: 900; padding-right: 30px; font-size: 180%; letter-spacing: -1px"><a
+                                href="/"><img src="/images/test.gif"></a></a></span><span style="font-weight: 700;"><a
+                                href="/auth/register">Registrera</a></span>
                 </div>
                 <div class="col-lg-6 text-right">
                 </div>
@@ -19,7 +21,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a href="/"><img src="/images/timetorun.png"></a></span><span style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
+                        <span style="font-weight: 700; padding-right: 30px; font-size: 180%;"><a href="/"><img
+                                        src="/images/timetorun.png"></a></span><span style="font-weight: 700;"><!--<a href="#">REGISTRERA</a>--></span>
                     </div>
                     <div class="col-lg-6 text-right">
                     </div>
@@ -31,7 +34,9 @@
                 <div class="col-lg-12 height-full">
                     <div class="table">
                         <div class="table-cell text-center" style="position: relative;">
-                            <h1 style="font-weight: 900; margin: 4px; letter-spacing: -3px; color: #fff716;">Gilla att springa</h1>
+                            <h1 style="font-weight: 900; margin: 4px; letter-spacing: -3px; color: #fff716;">Gilla att
+                                springa</h1>
+
                             <div style="position: absolute; bottom: 0; left: 0;">Upptäck nya lopp</div>
                         </div>
                     </div>
@@ -40,84 +45,90 @@
         </div>
     </div>
 
-    <div>
-        <div class="container">
-            <div class="row">
-                <nav>
-                    <ul class="nav nav-pills">
+    <div class="container">
+
+
+        <div class="row">
+            <nav>
+                <ul class="nav nav-pills">
+                    @if (!Auth::check())
                         <li><a href="/auth/login">{{ Lang::get('auth.login') }}</a></li>
                         <li><a href="/auth/register">{{ Lang::get('auth.register') }}</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!--
-            <div class="row">
-                <div class="col-lg-12">vi rekommenderar
-                genre
-                topp
-                nyheter
-                </div>
-            </div>
-            -->
-            <div class="row">
+                    @else
+                        <li><a href="/hem">{{ Lang::get('default.home') }}</a></li>
+                    @endif
+                </ul>
+            </nav>
+        </div>
 
-                <div class="col-lg-12 text-center" style="padding-top: 40px; padding-bottom: 40px; border-top: 1px solid #ededed;">
-                    <h2 style="font-size: 400%; font-weight: 900; margin: 4px; letter-spacing: -1px;">Upptäck nya lopp</h2>
-                    Läs mer eller anmäl dig direkt
-                </div>
+        <!--
+        <div class="row">
+            <div class="col-lg-12">vi rekommenderar
+            genre
+            topp
+            nyheter
+            </div>
+        </div>
+        -->
+        <div class="row">
 
-                <div class="col-lg-2"><h3>Stad</h3></div>
-                <div class="col-lg-2"><h3>Datum</h3></div>
-                <div class="col-lg-3"><h3>Namn</h3></div>
-                <div class="col-lg-3"><h3>Distans</h3></div>
-                <div class="col-lg-2 text-right"><h3>Anmälan</h3></div>
+            <div class="col-lg-12 text-center"
+                 style="padding-top: 40px; padding-bottom: 40px; border-top: 1px solid #ededed;">
+                <h2 style="font-size: 400%; font-weight: 900; margin: 4px; letter-spacing: -1px;">Upptäck nya lopp</h2>
+                Läs mer eller anmäl dig direkt
             </div>
 
-            @include('race.list')
+            <div class="col-lg-2"><h3>Stad</h3></div>
+            <div class="col-lg-2"><h3>Datum</h3></div>
+            <div class="col-lg-3"><h3>Namn</h3></div>
+            <div class="col-lg-3"><h3>Distans</h3></div>
+            <div class="col-lg-2 text-right"><h3>Anmälan</h3></div>
+        </div>
 
-            <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
-                <div class="col-lg-2">Kalmar</div>
-                <div class="col-lg-2">Sön 3 maj</div>
-                <div class="col-lg-3">Wings For Life World Run</div>
-                <div class="col-lg-3">Rörligt mål</div>
-                <div class="col-lg-2 text-right"><a class="btn"
-                                                    href="http://www.wingsforlifeworldrun.com/se/sv/">Anmäl</a></div>
+        @include('race.list')
+
+        <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
+            <div class="col-lg-2">Kalmar</div>
+            <div class="col-lg-2">Sön 3 maj</div>
+            <div class="col-lg-3">Wings For Life World Run</div>
+            <div class="col-lg-3">Rörligt mål</div>
+            <div class="col-lg-2 text-right"><a class="btn"
+                                                href="http://www.wingsforlifeworldrun.com/se/sv/">Anmäl</a></div>
+        </div>
+        <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
+            <div class="col-lg-2">Kalmar</div>
+            <div class="col-lg-2">Lör 27 juni</div>
+            <div class="col-lg-3">Kalmar Malkars 21</div>
+            <div class="col-lg-3">21 km</div>
+            <div class="col-lg-2 text-right"><a class="btn"
+                                                href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6008">Anmäl</a>
             </div>
-            <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
-                <div class="col-lg-2">Kalmar</div>
-                <div class="col-lg-2">Lör 27 juni</div>
-                <div class="col-lg-3">Kalmar Malkars 21</div>
-                <div class="col-lg-3">21 km</div>
-                <div class="col-lg-2 text-right"><a class="btn"
-                                                    href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6008">Anmäl</a>
-                </div>
+        </div>
+        <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
+            <div class="col-lg-2">Kalmar</div>
+            <div class="col-lg-2">Mån 29 juni</div>
+            <div class="col-lg-3">ATEA Kalmarmilen</div>
+            <div class="col-lg-3">10 km</div>
+            <div class="col-lg-2 text-right"><a class="btn"
+                                                href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6015">Anmäl</a>
             </div>
-            <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
-                <div class="col-lg-2">Kalmar</div>
-                <div class="col-lg-2">Mån 29 juni</div>
-                <div class="col-lg-3">ATEA Kalmarmilen</div>
-                <div class="col-lg-3">10 km</div>
-                <div class="col-lg-2 text-right"><a class="btn"
-                                                    href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6015">Anmäl</a>
-                </div>
+        </div>
+        <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
+            <div class="col-lg-2">Kalmar</div>
+            <div class="col-lg-2">Mån 29 juni</div>
+            <div class="col-lg-3">Lilla ATEA Kalmarmilen</div>
+            <div class="col-lg-3">1.2 km</div>
+            <div class="col-lg-2 text-right"><a class="btn"
+                                                href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6014">Anmäl</a>
             </div>
-            <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
-                <div class="col-lg-2">Kalmar</div>
-                <div class="col-lg-2">Mån 29 juni</div>
-                <div class="col-lg-3">Lilla ATEA Kalmarmilen</div>
-                <div class="col-lg-3">1.2 km</div>
-                <div class="col-lg-2 text-right"><a class="btn"
-                                                    href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6014">Anmäl</a>
-                </div>
-            </div>
-            <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
-                <div class="col-lg-2">Kalmar</div>
-                <div class="col-lg-2">Lör 22 aug</div>
-                <div class="col-lg-3">Nattloppet</div>
-                <div class="col-lg-3">5.7 km</div>
-                <div class="col-lg-2 text-right"><a class="btn"
-                                                    href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6016">Anmäl</a>
-                </div>
+        </div>
+        <div class="row" style="border-top: 1px solid #ededed; padding: 20px 0;">
+            <div class="col-lg-2">Kalmar</div>
+            <div class="col-lg-2">Lör 22 aug</div>
+            <div class="col-lg-3">Nattloppet</div>
+            <div class="col-lg-3">5.7 km</div>
+            <div class="col-lg-2 text-right"><a class="btn"
+                                                href="http://frida.friidrott.se/Public/PublicEntryRegister.aspx?ArrangementID=6016">Anmäl</a>
             </div>
         </div>
     </div>

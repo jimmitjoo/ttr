@@ -24,10 +24,10 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
+
 Route::get('login/facebook', function(){
-
     return Socialize::with('facebook')->scopes(['email'])->redirect();
-
 });
 
 Route::get('receive/facebook', function(){
@@ -37,5 +37,6 @@ Route::get('receive/facebook', function(){
 
     Auth::login($user);
 
-    return Redirect::to('/');
+    return Redirect::to('/hem');
+
 });
