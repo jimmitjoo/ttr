@@ -4,6 +4,9 @@
 
 @section('content')
     <div class="block-top">
+
+        @include('auth.menu')
+
         <div class="container-fluid">
 
             <div class="row">
