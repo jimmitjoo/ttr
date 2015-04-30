@@ -22,4 +22,18 @@ var topNavPosition = function () {
     topNav[0].classList.add('fadeOut');
 }
 
+
+var registerEmailInput = document.getElementById('registerEmail');
+var registerPasswordFieldBox = document.getElementById('registerPasswords');
+var validateEmail = function(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+}
+var checkIfEmailIsValid = function() {
+    if (validateEmail(registerEmailInput.value)) registerPasswordFieldBox.classList.remove('hidden');
+}
+registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
+
+
+
 window.onscroll = topNavPosition;
