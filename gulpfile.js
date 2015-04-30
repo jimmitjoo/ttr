@@ -1,4 +1,6 @@
 var elixir = require('laravel-elixir');
+require('laravel-elixir-imagemin');
+
 
 /*
  |--------------------------------------------------------------------------
@@ -13,4 +15,5 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.less('app.less');
+    mix.imagemin('','public/images', { optimizationLevel: 7, progressive: true, interlaced: true });
 });
