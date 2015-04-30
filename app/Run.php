@@ -20,4 +20,9 @@ class Run extends Model {
         'map_id'
     ];
 
+    public function race()
+    {
+        return $this->belongsTo('App\Race');
+    }
+
 }

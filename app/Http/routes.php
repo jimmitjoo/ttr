@@ -18,6 +18,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('lopp/skapa', ['as' => 'createRace', 'uses' => 'RacesController@create']);
 Route::post('lopp', ['as' => 'saveRace', 'uses' => 'RacesController@store']);
+Route::post('lopp/{id}', ['as' => 'getRace', 'uses' => 'RunsController@show']);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
