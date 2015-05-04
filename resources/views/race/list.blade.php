@@ -2,7 +2,7 @@
 
     @foreach($races as $race)
         <div class="row list-item">
-            <a href="/race">
+            <a href="/race/{{ $race->id }}">
                 <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">{{ $race->town }}</div>
                 <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">{{ $race->start_datetime }}</div>
                 <div class="col-lg-4 col-md-4 col-xs-9">{{ $race->name }}</div>
