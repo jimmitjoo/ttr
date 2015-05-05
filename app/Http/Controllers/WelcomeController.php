@@ -33,7 +33,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $races = Run::all();
+        $races = Run::with('race')->get();
 
         return view('welcome')->with(['races' => $races]);
     }
