@@ -46,7 +46,9 @@ class RunsController extends Controller {
 	 */
 	public function show($id)
 	{
-		return Run::find($id);
+		$run = Run::find($id);
+
+        return view('run.show')->with('run', $run);
 	}
 
 	/**
