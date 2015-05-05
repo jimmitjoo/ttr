@@ -32,7 +32,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <p style="font-size: 130%;">{{ $run->description }}</p>
+                            <p style="font-size: 130%;">{{ $run->race->description }}</p>
                         </div>
                     </div>
 
