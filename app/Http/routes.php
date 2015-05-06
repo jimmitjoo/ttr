@@ -42,3 +42,5 @@ Route::get('receive/facebook', function(){
     return Redirect::to('/hem');
 
 });
+
+Route::get('indexing', 'RacesController@apiCreateRequest');

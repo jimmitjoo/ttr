@@ -2,7 +2,7 @@
 
 return [
 
-    'name'          => 'Lopp',
+    'name'          => 'Arrangör',
     'logo'          => 'Loppets logga',
     'cover'         => 'Coverbild',
     'date'          => 'Datum',

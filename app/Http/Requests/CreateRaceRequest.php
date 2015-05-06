@@ -23,15 +23,12 @@ class CreateRaceRequest extends Request {
 	{
 		return [
 			'name' => 'required',
-            'date' => 'required|date',
             'town' => 'required',
             'run_name' => 'required',
             'run_distance' => 'required|integer',
-            'run_entry_fee' => 'required|integer',
-            'run_late_entry_fee' => 'required|integer',
-            'run_first_entry_datetime' => 'required|date',
-            'run_first_late_entry_datetime' => 'required',
-            'run_last_late_entry_datetime' => 'required',
+            'run_entry_fee' => 'integer',
+            'run_late_entry_fee' => 'integer',
+            'run_first_entry_datetime' => 'date',
             'run_start_datetime' => 'required',
 		];
 	}
