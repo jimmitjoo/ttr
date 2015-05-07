@@ -22,9 +22,9 @@ class Run extends Model {
         'map_id'
     ];
 
-    public function race()
+    public function organizer()
     {
-        return $this->belongsTo('App\Organizer');
+        return $this->belongsTo('App\Organizer', 'race_id');
     }
 
 }

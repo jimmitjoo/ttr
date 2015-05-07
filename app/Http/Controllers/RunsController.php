@@ -44,9 +44,9 @@ class RunsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($runname, $id)
 	{
-		$run = Run::where('id', '=', $id)->with('race')->first();
+		$run = Run::where('id', '=', $id)->with('organizer')->first();
 
         return view('run.show')->with('run', $run);
 	}

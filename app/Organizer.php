@@ -37,6 +37,11 @@ class Organizer extends Model
         return $query->where('town', '=', $town);
     }
 
+    public function runs()
+    {
+        return $this->hasMany('App\Run', 'race_id');
+    }
+
     public function administrator()
     {
 

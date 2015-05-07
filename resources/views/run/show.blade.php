@@ -9,7 +9,7 @@
 
         <!--<div class="parallax__layer parallax__layer--back">-->
         <div>
-            <div style="background: url('../images/cover.png'); background-position: center center; background-size: cover; height: 460px;">
+            <div style="background: url('/images/cover.png'); background-position: center center; background-size: cover; height: 460px;">
                 <div class="table">
                     <div class="table-cell text-center">
                         <div class=" text-center text-title">
@@ -32,7 +32,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <p style="font-size: 130%;">{{ $run->race->description }}</p>
+                            <p style="font-size: 130%;">{{ $run->organizer->description }}</p>
                         </div>
                     </div>
 

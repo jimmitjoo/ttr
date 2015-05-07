@@ -18,7 +18,8 @@ Route::get('/', 'WelcomeController@index');
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('lopp/skapa', ['as' => 'createRace', 'uses' => 'OrganizersController@create']);
 Route::post('lopp', ['as' => 'saveRace', 'uses' => 'OrganizersController@store']);
-Route::post('lopp/{id}', ['as' => 'getRace', 'uses' => 'RunsController@show']);
+//Route::post('lopp/{id}', ['as' => 'getRace', 'uses' => 'RunsController@show']);
+Route::get('lopp/{runname}/{id}', ['as' => 'race', 'uses' => 'RunsController@show']);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -26,7 +27,6 @@ Route::controllers([
 ]);
 
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
-Route::get('race/{id}', ['as' => 'race', 'uses' => 'RunsController@show']);
 
 Route::get('login/facebook', function(){
     return Socialize::with('facebook')->scopes(['email'])->redirect();
