@@ -15,8 +15,9 @@ class CreateRunsTable extends Migration {
 		Schema::create('runs', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('race_id');
+            $table->integer('organizer_id');
             $table->string('name');
+            $table->string('town');
             $table->integer('distance');
             $table->integer('entry_fee');
             $table->integer('late_entry_fee');

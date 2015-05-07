@@ -7,8 +7,9 @@ class Run extends Model {
 	protected $table = 'runs';
 
     protected $fillable = [
-        'race_id',
+        'organizer_id',
         'name',
+        'town',
         'distance',
         'entry_fee',
         'late_entry_fee',
@@ -24,7 +25,7 @@ class Run extends Model {
 
     public function organizer()
     {
-        return $this->belongsTo('App\Organizer', 'race_id');
+        return $this->belongsTo('App\Organizer');
     }
 
 }

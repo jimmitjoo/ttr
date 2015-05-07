@@ -177,13 +177,13 @@ class OrganizersController extends Controller
             $organizer = Organizer::firstOrCreate([
                 'name' => $run[$i]['organizer']
             ]);
-            $organizer->town = $run[$i]['town'];
             $organizer->save();
 
             for ($x=0;$x<count($run[$i]['length']);$x++) {
                 Run::firstOrCreate([
-                    'race_id' => $organizer->id,
-                    'name' => $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . ' km',
+                    'organizer_id' => $organizer->id,
+                    'name' => $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . 'km',
+                    'town' => $run[$i]['town'],
                     'distance' => $run[$i]['length'][$x],
                     'start_datetime' => $run[$i]['date'],
                     'external_link' => $run[$i]['external_link']

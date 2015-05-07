@@ -33,7 +33,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $races = Run::with('organizer')->get();
+        $races = Run::where('start_datetime', '>', date('Y-m-d'))->with('organizer')->paginate(15);
 
         return view('welcome')->with(['races' => $races]);
     }
