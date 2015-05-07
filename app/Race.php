@@ -44,4 +44,10 @@ class Race extends Model
 
     }
 
+    public static function findOrCreate(array $data)
+    {
+        $obj = static::where('name', $data['name'])->where('town', $data['town']);
+        return $obj ?: new static;
+    }
+
 }

@@ -25,4 +25,10 @@ class Run extends Model {
         return $this->belongsTo('App\Race');
     }
 
+    public static function findOrCreate(array $data)
+    {
+        $obj = static::where('name', $data['name'])->where('distance', $data['distance'])->where('start_datetime', $data['start_datetime']);
+        return $obj ?: new static;
+    }
+
 }

@@ -174,7 +174,7 @@ class RacesController extends Controller
                 continue;
             }
 
-            $race = Race::create([
+            $race = Race::findOrCreate([
                 'name' => $run[$i]['organizer'],
                 'town' => $run[$i]['town'],
                 'external_link' => $run[$i]['external_link']
