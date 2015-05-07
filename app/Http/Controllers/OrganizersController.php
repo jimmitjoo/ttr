@@ -10,14 +10,14 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Requests\CreateRaceRequest;
-use App\Race;
+use App\Organizer;
 use App\Run;
 
 /**
- * Class RacesController
+ * Class OrganizersController
  * @package App\Http\Controllers
  */
-class RacesController extends Controller
+class OrganizersController extends Controller
 {
 
     /**
@@ -63,7 +63,7 @@ class RacesController extends Controller
 
         foreach ($result as $q) {
 
-            $race = [];
+            $organizer = [];
 
             foreach ($q as $x => $v) {
 
@@ -83,7 +83,7 @@ class RacesController extends Controller
                     }
                     //echo date('Y-m-d', strtotime($v . ' 2015')).'<br />';
 
-                    $race['date'] = date('Y-m-d', strtotime($v . ' 2015'));
+                    $organizer['date'] = date('Y-m-d', strtotime($v . ' 2015'));
 
                 }
                 /*
@@ -111,7 +111,7 @@ class RacesController extends Controller
 
                     }
 
-                    $race['length'] = $length;
+                    $organizer['length'] = $length;
                     //print_r($length);
 
 
@@ -121,19 +121,19 @@ class RacesController extends Controller
                     $v = (!empty($tarr[0])) ? $tarr[0] : $v;
                     //echo $x .' : ' . $v . '<br />';
 
-                    $race['town'] = $v;
+                    $organizer['town'] = $v;
 
                 } elseif ($x == 'links/_text') {
 
-                    $race['name'] = $v;
+                    $organizer['name'] = $v;
 
                 } elseif ($x == 'value_4') {
 
-                    $race['organizer'] = $v;
+                    $organizer['organizer'] = $v;
 
                 } elseif ($x == 'links') {
 
-                    $race['external_link'] = $v;
+                    $organizer['external_link'] = $v;
 
                 } else {
 
@@ -142,7 +142,7 @@ class RacesController extends Controller
 
             }
 
-            if (count($race) > 0 && strtotime($race['date']) > time()) $run[] = $race;
+            if (count($organizer) > 0 && strtotime($organizer['date']) > time()) $run[] = $organizer;
 
         }
 
@@ -174,15 +174,15 @@ class RacesController extends Controller
                 continue;
             }
 
-            $race = Race::firstOrCreate([
+            $organizer = Organizer::firstOrCreate([
                 'name' => $run[$i]['organizer']
             ]);
-            $race->town = $run[$i]['town'];
-            $race->save();
+            $organizer->town = $run[$i]['town'];
+            $organizer->save();
 
             for ($x=0;$x<count($run[$i]['length']);$x++) {
                 Run::firstOrCreate([
-                    'race_id' => $race->id,
+                    'race_id' => $organizer->id,
                     'name' => $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . ' km',
                     'distance' => $run[$i]['length'][$x],
                     'start_datetime' => $run[$i]['date'],
@@ -239,8 +239,8 @@ class RacesController extends Controller
         //dd($runArray);
         //dd($postArray);
 
-        $race = Race::create($postArray);
-        $runArray['race_id'] = $race->id;
+        $organizer = Organizer::create($postArray);
+        $runArray['race_id'] = $organizer->id;
 
         Run::create($runArray);
 

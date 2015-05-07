@@ -11,9 +11,9 @@ class RaceAdministrators extends Model {
         'user_id'
     ];
 
-    public function races()
+    public function organizers()
     {
-        return $this->hasMany('App\Race', 'id', 'race_id');
+        return $this->hasMany('App\Organizer', 'id', 'race_id');
     }
 
     public function administrator()

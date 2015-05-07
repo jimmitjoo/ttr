@@ -16,8 +16,8 @@ use App\User;
 Route::get('/', 'WelcomeController@index');
 
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
-Route::get('lopp/skapa', ['as' => 'createRace', 'uses' => 'RacesController@create']);
-Route::post('lopp', ['as' => 'saveRace', 'uses' => 'RacesController@store']);
+Route::get('lopp/skapa', ['as' => 'createRace', 'uses' => 'OrganizersController@create']);
+Route::post('lopp', ['as' => 'saveRace', 'uses' => 'OrganizersController@store']);
 Route::post('lopp/{id}', ['as' => 'getRace', 'uses' => 'RunsController@show']);
 
 Route::controllers([
@@ -43,4 +43,4 @@ Route::get('receive/facebook', function(){
 
 });
 
-Route::get('indexing', 'RacesController@apiCreateRequest');
+Route::get('indexing', 'OrganizersController@apiCreateRequest');

@@ -12,7 +12,7 @@ class CreateRacesTable extends Migration {
 	 */
 	public function up()
 	{
-        Schema::create('races', function(Blueprint $table)
+        Schema::create('organizers', function(Blueprint $table)
         {
             $table->increments('id');
             $table->string('name');
@@ -33,7 +33,7 @@ class CreateRacesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('races');
+		Schema::drop('organizers');
 	}
 
 }

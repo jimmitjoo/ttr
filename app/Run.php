@@ -24,7 +24,7 @@ class Run extends Model {
 
     public function race()
     {
-        return $this->belongsTo('App\Race');
+        return $this->belongsTo('App\Organizer');
     }
 
 }

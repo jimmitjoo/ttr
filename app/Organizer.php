@@ -3,16 +3,16 @@
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Race
+ * Class Organizer
  * @package App
  */
-class Race extends Model
+class Organizer extends Model
 {
 
     /**
      * @var string
      */
-    protected $table = 'races';
+    protected $table = 'organizers';
 
     /**
      * @var array
