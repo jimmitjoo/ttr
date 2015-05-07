@@ -22,8 +22,6 @@ class CreateRacesTable extends Migration {
             $table->string('county');
             $table->string('town');
             $table->text('description');
-            $table->string('external_link');
-            $table->string('signup_link');
             $table->timestamps();
         });
 	}

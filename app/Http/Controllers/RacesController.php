@@ -175,17 +175,18 @@ class RacesController extends Controller
             }
 
             $race = Race::firstOrCreate([
-                'name' => $run[$i]['organizer'],
-                'town' => $run[$i]['town'],
-                'external_link' => $run[$i]['external_link']
+                'name' => $run[$i]['organizer']
             ]);
+            $race->town = $run[$i]['town'];
+            $race->save();
 
             for ($x=0;$x<count($run[$i]['length']);$x++) {
                 Run::firstOrCreate([
                     'race_id' => $race->id,
                     'name' => $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . ' km',
                     'distance' => $run[$i]['length'][$x],
-                    'start_datetime' => $run[$i]['date']
+                    'start_datetime' => $run[$i]['date'],
+                    'external_link' => $run[$i]['external_link']
                 ]);
             }
 

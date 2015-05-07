@@ -24,9 +24,7 @@ class Race extends Model
         'country',
         'county',
         'town',
-        'description',
-        'external_link',
-        'signup_link'
+        'description'
     ];
 
     /**

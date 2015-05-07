@@ -17,6 +17,8 @@ class Run extends Model {
         'last_late_entry_datetime',
         'start_datetime',
         'cover_src',
+        'external_link',
+        'signup_link',
         'map_id'
     ];
 
