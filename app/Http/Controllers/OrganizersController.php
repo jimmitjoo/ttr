@@ -247,4 +247,12 @@ class OrganizersController extends Controller
         //return redirect(route('home'));
     }
 
+
+    public function listRaces()
+    {
+        $races = Run::where('start_datetime', '>', date('Y-m-d'))->with('organizer')->paginate(15);
+
+        return view('race.list')->with(['races' => $races]);
+    }
+
 }

@@ -30,9 +30,10 @@ var validateEmail = function(email) {
     return re.test(email);
 }
 var checkIfEmailIsValid = function() {
+    if (!registerEmailInput) return;
     if (validateEmail(registerEmailInput.value)) registerPasswordFieldBox.classList.remove('hidden');
 }
-registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
+if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
 
 
 

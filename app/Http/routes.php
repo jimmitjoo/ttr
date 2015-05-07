@@ -26,6 +26,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('partials/race-list', 'OrganizersController@listRaces');
+
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
 
 Route::get('login/facebook', function(){

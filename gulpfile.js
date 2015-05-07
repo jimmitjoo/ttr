@@ -1,3 +1,4 @@
+
 var elixir = require('laravel-elixir');
 require('laravel-elixir-imagemin');
 
@@ -16,4 +17,11 @@ require('laravel-elixir-imagemin');
 elixir(function(mix) {
     mix.less('app.less');
     mix.imagemin('','public/images', { optimizationLevel: 7, progressive: true, interlaced: true });
+
+    mix.scripts([
+        '../assets/bower/jquery/dist/jquery.js',
+        '../assets/bower/bootstrap/dist/js/bootstrap.js',
+        '../assets/bower/angular/angular.js'
+    ], 'public/js/build.js');
 });
+
