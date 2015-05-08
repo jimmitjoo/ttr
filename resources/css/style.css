@@ -376,6 +376,16 @@ section button.disabled {
     display: block;
     float: left;
 }
+.product-pricetag-shop {
+	background-color: #000;
+	color: white;
+	padding: 10px 10px 10px;
+	display: block;
+	float: left;
+} 
+.single {
+	font-size: 180%;
+} 
 
 /*
  * Mobile
