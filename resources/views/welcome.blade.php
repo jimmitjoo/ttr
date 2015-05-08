@@ -45,20 +45,6 @@
 	                <p style="font-weight: 500;">-i  närheten eller på annan plats i Sverige och världen.</p>
 	            </div>
 
-                <div class="col-lg-12 text-center search-container">
-                    <form>
-                        <div class="search-box">
-                            <div class="search-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="search-clear">
-                                <i class="fa fa-times"></i>
-                            </div>
-                            <input class="search-field" type="text" name="search" placeholder="Sök"/>
-                        </div>
-                    </form>
-                </div>
-
             </div>
 
             <div class="row">
@@ -77,4 +63,5 @@
     </div>
 
 @include('ads.upsells-single')
+
 @stop
