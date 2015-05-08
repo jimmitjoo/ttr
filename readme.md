@@ -1,2 +1,0 @@
-# ttr
-Time To Run
