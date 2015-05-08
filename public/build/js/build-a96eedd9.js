@@ -11527,8 +11527,6 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-<<<<<<< HEAD
-=======
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -37838,7 +37836,6 @@ var minlengthDirective = function() {
 })(window, document);
 
 !window.angular.$$csp() && window.angular.element(document).find('head').prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}</style>');
->>>>>>> origin/master
 /*$(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 600) {

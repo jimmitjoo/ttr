@@ -3,5 +3,3 @@
 /resources/assets/bower
 .env
 _ide_helper.php
-/public/css
-/public/js
