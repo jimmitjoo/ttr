@@ -37836,4 +37836,44 @@ var minlengthDirective = function() {
 })(window, document);
 
 !window.angular.$$csp() && window.angular.element(document).find('head').prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}</style>');
+/*$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 600) {
+        $('.topnav').fadeIn();
+    } else {
+        $('.topnav').fadeOut();
+    }
+});*/
+
+var scrollToTop;
+var topNav = document.getElementsByClassName('topnav');
+var topNavPosition = function () {
+    scrollToTop = window.scrollY;
+
+    if (scrollToTop > 600) {
+        topNav[0].classList.remove('fadeOut');
+        topNav[0].classList.add('fadeIn');
+
+        return
+    }
+    topNav[0].classList.remove('fadeIn');
+    topNav[0].classList.add('fadeOut');
+}
+
+
+var registerEmailInput = document.getElementById('registerEmail');
+var registerPasswordFieldBox = document.getElementById('registerPasswords');
+var validateEmail = function(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+}
+var checkIfEmailIsValid = function() {
+    if (!registerEmailInput) return;
+    if (validateEmail(registerEmailInput.value)) registerPasswordFieldBox.classList.remove('hidden');
+}
+if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
+
+
+
+window.onscroll = topNavPosition;
 //# sourceMappingURL=build.js.map

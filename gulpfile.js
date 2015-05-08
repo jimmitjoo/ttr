@@ -27,7 +27,8 @@ elixir(function(mix) {
     mix.scripts([
         '../assets/bower/jquery/dist/jquery.js',
         '../assets/bower/bootstrap/dist/js/bootstrap.js',
-        '../assets/bower/angular/angular.js'
+        '../assets/bower/angular/angular.js',
+        'custom.js'
     ], 'public/js/build.js');
 });
 
