@@ -10162,6 +10162,9 @@ section button.disabled {
     p {
     	font-size: 100%;
     }
+    .splash {
+    	height: 90%;
+    }
     .splash h1 {
     	font-size: 300%;
     }
