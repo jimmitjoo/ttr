@@ -1,37 +1,36 @@
-app.controller('runPaginationController', function($scope, $http){
+app.controller('runPaginationController', function ($scope, $http) {
 
     $scope.filter = [];
     $scope.currentPage = 1;
     $scope.numPerPage = 10;
     $scope.maxSize = 10;
+    $scope.totalItems = 100;
 
 
-    $scope.makeList = function() {
+    $scope.makeList = function () {
         $scope.races = [];
 
         $http.get("/race/list")
-            .success(function(response) {
+            .success(function (response) {
 
-                for (var i=0;i<response.length;i++) {
+                for (var i = 0; i < response.length; i++) {
                     $scope.races.push({
                         id: response[i].id,
                         name: response[i].name,
                         town: response[i].town,
                         distance: response[i].distance,
                         start_datetime: response[i].start_datetime,
-                        done:false
+                        done: false
                     });
                 }
+
+                $scope.totalItems = $scope.races.length;
 
             });
     };
     $scope.makeList();
 
-    $scope.setPage = function (pageNo) {
-        $scope.currentPage = pageNo;
-    };
-
-    $scope.$watch("currentPage + numPerPage + races", function() {
+    $scope.$watch("currentPage + numPerPage + races", function () {
         var begin = (($scope.currentPage - 1) * $scope.numPerPage),
             end = begin + $scope.numPerPage;
 
@@ -41,8 +40,6 @@ app.controller('runPaginationController', function($scope, $http){
 
         $scope.filter = $scope.races.slice(begin, end);
     });
-
-
 
 
 });

@@ -75,7 +75,9 @@
                 </div>
 
 
-                <pagination boundary-links="true" total-items="numPages()" items-per-page="numPerPage" max-size="maxSize" ng-model="currentPage" ng-change=""></pagination>
+                <pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="true"></pagination>
+
+
             </div>
             <!--@include('race.list')-->
 
@@ -87,5 +89,5 @@
 @stop
 
 <script src="/js/angular/angular.js"></script>
-<script src="/js/angular/ui-bootstrap.min.js"></script>
+<script src="/js/angular/ui-bootstrap-0.11.1.js"></script>
 <script src="/js/angular/application.js"></script>

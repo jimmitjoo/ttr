@@ -11536,6 +11536,7 @@ if (typeof jQuery === 'undefined') {
     }
 });*/
 
+/*
 var scrollToTop;
 var topNav = document.getElementsByClassName('topnav');
 var topNavPosition = function () {
@@ -11550,6 +11551,8 @@ var topNavPosition = function () {
     topNav[0].classList.remove('fadeIn');
     topNav[0].classList.add('fadeOut');
 }
+window.onscroll = topNavPosition;
+*/
 
 
 var registerEmailInput = document.getElementById('registerEmail');
@@ -11566,5 +11569,5 @@ if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmai
 
 
 
-window.onscroll = topNavPosition;
+
 //# sourceMappingURL=build.js.map
