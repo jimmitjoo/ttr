@@ -1,6 +1,10 @@
 
 @extends('master.master')
 
+@section('title', 'Älska att springa - Timetorun.se')
+
+@section('description', 'Hitta lopp och tävlingar att springa i Sverige och utomlands. Löparskor, träningskläder och kompressionskläder till bra pris online.')
+
 @section('content')
 
     <div class="splash">

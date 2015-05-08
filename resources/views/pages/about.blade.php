@@ -1,4 +1,10 @@
-@include('master.header-subpage')
+@extends('master.master-subpage')
+
+@section('title', 'Om oss - Timetorun.se')
+
+@section('description', 'Hitta lopp och tävlingar att springa i Sverige och utomlands. Löparskor, träningskläder och kompressionskläder till bra pris online.')
+
+@section('content')
 
     <div class="block">
         <div class="container">
@@ -36,4 +42,4 @@
         </div>
     </div>
 
-@include('master.footer')
+@endsection

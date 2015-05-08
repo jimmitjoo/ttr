@@ -25,7 +25,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     */
 }
-
 h2 {
     font-size: 350%;
     font-weight: 700;
@@ -35,7 +34,6 @@ h2 {
 }
 h1.big, h2.big {
     font-size: 400%;
-    font-size: 5vw;
     font-weight: 900;
     margin: 4px;
     letter-spacing: -1px;
@@ -69,7 +67,7 @@ a {
     -moz-transition: color .2s linear;
 }
 a:hover, a:active {
-    color: #008aff;
+    color: #4f287a;
     text-decoration: none;
 }
 .text-title {
@@ -108,11 +106,9 @@ a:hover, a:active {
     background-position: center center;
     background-size: cover;
     height: 82%;
-    min-height: 740px;
 }
 .splash h1 {
     font-size: 720%;
-
     /*font-size: 10vw;*/
     line-height: 1.2;
     font-weight: 900;
@@ -151,6 +147,9 @@ header {
     padding: 10px 0;
     color: white;
     background: #0087ff;
+}
+.logo {
+	cursor: pointer;
 }
 
 /* 
@@ -393,6 +392,29 @@ section button.disabled {
 /*
  * Mobile
  */
+@media screen and (max-width: 767px) {
+    p {
+    	font-size: 100%;
+    }
+    .splash {
+    	height: 90%;
+    }
+    .splash h1 {
+    	font-size: 300%;
+    }
+    .splash h2 {
+    	font-size: 160%;
+    }
+    h1.big, h2.big {
+    	font-size: 200%;
+    }
+    h2.large {
+    	font-size: 180%;
+    }
+    .single {
+	    font-size: 120%;
+    }
+}
 @media screen and (max-width: 990px) {
     .hide-mobile {
         display: none;
