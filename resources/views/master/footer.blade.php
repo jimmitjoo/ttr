@@ -10,8 +10,8 @@
             <div class="col-lg-12 small">
                 <div class="col-lg-8 col-md-8 col-xs-12">
                     <ul>
-                        <li><a href="http://www.timetorun.se">Start</a></li>
-                        <li><a href="http://www.timetorun.se/about/">Om oss</a></li>
+                        <li><a href="/">Start</a></li>
+                        <li><a href="{{ link_to_route('about') }}">Om oss</a></li>
                     </ul>
                     <span class="small">© 2015 Timetorun.se</span>
                 </div>

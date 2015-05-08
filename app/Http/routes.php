@@ -20,6 +20,7 @@ Route::get('lopp/skapa', ['as' => 'createRace', 'uses' => 'OrganizersController@
 Route::post('lopp', ['as' => 'saveRace', 'uses' => 'OrganizersController@store']);
 //Route::post('lopp/{id}', ['as' => 'getRace', 'uses' => 'RunsController@show']);
 Route::get('lopp/{runname}/{id}', ['as' => 'race', 'uses' => 'RunsController@show']);
+Route::get('omoss', ['as' => 'about', 'uses' => 'PagesController@about']);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
