@@ -11527,6 +11527,8 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+<<<<<<< HEAD
+=======
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -37876,4 +37878,5 @@ if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmai
 
 
 window.onscroll = topNavPosition;
+>>>>>>> origin/master
 //# sourceMappingURL=build.js.map
