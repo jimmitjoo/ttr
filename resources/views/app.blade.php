@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
 
-    <link href="{{ asset('/css/build.css') }}" rel="stylesheet">
+    <link href="{{ elixir('/css/build.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900" rel="stylesheet" type="text/css">
@@ -70,8 +70,7 @@
 @yield('content')
 
 <!-- Scripts -->
-<script src="{{ asset('/js/build.js') }}"></script>
-<script src="/js/custom.js"></script>
+<script src="{{ elixir('/js/build.js') }}"></script>
 @include('partials.analytics')
 </body>
 </html>

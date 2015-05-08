@@ -30,5 +30,10 @@ elixir(function(mix) {
         '../assets/bower/angular/angular.js',
         'custom.js'
     ], 'public/js/build.js');
+
+    mix.version([
+        'css/build.css',
+        'js/build.js'
+    ]);
 });
 
