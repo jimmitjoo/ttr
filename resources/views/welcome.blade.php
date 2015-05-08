@@ -1,3 +1,4 @@
+
 @extends('master.master')
 
 @section('content')
@@ -57,7 +58,22 @@
 
             </div>
 
-            @include('race.list')
+            <div data-ng-controller="runPaginationController">
+
+                <div ng-repeat="race in filter" class="row list-item">
+                    <a href="/lopp/@{{ race.name.toLowerCase() }}/@{{ race.id }}">
+                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.town }}</div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.start_datetime }}</div>
+                        <div class="col-lg-4 col-md-4 col-xs-9">@{{ race.name }}</div>
+                        <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile">@{{ race.distance / 1000 }} km</div>
+                        <div class="col-lg-2 col-md-2 col-xs-3 text-right"><a class="list-btn" href="/lopp/@{{ race.name.toLowerCase() }}/@{{ race.id }}"><span class="hide-mobile">Läs mer</span> &nbsp; <i class="fa fa-long-arrow-right"></i></a></div>
+                    </a>
+                </div>
+
+
+                <pagination boundary-links="true" total-items="numPages()" items-per-page="numPerPage" max-size="maxSize" ng-model="currentPage" ng-change=""></pagination>
+            </div>
+            <!--@include('race.list')-->
 
         </div>
     </div>
@@ -65,3 +81,7 @@
 @include('ads.upsells-single')
 
 @stop
+
+<script src="/js/angular/angular.js"></script>
+<script src="/js/angular/ui-bootstrap.min.js"></script>
+<script src="/js/angular/application.js"></script>

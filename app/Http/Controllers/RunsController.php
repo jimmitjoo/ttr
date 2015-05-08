@@ -5,8 +5,16 @@ use App\Http\Controllers\Controller;
 use App\Run;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class RunsController extends Controller {
+
+    public function apiGetList()
+    {
+        $runs = Run::all();
+
+        return $runs;
+    }
 
 	/**
 	 * Display a listing of the resource.

@@ -47,3 +47,7 @@ Route::get('receive/facebook', function(){
 });
 
 Route::get('indexing', 'OrganizersController@apiCreateRequest');
+
+
+
+Route::get('race/list', 'RunsController@apiGetList');

@@ -1,6 +1,7 @@
 
 var elixir = require('laravel-elixir');
 require('laravel-elixir-imagemin');
+require('laravel-elixir-angular');
 
 
 /*
@@ -27,9 +28,10 @@ elixir(function(mix) {
     mix.scripts([
         '../assets/bower/jquery/dist/jquery.js',
         '../assets/bower/bootstrap/dist/js/bootstrap.js',
-        '../assets/bower/angular/angular.js',
         'custom.js'
     ], 'public/js/build.js');
+
+    mix.angular('resources/assets/angular/', 'public/js/angular/', 'application.js');
 
     mix.version([
         'css/build.css',
