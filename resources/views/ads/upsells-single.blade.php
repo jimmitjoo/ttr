@@ -13,13 +13,9 @@
 				<div class="table-cell">
 					<h2 class="large" style="color: black; margin-bottom: 20px;">Orka längre med 2XU kompressionskläder</h2>
 					<p style="color: black; margin-bottom: 30px;">2XU Men's Elite Compression Tights är förmodligen de skönaste löpartightsen du någonsin kommer äga. Stabiliserar de största muskelgrupperna och ger stöd under löpturen.</p>
-					<div style="position: relative">
-						<div style="position: absolute;">
-							<div><span class="product-label single hide-mobile">2XU Men Compression Tight</span></div>
-							<div><span class="product-pricetag single">745;- Spara 50%!</span></div>
-							<div style="clear: both"><span class="product-pricetag-shop">Handla här</span></div>
-						</div>
-					</div>
+					<div class="clear"><span class="product-label single">2XU Men Compression Tight</span></div>
+					<div class="clear"><span class="product-pricetag single">745;- Spara 50%!</span></div>
+					<div class="clear"><span class="product-pricetag-shop">Handla här</span></div>
 				</div>
 			</div>
 		</div>

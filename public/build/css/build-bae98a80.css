@@ -9862,6 +9862,9 @@ a:hover, a:active {
     height: 100%;
     width: 100%;
 }
+.clear {
+	clear: both;
+}
 
 /* 
  * Splash
