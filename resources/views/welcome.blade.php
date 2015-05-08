@@ -37,7 +37,7 @@
                     <div class="table">
                         <div class="table-cell text-center">
                             <h1>Älska att springa</h1>
-                            <h2>Hitta lopp och löparkläder</h2>
+                            <h2>Hitta lopp och löparkläder </h2>
                         </div>
                     </div>
                 </div>
