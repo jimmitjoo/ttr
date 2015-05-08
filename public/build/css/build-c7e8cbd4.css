@@ -9766,9 +9766,9 @@ Copyright (c) 2015 Daniel Eden
 }
 /* 
  * Timetorun.se
- * Version 1.0
+ * Version 1.01
  */
-
+ 
 /* Google font */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100);
@@ -9867,7 +9867,7 @@ a:hover, a:active {
  * Splash
  */
 .splash {
-    background: url('../images/unsplash-green.jpg');
+    background: url('/images/unsplash-green.jpg');
     background-position: center center;
     background-size: cover;
     height: 82%;
@@ -9882,7 +9882,7 @@ a:hover, a:active {
     margin: 4px;
     letter-spacing: -3px;
     color: #fff716;
-    color: #1a429f;
+    color: #4f287a;
 }
 .splash h2 {
     font-size: 250%;
@@ -9913,7 +9913,7 @@ header {
 .header-subpage {
     padding: 10px 0;
     color: white;
-    background: #1a429f;
+    background: #0087ff;
 }
 
 /* 
@@ -10142,6 +10142,16 @@ section button.disabled {
     display: block;
     float: left;
 }
+.product-pricetag-shop {
+	background-color: #000;
+	color: white;
+	padding: 10px 10px 10px;
+	display: block;
+	float: left;
+} 
+.single {
+	font-size: 180%;
+} 
 
 /*
  * Mobile
