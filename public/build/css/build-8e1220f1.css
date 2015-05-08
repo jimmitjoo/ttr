@@ -9872,7 +9872,6 @@ a:hover, a:active {
     background-position: center center;
     background-size: cover;
     height: 82%;
-    min-height: 740px;
 }
 .splash h1 {
     font-size: 720%;
