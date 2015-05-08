@@ -24,7 +24,7 @@
     </div>
 </footer>
 
-<script src="{{ elixir('/js/build.js') }}"></script>
+<script src="{{ elixir('js/build.js') }}"></script>
 @include('partials.analytics')
 </body>
 </html>
