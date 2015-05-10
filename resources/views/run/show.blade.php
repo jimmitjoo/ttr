@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', $run->name )
+@section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
 
 @section('content')
 
