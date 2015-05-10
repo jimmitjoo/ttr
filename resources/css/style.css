@@ -230,6 +230,9 @@ footer li {
 
 /* Block
  --------------------------------------------- */
+.block-top {
+    padding-top: 80px;
+}
 .block-center {
     float: none;
     margin: auto;
