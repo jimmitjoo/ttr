@@ -40,6 +40,8 @@ Route::get('receive/facebook', function(){
     $socialUser = Socialize::with('facebook')->user();
     $user = User::socialUser($socialUser);
 
+    dd($user);
+
     Auth::login($user);
 
     return Redirect::to('/hem');
