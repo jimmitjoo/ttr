@@ -64,6 +64,18 @@
 
             <div data-ng-controller="runPaginationController">
 
+                <form>
+                    <div class="search-box">
+                        <div class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="search-clear">
+                            <i class="fa fa-times"></i>
+                        </div>
+                        <input class="search-field" type="text" ng-model="searchQuery" ng-change="makeList()" placeholder="Sök">
+                    </div>
+                </form>
+
                 <div ng-repeat="race in filter" class="row list-item">
                     <a href="/lopp/@{{ race.name.toLowerCase() }}/@{{ race.id }}">
                         <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.town }}</div>
@@ -79,7 +91,6 @@
 
 
             </div>
-            <!--@include('race.list')-->
 
         </div>
     </div>

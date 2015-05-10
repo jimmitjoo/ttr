@@ -5,12 +5,13 @@ app.controller('runPaginationController', function ($scope, $http) {
     $scope.numPerPage = 10;
     $scope.maxSize = 10;
     $scope.totalItems = 100;
+    $scope.searchQuery = '';
 
 
     $scope.makeList = function () {
         $scope.races = [];
 
-        $http.get("/race/list")
+        $http.get("/race/list/" + $scope.searchQuery, { cache: true})
             .success(function (response) {
 
                 for (var i = 0; i < response.length; i++) {
@@ -30,7 +31,7 @@ app.controller('runPaginationController', function ($scope, $http) {
     };
     $scope.makeList();
 
-    $scope.$watch("currentPage + numPerPage + races", function () {
+    $scope.$watch("currentPage + numPerPage + races + searchQuery", function () {
         var begin = (($scope.currentPage - 1) * $scope.numPerPage),
             end = begin + $scope.numPerPage;
 

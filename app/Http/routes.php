@@ -50,4 +50,5 @@ Route::get('indexing', 'OrganizersController@apiCreateRequest');
 
 
 
-Route::get('race/list', 'RunsController@apiGetList');
+Route::get('race/list/', 'RunsController@apiGetList');
+Route::get('race/list/{query}', 'RunsController@apiGetList');

@@ -9,9 +9,20 @@ use Illuminate\Http\Response;
 
 class RunsController extends Controller {
 
-    public function apiGetList()
+    public function apiGetList($query = null)
     {
-        $runs = Run::all();
+
+        if (strlen($query) > 0) {
+            $runs = Run::where('name', 'LIKE', '%' . $query . '%')
+                ->where('start_datetime', '>', date('Y-m-d'))
+
+                ->orWhere('town', 'LIKE', '%' . $query . '%')
+                ->where('start_datetime', '>', date('Y-m-d'))
+
+                ->get();
+        } else {
+            $runs = Run::where('start_datetime', '>', date('Y-m-d'))->get();
+        }
 
         return $runs;
     }
