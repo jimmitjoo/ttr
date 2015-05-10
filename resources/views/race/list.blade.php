@@ -12,8 +12,10 @@
         </div>
     @endforeach
 
+    @if ($races->render())
     <div class="row">
         <div class="col-lg-12 text-center"><?php echo $races->render(); ?></div>
     </div>
+    @endif
 
 @endif

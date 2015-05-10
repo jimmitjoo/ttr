@@ -67,7 +67,13 @@ class RunsController extends Controller {
 	{
 		$run = Run::where('id', '=', $id)->with('organizer')->first();
 
-        return view('run.show')->with('run', $run);
+        $lastSpacePosition = strrpos($run->name, ' ');
+        $run->purename = substr($run->name, 0, $lastSpacePosition);
+        $run->title = $run->purename . ', ' . $run->town;
+
+        $races = Run::where('town', '=', $run->town)->with('organizer')->paginate();
+
+        return view('run.show')->with('run', $run)->with('races', $races);
 	}
 
 	/**

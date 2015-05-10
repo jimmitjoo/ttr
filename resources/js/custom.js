@@ -39,4 +39,7 @@ var checkIfEmailIsValid = function() {
 if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
 
 
+$('.search-clear').on('click', function(){
+    $('.search-field').val('');
+});
 

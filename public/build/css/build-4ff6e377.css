@@ -9941,6 +9941,7 @@ header {
     top: 18px;
     right: 20px;
     color: #2395ff;
+    cursor: pointer;
 }
 .search-box:hover .search-clear {
     display: block;
