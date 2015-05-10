@@ -1,10 +1,12 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Date\Date;
 
-class Run extends Model {
+class Run extends Model
+{
 
-	protected $table = 'runs';
+    protected $table = 'runs';
 
     protected $fillable = [
         'organizer_id',
@@ -23,9 +25,19 @@ class Run extends Model {
         'map_id'
     ];
 
+    public function __construct()
+    {
+        Date::setLocale('sv');
+    }
+
     public function organizer()
     {
         return $this->belongsTo('App\Organizer');
+    }
+
+    public function getStartDatetimeAttribute($value)
+    {
+        return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
     }
 
 }
