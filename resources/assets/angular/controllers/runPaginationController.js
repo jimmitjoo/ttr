@@ -31,6 +31,12 @@ app.controller('runPaginationController', function ($scope, $http) {
     };
     $scope.makeList();
 
+    $('.search-field').on('keyup', function(){
+        delay(function(){
+            $scope.makeList();
+        }, 200 );
+    });
+
     $scope.$watch("currentPage + numPerPage + races + searchQuery", function () {
         var begin = (($scope.currentPage - 1) * $scope.numPerPage),
             end = begin + $scope.numPerPage;
@@ -44,3 +50,15 @@ app.controller('runPaginationController', function ($scope, $http) {
 
 
 });
+
+
+/*
+ * Denna funktion bör ligga någon annanstans
+ */
+var delay = (function(){
+    var timer = 0;
+    return function(callback, ms){
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();

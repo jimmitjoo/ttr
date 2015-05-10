@@ -72,7 +72,7 @@
                         <div class="search-clear">
                             <i class="fa fa-times"></i>
                         </div>
-                        <input class="search-field" type="text" ng-model="searchQuery" ng-change="makeList()" placeholder="Sök">
+                        <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
                     </div>
                 </form>
 
