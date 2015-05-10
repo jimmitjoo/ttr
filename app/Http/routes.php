@@ -32,7 +32,7 @@ Route::get('partials/race-list', 'OrganizersController@listRaces');
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
 
 Route::get('login/facebook', function(){
-    return Socialize::with('facebook')->scopes(['email', 'user_hometown'])->redirect();
+    return Socialize::with('facebook')->scopes(['email', 'hometown'])->redirect();
 });
 
 Route::get('receive/facebook', function(){
