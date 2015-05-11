@@ -161,6 +161,8 @@ header {
 }
 .logo {
 	cursor: pointer;
+	border: 0;
+	
 }
 
 /* 
@@ -202,6 +204,7 @@ header {
     cursor: pointer;
 }
 .list-btn {
+	opacity: 0;
     background: #008aff;
     padding: 10px 14px;
     color: #fff !important;
@@ -210,6 +213,9 @@ header {
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
+}
+.list-item:hover .list-btn {
+	opacity: 1;
 }
 .list-btn:hover {
     background: #0077e0;
