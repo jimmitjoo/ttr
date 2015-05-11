@@ -11527,14 +11527,14 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-/*$(document).scroll(function() {
+$(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 600) {
+    if (y > 750) {
         $('.topnav').fadeIn();
     } else {
         $('.topnav').fadeOut();
     }
-});*/
+});
 
 /*
 var scrollToTop;
