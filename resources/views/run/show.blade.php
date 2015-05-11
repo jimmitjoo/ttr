@@ -5,21 +5,23 @@
 @section('content')
 
 	<!--
-	-- Release in next version
+	-- New
 	--
 	-->
-	
 	<div class="topnav">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<div class="logo-animated">
-						<a href="http://www.timetorun.se"><img src="images/runner.gif"></a>
-					</div>
+				<div class="col-lg-12 col-md-12" style="height: 70px;">
+					<div class="table">
+                    	<div class="table-cell">
+                        	<a href="http://timetorun.se"><img src="/images/timetorun.png" style="margin-top: -2px;"></a>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 
     <div style="background: url('/images/cover.png'); background-position: center center; background-size: cover; height: 460px;">
         <div class="table">
@@ -45,9 +47,13 @@
                         <ul>
                             <li>Arrangör: {{ $run->organizer->name }}</li>
                             <li>Stad: {{ $run->town }}</li>
+                            <!--
+                              -- Hide distanse
+                              --
                             <li>Distans: {{ $run->distance / 1000 }}km</li>
-                            <!-- <li>Datum: {{ date('Y-m-d', strtotime($run->start_datetime)) }}</li> -->
-                            <li>Länk: {{ $run->external_link }}</li>
+                            -->
+                            <li>Datum: {{ date('Y-m-d', strtotime($run->start_datetime)) }}</li> 
+                            <li>Länk: <a target="_blank" href="{{ $run->external_link }}">{{ $run->external_link }}</a></li>
                         </ul>
                         <p style="font-size: 130%;">{{ $run->description }}</p></div>
                 </div>
