@@ -11,13 +11,9 @@ app.controller('runPaginationController', function ($scope, $http) {
     $scope.makeList = function () {
         $scope.races = [];
 
-        console.log('query: ' + $scope.searchQuery);
-
         if ($('#runTown').length > 0) {
             $scope.searchQuery = $('#runTown').val();
         }
-
-        console.log('query: ' + $scope.searchQuery);
 
         $http.get("/race/list/" + $scope.searchQuery, { cache: true})
             .success(function (response) {
@@ -36,9 +32,6 @@ app.controller('runPaginationController', function ($scope, $http) {
 
                 $scope.totalItems = $scope.races.length;
 
-            })
-            .error(function(message){
-                console.log(message);
             });
     };
     $scope.makeList();
