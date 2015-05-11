@@ -65,8 +65,4 @@
 
 
 
-<!-- Scripts -->
-<script src="{{ elixir('js/build.js') }}"></script>
-@include('partials.analytics')
-</body>
-</html>
+@include('master.footer')
