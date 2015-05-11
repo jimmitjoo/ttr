@@ -47,8 +47,10 @@
                               -- Hide distanse
                               --
                             <li>Distans: {{ $run->distance / 1000 }}km</li>
+                            <li>Datum: {{ $run->start_datetime }}</li>
+                            <li>Länk: {{ $run->external_link }}</li>
                             -->
-                            <li>Datum: {{ date('Y-m-d', strtotime($run->start_datetime)) }}</li> 
+                            <li>Datum: {{ $run->start_datetime }}</li>
                             <li>Länk: <a target="_blank" href="{{ $run->external_link }}">{{ $run->external_link }}</a></li>
                         </ul>
                         <p style="font-size: 130%;">{{ $run->description }}</p></div>
