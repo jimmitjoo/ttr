@@ -11,15 +11,11 @@
 	-- New
 	--
 	-->
-	<div class="topnav">
+	<div class="topnav" style="padding: 10px 0;">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12" style="height: 70px;">
-					<div class="table">
-                    	<div class="table-cell">
-                        	<a href="/"><img src="/images/timetorun.png" style="margin-top: -2px;"></a>
-                        </div>
-                    </div>
+				<div class="col-lg-12 col-md-12">
+                	<a href="/"><img src="/images/timetorun.png" style="margin-top: -2px; border: 0;"></a>
 				</div>
 			</div>
 		</div>

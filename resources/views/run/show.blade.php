@@ -8,15 +8,11 @@
 	-- New
 	--
 	-->
-	<div class="topnav">
+	<div class="topnav" style="background: black; padding: 10px 0;">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12" style="height: 70px;">
-					<div class="table">
-                    	<div class="table-cell">
-                        	<a href="http://timetorun.se"><img src="/images/timetorun.png" style="margin-top: -2px;"></a>
-                        </div>
-                    </div>
+				<div class="col-lg-12 col-md-12 text-center">
+					<a href="/"><img src="/images/timetorun-white.png" style="margin-top: -2px; border: 0;"></a>
 				</div>
 			</div>
 		</div>
@@ -30,7 +26,7 @@
                     <h1 class="big" style="color: white; font-size: 600%;">{{ $run->title }}</h1>
                 </div>
                 <form action="{{ $run->external_link }}">
-                    <input class="green" type="submit" name="register" value="Läs mer och anmäl dig här"
+                    <input class="green" type="submit" name="register" value="Anmäl dig här"
                            style="max-width: 300px; margin: auto; margin-top: 20px;">
                 </form>
             </div>
