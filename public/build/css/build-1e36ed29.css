@@ -9914,6 +9914,17 @@ header {
     color: white;
     background: #0087ff;
 }
+.topnav {
+	height: 80px;
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: rgba(255,255,255,.97);
+	z-index: 6000;
+}
 .logo {
 	cursor: pointer;
 }
@@ -9926,6 +9937,7 @@ header {
 }
 .search-box {
     position: relative;
+    padding-bottom: 40px;
 }
 .search-icon {
     position: absolute;

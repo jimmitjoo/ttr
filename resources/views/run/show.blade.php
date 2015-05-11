@@ -4,6 +4,23 @@
 
 @section('content')
 
+	<!--
+	-- Release in next version
+	--
+	-->
+	
+	<div class="topnav">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<div class="logo-animated">
+						<a href="http://www.timetorun.se"><img src="images/runner.gif"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
     <div style="background: url('/images/cover.png'); background-position: center center; background-size: cover; height: 460px;">
         <div class="table">
             <div class="table-cell text-center">
@@ -29,7 +46,7 @@
                             <li>Arrangör: {{ $run->organizer->name }}</li>
                             <li>Stad: {{ $run->town }}</li>
                             <li>Distans: {{ $run->distance / 1000 }}km</li>
-                            <li>Datum: {{ date('Y-m-d', strtotime($run->start_datetime)) }}</li>
+                            <!-- <li>Datum: {{ date('Y-m-d', strtotime($run->start_datetime)) }}</li> -->
                             <li>Länk: {{ $run->external_link }}</li>
                         </ul>
                         <p style="font-size: 130%;">{{ $run->description }}</p></div>
@@ -44,11 +61,13 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <h2 class="big" style="font-size: 600%; color: #4f287a;">{{ $run->distance / 1000 }} km</h2>
-
+                        
+                        <!--
                         <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
                             Längs hela banan finns belysning i rött och gult som är Nattloppets färger och du möts
                             av musik och andra överraskningar längs vägen. Starten går vid Larmtorget och längs
                             sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
+                         -->
                     </div>
                     <div class="col-lg-6 col-md-6">
 

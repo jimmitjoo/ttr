@@ -53,16 +53,6 @@
 
             </div>
 
-            <div class="row">
-
-                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
-                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
-                <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
-                <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
-                <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
-
-            </div>
-
             <div data-ng-controller="runPaginationController">
 
                 <form>
@@ -76,6 +66,16 @@
                         <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
                     </div>
                 </form>
+                
+                <div class="row">
+
+	                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
+	                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
+	                <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
+	                <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
+	                <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
+
+                </div>
 
                 <div ng-repeat="race in filter" class="row list-item">
                     <a href="/lopp/@{{ race.name.toLowerCase() }}/@{{ race.id }}">
