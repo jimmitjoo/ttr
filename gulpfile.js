@@ -19,6 +19,7 @@ elixir(function(mix) {
 
     mix.styles([
         '../bower/bootstrap/dist/css/bootstrap.css',
+        '../bower/components-font-awesome/css/font-awesome.css',
         'animate.css',
         'style.css'
     ], 'public/css/build.css');
@@ -36,6 +37,10 @@ elixir(function(mix) {
     mix.version([
         'css/build.css',
         'js/build.js'
-    ]);
+    ]).copy(
+        'resources/assets/bower/components-font-awesome/fonts',
+        'public/build/fonts'
+    );
+
 });
 

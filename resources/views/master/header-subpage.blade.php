@@ -10,8 +10,7 @@
     <meta name="description" content="@yield('description')">
 
     <link rel="stylesheet" href="{{ elixir('css/build.css') }}">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900" rel="stylesheet" type="text/css">
 
 </head>
 <body>
