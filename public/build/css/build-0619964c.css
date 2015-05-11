@@ -9924,6 +9924,8 @@ header {
 }
 .logo {
 	cursor: pointer;
+	border: 0;
+	
 }
 
 /* 
@@ -9965,17 +9967,22 @@ header {
     cursor: pointer;
 }
 .list-btn {
-    background: #008aff;
+	opacity: 0;
+    background: #111;
     padding: 10px 14px;
     color: #fff !important;
     font-size: 80%;
     font-weight: 700;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    cursor: pointer;
+}
+.list-item:hover .list-btn {
+	opacity: 1;
 }
 .list-btn:hover {
-    background: #0077e0;
+    background: #222;
     color: #fff;
     border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -10194,10 +10201,16 @@ section button.disabled {
     .single {
 	    font-size: 120%;
     }
+    .list-btn {
+	    opacity: 1;
+    }
 }
 @media screen and (max-width: 990px) {
     .hide-mobile {
         display: none;
+    }
+    .list-btn {
+	    opacity: 1;
     }
 }
 /*# sourceMappingURL=build.css.map */
