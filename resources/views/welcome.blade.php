@@ -17,7 +17,7 @@
 				<div class="col-lg-12 col-md-12" style="height: 70px;">
 					<div class="table">
                     	<div class="table-cell">
-                        	<a href="/"><img src="images/timetorun.png" style="margin-top: -2px;"></a>
+                        	<a href="/"><img src="/images/timetorun.png" style="margin-top: -2px;"></a>
                         </div>
                     </div>
 				</div>
@@ -34,7 +34,7 @@
                     <div class="col-lg-4 col-md-4" style="height: 70px;">
                         <div class="table">
                             <div class="table-cell">
-                                <a href="/"><img src="images/timetorun.png" style="margin-top: -2px;"></a>
+                                <a href="/"><img src="/images/timetorun.png" style="margin-top: -2px;"></a>
                             </div>
                         </div>
                     </div>
