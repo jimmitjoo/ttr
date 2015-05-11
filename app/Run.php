@@ -26,6 +26,10 @@ class Run extends Model
         'map_id'
     ];
 
+    protected $appends = [
+        'slug'
+    ];
+
     public function __construct()
     {
         Date::setLocale('sv');
@@ -37,12 +41,12 @@ class Run extends Model
         return $this->belongsTo('App\Organizer');
     }
 
-    public function getStartDatetimeAttribute($value)
+    public function getStartDatetimeAttribute()
     {
         return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
     }
 
-    public function getSlugAttribute($value)
+    public function getSlugAttribute()
     {
         if (strpos($this->attributes['name'], $this->attributes['town']) !== false) {
             $string = $this->attributes['name'];
