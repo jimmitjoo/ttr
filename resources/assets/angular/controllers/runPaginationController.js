@@ -37,6 +37,12 @@ app.controller('runPaginationController', function ($scope, $http) {
         }, 200 );
     });
 
+    $('.search-clear').on('click', function(){
+        $('.search-field').val('');
+        $scope.searchQuery = '';
+        $scope.makeList();
+    });
+
     $scope.$watch("currentPage + numPerPage + races + searchQuery", function () {
         var begin = (($scope.currentPage - 1) * $scope.numPerPage),
             end = begin + $scope.numPerPage;

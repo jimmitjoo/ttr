@@ -37,9 +37,3 @@ var checkIfEmailIsValid = function() {
     if (validateEmail(registerEmailInput.value)) registerPasswordFieldBox.classList.remove('hidden');
 }
 if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
-
-
-$('.search-clear').on('click', function(){
-    $('.search-field').val('');
-});
-
