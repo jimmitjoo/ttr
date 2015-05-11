@@ -69,7 +69,12 @@ class RunsController extends Controller {
 
         $lastSpacePosition = strrpos($run->name, ' ');
         $run->purename = substr($run->name, 0, $lastSpacePosition);
-        $run->title = $run->purename . ', ' . $run->town;
+
+        if (!strpos($run->purename, $run->town)) {
+            $run->title = $run->purename . ', ' . $run->town;
+        } else {
+            $run->title = $run->purename;
+        }
 
         $races = Run::where('town', '=', $run->town)->with('organizer')->paginate();
 
