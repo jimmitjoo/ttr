@@ -4,9 +4,6 @@
 
 @section('content')
 
-    <!--<div class="parallax">-->
-
-    <!--<div class="parallax__layer parallax__layer--back">-->
     <div style="background: url('/images/cover.png'); background-position: center center; background-size: cover; height: 460px;">
         <div class="table">
             <div class="table-cell text-center">
@@ -21,10 +18,8 @@
         </div>
     </div>
 
-    <!--<div class="parallax__layer parallax__layer--base" style="margin-top: 380px;">-->
+
     <div>
-
-
         <div class="block" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container">
 
@@ -43,8 +38,7 @@
             </div>
         </div>
 
-        <div class="block block-border-bottom"
-             style="padding-top: 80px; padding-bottom: 80px; background: #eef362;">
+        <div class="block" style="padding-top: 80px; padding-bottom: 80px; background: #eef362;">
             <div class="container">
 
                 <div class="row">
