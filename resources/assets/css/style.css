@@ -149,7 +149,6 @@ header {
     background: #0087ff;
 }
 .topnav {
-	height: 80px;
 	display: none;
 	position: fixed;
 	top: 0;
