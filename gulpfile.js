@@ -18,7 +18,7 @@ require('laravel-elixir-angular');
 elixir(function(mix) {
 
     mix.styles([
-        '../assets/bower/bootstrap/dist/css/bootstrap.css',
+        '../bower/bootstrap/dist/css/bootstrap.css',
         'animate.css',
         'style.css'
     ], 'public/css/build.css');
@@ -26,8 +26,8 @@ elixir(function(mix) {
     mix.imagemin('','public/images', { optimizationLevel: 7, progressive: true, interlaced: true });
 
     mix.scripts([
-        '../assets/bower/jquery/dist/jquery.js',
-        '../assets/bower/bootstrap/dist/js/bootstrap.js',
+        '../bower/jquery/dist/jquery.js',
+        '../bower/bootstrap/dist/js/bootstrap.js',
         'custom.js'
     ], 'public/js/build.js');
 
