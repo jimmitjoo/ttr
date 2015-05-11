@@ -8,9 +8,11 @@
      <title>@yield('title')</title>
 
     <meta name="description" content="@yield('description')">
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon-114x114.png" />
 
     <link rel="stylesheet" href="{{ elixir('css/build.css') }}">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900" rel="stylesheet" type="text/css">
 
 </head>
 <body>
