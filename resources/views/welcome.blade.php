@@ -82,11 +82,11 @@
                 
                 <div class="row">
 
-	                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
-	                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
-	                <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
-	                <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
-	                <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
+                    <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
 
                 </div>
 
@@ -98,11 +98,11 @@
                         <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile">@{{ race.distance / 1000 }} km</div>
                         <div class="col-lg-2 col-md-2 col-xs-3 text-right">
                             <a class="list-btn" href="@{{ race.slug }}">
-                            	<div class="table">
-                            		<div class="table-cell text-center">
-                            			<i class="fa fa-long-arrow-right"></i>
-                            		</div>
-                            	</div>
+                                <div class="table">
+                                    <div class="table-cell text-center">
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </a>
