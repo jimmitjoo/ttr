@@ -52,7 +52,7 @@ class Run extends Model
 
         $slug = Str::slug($string, '-') . '/' . $this->attributes['id'];
 
-        return $slug;
+        return '/lopp/' . $slug;
     }
 
 }

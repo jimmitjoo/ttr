@@ -18,6 +18,7 @@ app.controller('runPaginationController', function ($scope, $http) {
                     $scope.races.push({
                         id: response[i].id,
                         name: response[i].name,
+                        slug: response[i].slug,
                         town: response[i].town,
                         distance: response[i].distance,
                         start_datetime: response[i].start_datetime,
