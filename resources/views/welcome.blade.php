@@ -124,8 +124,7 @@
 
     @include('ads.upsells-single')
 
+    <script src="/js/angular/angular.js"></script>
+    <script src="/js/angular/ui-bootstrap-0.11.1.js"></script>
+    <script src="/js/angular/application.js"></script>
 @stop
-
-<script src="/js/angular/angular.js"></script>
-<script src="/js/angular/ui-bootstrap-0.11.1.js"></script>
-<script src="/js/angular/application.js"></script>
