@@ -84,8 +84,13 @@
                         <div class="col-lg-4 col-md-4 col-xs-9">@{{ race.name }}</div>
                         <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile">@{{ race.distance / 1000 }} km</div>
                         <div class="col-lg-2 col-md-2 col-xs-3 text-right">
-                        	<!--<i class="fa fa-arrow-circle-o-right"></i>-->
-                            <a class="list-btn" href="/lopp/@{{ race.name.toLowerCase() }}/@{{ race.id }}"> &nbsp; <i class="fa fa-long-arrow-right"></i> &nbsp; </a>
+                            <a class="list-btn" href="/lopp/@{{ race.name.toLowerCase() }}/@{{ race.id }}">
+                            	<div class="table">
+                            		<div class="table-cell text-center">
+                            			<i class="fa fa-long-arrow-right"></i>
+                            		</div>
+                            	</div>
+                            </a>
                         </div>
                     </a>
                 </div>

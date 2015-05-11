@@ -11768,26 +11768,25 @@ header {
     cursor: pointer;
 }
 .list-btn {
-	opacity: 0;
-    background: #111;
-    padding: 10px 14px;
-    color: #fff !important;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    display: block;
+    color: #111 !important;
     font-size: 80%;
     font-weight: 700;
-    transition: background .3s ease;
-    -webkit-transition: background .3s ease;
-    -moz-transition: background .3s ease;
+    transition: border .3s ease;
+    -webkit-transition: border .3s ease;
+    -moz-transition: border .3s ease;
     cursor: pointer;
+    float: right;
+    margin-top: -6px;
+    margin-bottom: -6px;
 }
 .list-item:hover .list-btn {
-	opacity: 1;
-}
-.list-btn:hover {
-    background: #222;
-    color: #fff;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
+	border: 2px solid #111;
 }
 
 /* 
