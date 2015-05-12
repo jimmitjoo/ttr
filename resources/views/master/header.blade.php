@@ -24,11 +24,12 @@
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
 
-    <link rel="canonical" href="{{ "http://timetorun.se$_SERVER[REQUEST_URI]" }}" />
+    <link rel="canonical" href="@yield('current_url')" />
 
     <meta property="og:site_name" content="Timetorun.se"/>
     <meta property="og:title" content="@yield('title')" />
-    <meta property="og:url" content="{{ "http://timetorun.se$_SERVER[REQUEST_URI]" }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@yield('current_url')" />
     <meta property="og:description" content="@yield('description')" />
     <meta property="fb:app_id" content="{{ getenv('FACEBOOK_CLIENT') }}" />
     <meta property="og:locale" content="sv_SE" />
