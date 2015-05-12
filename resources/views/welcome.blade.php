@@ -1,31 +1,56 @@
 @extends('master.master')
 
+@section('title', 'Älska att springa - Timetorun.se')
+@section('description', 'Hitta lopp och tävlingar att springa i Sverige och utomlands. Löparskor, träningskläder och kompressionskläder till bra pris online.')
+@section('current_url', 'http://'.getenv('APP_URL') )
+@section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/unsplash-green.jpg')
+
 @section('content')
 
-    <!--
-  -- Release in next version
-  --
 
-<div class="topnav">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12 col-md-12">
-				<div class="logo-animated">
-					<a href="http://www.timetorun.se"><img src="images/runner.gif"></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
--->
+    <!--
+    -- New
+    --
+    -->
+    <div class="topnav" style="padding: 10px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <a href="/"><img src="/images/timetorun.png" style="margin-top: -2px; border: 0;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="splash">
 
         <header>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="logo"><a href="http://www.timetorun.se"><img src="images/timetorun.png"></a></div>
+                    <div class="col-lg-6 col-md-6" style="height: 62px;">
+                        <div class="table">
+                            <div class="table-cell">
+                                <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
+                                <a class="link-topnav" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="height: 54px;">
+                        <div class="table">
+                            <div class="table-cell text-right">
+                            	<!--
+                            	<form>
+                            		<input type="text" class="search-topnav" placeholder="sök">
+                            	</form>
+                            	-->
+                                <!--
+                                  -- User
+                                  --
+                                <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
+                                -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,7 +62,8 @@
                     <div class="table">
                         <div class="table-cell text-center">
                             <h1>Älska att springa</h1>
-                            <h2>Hitta lopp och löparkläder</h2>
+                            <h2>Lopp och tävlingar - i Sverige och världen.</h2>
+                            <p style="margin-top: 20px;"><a class="promo-link" href="#">Blodomloppet Malmö</a> &nbsp;&nbsp; <a class="promo-link" href="#">Stockholm Urban Mile</a></p>
                         </div>
                     </div>
                 </div>
@@ -45,139 +71,74 @@
         </div>
     </div>
 
-
-    <div class="container-border-bottom">
+    <div class="block block-border-bottom">
         <div class="container">
 
             <div class="row">
 
-                <div class="col-lg-12 text-center text-title">
-                    <h2 class="big">Upptäck nya lopp</h2>
-                    <p>Hitta lopp nära dig eller på annan plats och läs mer eller anmäl dig direkt</p>
+                <div class="col-lg-12 text-center" style="padding-bottom: 50px;">
+                    <h2 class="text-title big">Sök lopp och tävlingar</h2>
+
+                    <p style="font-weight: 500;">-i närheten eller på annan plats i Sverige och världen.</p>
                 </div>
 
-                <div class="col-lg-12 text-center search-container">
-                    <form>
-                        <div class="search-box">
-                            <div class="search-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="search-clear">
-                                <i class="fa fa-times"></i>
-                            </div>
-                            <input class="search-field" type="text" name="search" placeholder="Sök"/>
+            </div>
+
+            <div data-ng-controller="runPaginationController">
+
+                <form>
+                    <div class="search-box">
+                        <div class="search-icon">
+                            <i class="fa fa-search"></i>
                         </div>
-                    </form>
+                        <div class="search-clear">
+                            <i class="fa fa-times"></i>
+                        </div>
+                        <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
+                    </div>
+                </form>
+
+                <div class="row">
+
+                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
+                    <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
+                    <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
+
                 </div>
 
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
-                <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
-                <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
-                <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
-                <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
-
-            </div>
-
-            @include('race.list')
-
-        </div>
-    </div>
-
-
-
-    <!--
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6" style="color: white; background: #00baff;">
-                <div class="col-lg-12">
-                    <h2 style="font-size: 450%; font-weight: 700;">Ditt näst lopp</h2>
-                    Sugen på att springa? Här hittar du lopp och tävlingar från världens alla hörn. Kanske är det dags att springa Lidingöloppet för första gången?
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="col-lg-12">
-                        På Time to run hittar du lopp och tävlingar för alla som gillar att springa.
-                    <p><a href="#">Om Timetorun</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-
-    <div class="container-fluid" style="padding-bottom: 60px;">
-
-        <div class="row">
-
-            <div class="col-lg-12 text-center text-title">
-                <h2 class="big">Boosta din löpning</h2>
-                <p>Ge dig själva bästa förutsättningarna med löparskor och bra löparkläder</p>
-            </div>
-
-            <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a href="http://track.adtraction.com/t/t?a=629059555&as=1087597488&t=2&tk=1&url=http://www.sportamore.se/produkt/81122-nike-free-50-m-gulgron" target="_blank"><img src="images/products/sportamore-nike-free-5.jpg" style="width: 100%; bo"/></a></div>
-
-            <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a href="http://track.adtraction.com/t/t?a=629059555&as=1087597488&t=2&tk=1&url=http://www.sportamore.se/produkt/77322-asics-m-gel-kayano-21-m-svartgron" target="_blank"><img src="images/products/sportamore-asics-m-gel-kayano-21.jpg" style="width: 100%"/></a></div>
-
-            <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a href="http://track.adtraction.com/t/t?a=629059555&as=1087597488&t=2&tk=1&url=http://www.sportamore.se/produkt/76889-adidas-adizero-adios-boost-2-m-m-lilagra" target="_blank"><img src="images/products/sportamore-adidas-adizero-adios-boost-2.jpg" style="width: 100%"/></a></div>
-
-            <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a href="http://track.adtraction.com/t/t?a=629059555&as=1087597488&t=2&tk=1&url=http://www.sportamore.se/produkt/77915-nike-wmns-lunarglide-6-f-lilarosa" target="_blank"><img src="images/products/sportamore-nike-lunarglide-6-dam.jpg" style="width: 100%"/></a></div>
-
-            <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a href="http://track.adtraction.com/t/t?a=629059555&as=1087597488&t=2&tk=1&url=http://www.sportamore.se/produkt/77404-asics-w-gt-1000-3-f-orange" target="_blank"><img src="images/products/sportamore-asics-w-gt-1000-3-dam.jpg" style="width: 100%"/></a></div>
-
-            <div class="col-lg-2 col-md-2 col-xs-6 text-center"><a href="http://track.adtraction.com/t/t?a=629059555&as=1087597488&t=2&tk=1&url=http://www.sportamore.se/produkt/81183-nike-w-free-50-f-bla" target="_blank"><img src="images/products/sportamore-nike-free-5-dam.jpg" style="width: 100%"/></a></div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-xs-6">
-                <div style="position: relative">
-                    <a href="http://track.adtraction.com/t/t?a=435656443&as=1087597488&t=2&tk=1&url=http://www.outnorth.se/2xu/men-s-compression-tight" target="_blank"><img src="images/products/outnorth-2xu-compression-tights.jpg" style="width: 100%; outline: 0;"/>
-                        <div class="" style="position: absolute; bottom: 30px; overflow: hidden;">
-                            <div><span class="product-label hide-mobile">2XU Compression Tight</span></div>
-                            <div><span class="product-pricetag">Nu 995;-</span></div>
+                <div ng-repeat="race in filter" class="row list-item">
+                    <a href="@{{ race.slug }}">
+                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.town }}</div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.start_datetime }}</div>
+                        <div class="col-lg-4 col-md-4 col-xs-9">@{{ race.name }}</div>
+                        <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile">@{{ race.distance / 1000 }} km</div>
+                        <div class="col-lg-2 col-md-2 col-xs-3 text-right">
+                            <a class="list-btn" href="@{{ race.slug }}">
+                                <div class="table">
+                                    <div class="table-cell text-center">
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </a>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-6">
-                <div style="position: relative">
-                    <a href="http://track.adtraction.com/t/t?a=435656443&as=1087597488&t=2&tk=1&url=http://www.outnorth.se/garmin/vivoactive" target="_blank"><img src="images/products/outnorth-garmin-vivoactive.jpg" style="width: 100%; outline: 0;"/>
-                        <div class="" style="position: absolute; bottom: 30px; overflow: hidden;">
-                            <div><span class="product-label hide-mobile">Ny! Garmin - Vivoactive</span></div>
-                            <div><span class="product-pricetag">2.395;-</span></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-6">
-                <div style="position: relative">
-                    <a href="http://track.adtraction.com/t/t?a=435656443&as=1087597488&t=2&tk=1&url=http://www.outnorth.se/oakley/repl-lens-radarlock-path-prizm-road" target="_blank"><img src="images/products/outnorth-oakley-repl-ens-radarlock-path-prizm-road.jpg" style="width: 100%; outline: 0;"/>
-                        <div class="" style="position: absolute; bottom: 30px; overflow: hidden;">
-                            <div><span class="product-label hide-mobile">Oakley - Radarlock Path Prizm</span></div>
-                            <div><span class="product-pricetag">795;-</span></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                <pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm"
+                            boundary-links="true" rotate="true"></pagination>
 
-            <div class="col-lg-3 col-md-3 col-xs-6">
-                <div style="position: relative">
-                    <a href="http://track.adtraction.com/t/t?a=80752600&as=1087597488&t=2&tk=1&url=http://www.rohnisch.se/sv/artiklar/shape-brett-7-8-tights.html" target="_blank"><img src="images/products/rohnisch-shape-brett-tights.jpg" style="width: 100%; outline: 0;"/>
-                        <div class="" style="position: absolute; bottom: 30px; overflow: hidden;">
-                            <div><span class="product-label hide-mobile">Shape Brett 7/8 Tights</span></div>
-                            <div><span class="product-pricetag">799;-</span></div>
-                        </div>
-                    </a>
-                </div>
+
             </div>
 
         </div>
     </div>
 
+    @include('ads.upsells-single')
+
+    <script src="/js/angular/angular.js"></script>
+    <script src="/js/angular/ui-bootstrap-0.11.1.js"></script>
+    <script src="/js/angular/application.js"></script>
 @stop

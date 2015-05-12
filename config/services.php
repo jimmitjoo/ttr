@@ -35,9 +35,9 @@ return [
 	],
 
     'facebook' => [
-        'client_id' => '1432852267028834',
-        'client_secret' => '8d567a21ab5851b71c931dd9ae4ab33a',
-        'redirect' => 'http://212.71.252.243/receive/facebook',
+        'client_id' => getenv('FACEBOOK_CLIENT'),
+        'client_secret' => getenv('FACEBOOK_SECRET'),
+        'redirect' => 'http://timetorun.se/receive/facebook',
     ]
 
 ];

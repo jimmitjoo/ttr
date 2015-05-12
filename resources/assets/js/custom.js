@@ -1,12 +1,13 @@
-/*$(document).scroll(function() {
+$(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 600) {
+    if (y > 750) {
         $('.topnav').fadeIn();
     } else {
         $('.topnav').fadeOut();
     }
-});*/
+});
 
+/*
 var scrollToTop;
 var topNav = document.getElementsByClassName('topnav');
 var topNavPosition = function () {
@@ -21,6 +22,8 @@ var topNavPosition = function () {
     topNav[0].classList.remove('fadeIn');
     topNav[0].classList.add('fadeOut');
 }
+window.onscroll = topNavPosition;
+*/
 
 
 var registerEmailInput = document.getElementById('registerEmail');
@@ -34,7 +37,3 @@ var checkIfEmailIsValid = function() {
     if (validateEmail(registerEmailInput.value)) registerPasswordFieldBox.classList.remove('hidden');
 }
 if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
-
-
-
-window.onscroll = topNavPosition;

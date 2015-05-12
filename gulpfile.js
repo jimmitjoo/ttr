@@ -1,7 +1,9 @@
 
 var elixir = require('laravel-elixir');
 require('laravel-elixir-imagemin');
+require('laravel-elixir-angular');
 
+var Q = require("q");
 
 /*
  |--------------------------------------------------------------------------
@@ -14,14 +16,58 @@ require('laravel-elixir-imagemin');
  |
  */
 
-elixir(function(mix) {
-    mix.less('app.less');
-    mix.imagemin('','public/images', { optimizationLevel: 7, progressive: true, interlaced: true });
+function first() {
 
-    mix.scripts([
-        '../assets/bower/jquery/dist/jquery.js',
-        '../assets/bower/bootstrap/dist/js/bootstrap.js',
-        '../assets/bower/angular/angular.js'
-    ], 'public/js/build.js');
-});
+    var deferred = Q.defer();
 
+    elixir(function(mix) {
+
+        mix.styles([
+            '../bower/bootstrap/dist/css/bootstrap.css',
+            '../bower/components-font-awesome/css/font-awesome.css',
+            'animate.css',
+            'style.css'
+        ], 'public/css/build.css');
+
+        mix.imagemin('', 'public/images', {optimizationLevel: 7, progressive: true, interlaced: true});
+
+        mix.scripts([
+            '../bower/jquery/dist/jquery.js',
+            '../bower/bootstrap/dist/js/bootstrap.js',
+            'custom.js'
+        ], 'public/js/build.js');
+
+        mix.angular('resources/assets/angular/', 'public/js/angular/', 'application.js');
+
+        mix.version([
+            'css/build.css',
+            'js/build.js'
+        ]);
+
+        deferred.resolve();
+    });
+
+    return deferred.promise;
+
+}
+
+
+function second() {
+
+    var deferred = Q.defer();
+
+    elixir(function(mix) {
+
+        mix.copy(
+            'resources/assets/bower/components-font-awesome/fonts',
+            'public/build/fonts'
+        );
+
+        deferred.resolve();
+
+    });
+
+    return deferred.promise;
+}
+
+first().then(second).done();

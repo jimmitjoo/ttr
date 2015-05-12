@@ -138,6 +138,7 @@ return [
 		'Illuminate\View\ViewServiceProvider',
         'Illuminate\Html\HtmlServiceProvider',
         'Laravel\Socialite\SocialiteServiceProvider',
+        'Jenssegers\Date\DateServiceProvider',
 
 		/*
 		 * Application Service Providers...
