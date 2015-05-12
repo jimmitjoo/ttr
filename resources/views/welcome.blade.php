@@ -27,10 +27,21 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4" style="height: 70px;">
+                    <div class="col-lg-6 col-md-6" style="height: 54px;">
                         <div class="table">
                             <div class="table-cell">
-                                <a href="/"><img src="/images/timetorun.png" style="margin-top: -2px;"></a>
+                                <a href="/"><img class="logo" src="/images/timetorun-white.png" style="height: 38px;"></a>
+                                <a class="link-topnav" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="height: 54px;">
+                        <div class="table">
+                            <div class="table-cell text-right">
+                            	<form>
+                            		<input type="text" placeholder="sök">
+                            	</form>
+                                <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
                             </div>
                         </div>
                     </div>

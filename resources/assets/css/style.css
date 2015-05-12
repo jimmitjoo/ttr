@@ -102,7 +102,7 @@ a:hover, a:active {
  * Splash
  */
 .splash {
-    background: url('/images/unsplash-green.jpg');
+    background: url('/images/unsplash.jpg');
     background-position: center center;
     background-size: cover;
     height: 82%;
@@ -116,6 +116,7 @@ a:hover, a:active {
     letter-spacing: -3px;
     color: #fff716;
     color: #4f287a;
+    color: #fff;
 }
 .splash h2 {
     font-size: 250%;
@@ -140,8 +141,24 @@ header {
     left: 0;
     padding: 0;
     color: white;
-    background: #51565d;
-    background: rgba(255,255,255,1);
+    background: #0087ff;
+}
+header .logo {
+	cursor: pointer;
+	border: 0;
+	padding-right: 10px;
+}
+header a.link-topnav {
+	opacity: 1;
+	color: white;
+	font-weight: 600;
+	padding-left: 15px;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+}
+header a.link-topnav:hover {
+	opacity: .7;
 }
 .header-subpage {
     padding: 10px 0;
@@ -158,11 +175,7 @@ header {
 	background: rgba(255,255,255,.97);
 	z-index: 6000;
 }
-.logo {
-	cursor: pointer;
-	border: 0;
-	
-}
+
 
 /* 
  * Search and list items
