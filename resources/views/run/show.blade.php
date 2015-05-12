@@ -1,13 +1,17 @@
 @extends('app')
 
 @section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
+@section('description', 'Spring ' . $run->name . '! Anmäl dig via Timetorun.se, fixa bättre utrustning och hitta fler lopp att springa.' )
+@section('current_url', 'http://'.getenv('APP_URL').$run->slug )
+@section('share_image', 'http://'.getenv('APP_URL').'/images/cover.png')
+
 
 @section('description', 'Hitta lopp och tävlingar att springa - i Sverige och världen. Löpkläder och skor för effektivare träning och tävling - Timetorun.se' )
 
 @section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/fb_cover.png')
 
-@section('content')
 
+@section('content')
 	<!--
 	-- New
 	--
