@@ -4,22 +4,24 @@
 
 @section('description', 'Hitta lopp och tävlingar att springa i Sverige och utomlands. Löparskor, träningskläder och kompressionskläder till bra pris online.')
 
+@section('share_image', 'http://'.$_SERVER[HTTP_HOST].'/images/unsplash-green.jpg')
+
 @section('content')
 
 
-	<!--
-	-- New
-	--
-	-->
-	<div class="topnav" style="padding: 10px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-                	<a href="/"><img src="/images/timetorun.png" style="margin-top: -2px; border: 0;"></a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!--
+    -- New
+    --
+    -->
+    <div class="topnav" style="padding: 10px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <a href="/"><img src="/images/timetorun.png" style="margin-top: -2px; border: 0;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="splash">
@@ -44,6 +46,7 @@
                     <div class="table">
                         <div class="table-cell text-center">
                             <h1>Älska att springa</h1>
+
                             <h2>Hitta lopp och löptävlingar - i Sverige och världen.</h2>
                         </div>
                     </div>
@@ -79,7 +82,7 @@
                         <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
                     </div>
                 </form>
-                
+
                 <div class="row">
 
                     <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>

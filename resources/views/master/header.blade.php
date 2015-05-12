@@ -30,7 +30,7 @@
     <meta property="og:description" content="@yield('description')" />
     <meta property="fb:app_id" content="{{ getenv('FACEBOOK_CLIENT') }}" />
     <meta property="og:locale:alternate" content="sv_SE" />
-    <meta property="og:image" content="@yield('share_image')" />
+    <meta property="og:image:url" content="@yield('share_image')" />
 
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon-114x114.png" />
