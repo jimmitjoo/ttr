@@ -2,6 +2,8 @@
 
 @section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
 
+@section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/cover.png')
+
 @section('content')
 
 	<!--
