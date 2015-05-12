@@ -77,8 +77,8 @@
                                  * multiple, just put a space between them.
                                 */
                                 ?>
-                                <?php echo \App\Run::printPromoLink('40', 'Blodomloppet Malmö', 'promo-link'); ?> &nbsp;&nbsp;
-                                <?php echo \App\Run::printPromoLink('95', 'Stockholm Urban Mile', 'promo-link'); ?>
+                                <?php echo \App\Run::printRunLink('40', 'Blodomloppet Malmö', 'promo-link'); ?> &nbsp;&nbsp;
+                                <?php echo \App\Run::printRunLink('95', 'Stockholm Urban Mile', 'promo-link'); ?>
                             </p>
                         </div>
                     </div>

@@ -65,7 +65,7 @@ class Run extends Model
         return getenv('APP_URL') . $run->slug;
     }
 
-    public static function printPromoLink($id, $linktext = null, $class = '')
+    public static function printRunLink($id, $linktext = null, $class = '')
     {
         if ($linktext == null || $linktext == '') {
             $run = self::find($id);
