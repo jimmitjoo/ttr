@@ -4,7 +4,7 @@
 
 @section('description', 'Hitta lopp och tävlingar att springa i Sverige och utomlands. Löparskor, träningskläder och kompressionskläder till bra pris online.')
 
-@section('share_image', 'http://'.$_SERVER[HTTP_HOST].'/images/unsplash-green.jpg')
+@section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/unsplash-green.jpg')
 
 @section('content')
 
