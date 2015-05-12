@@ -2,6 +2,8 @@
 
 @section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
 
+@section('description', 'Spring ' . $run->name . '! Anmäl dig via Timetorun.se, fixa bättre utrustning och hitta fler lopp att springa.' )
+
 @section('current_url', 'http://'.getenv('APP_URL').$run->slug )
 
 @section('share_image', 'http://'.getenv('APP_URL').'/images/cover.png')
