@@ -63,7 +63,23 @@
                         <div class="table-cell text-center">
                             <h1>Älska att springa</h1>
                             <h2>Lopp och tävlingar - i Sverige och världen.</h2>
-                            <p style="margin-top: 20px;"><a class="promo-link" href="#">Blodomloppet Malmö</a> &nbsp;&nbsp; <a class="promo-link" href="#">Stockholm Urban Mile</a></p>
+                            <p style="margin-top: 20px;">
+                                <?php
+                                /*
+                                 * First parameter is the id (last part of race url) and is required.
+                                 * Check what the id is on the live-site since it may not be the same
+                                 * in your local environment.
+                                 *
+                                 * Second parameter in printPromoLink is not required, will use the
+                                 * name of the run from database in that case it is empty or not set.
+                                 *
+                                 * Third parameter is the class that should be set on the link, if
+                                 * multiple, just put a space between them.
+                                */
+                                ?>
+                                <?php echo \App\Run::printPromoLink('40', 'Blodomloppet Malmö', 'promo-link'); ?> &nbsp;&nbsp;
+                                <?php echo \App\Run::printPromoLink('95', 'Stockholm Urban Mile', 'promo-link'); ?>
+                            </p>
                         </div>
                     </div>
                 </div>
