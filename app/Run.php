@@ -1,6 +1,7 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 use Jenssegers\Date\Date;
 
 class Run extends Model
@@ -25,9 +26,14 @@ class Run extends Model
         'map_id'
     ];
 
+    protected $appends = [
+        'slug'
+    ];
+
     public function __construct()
     {
         Date::setLocale('sv');
+
     }
 
     public function organizer()
@@ -35,9 +41,22 @@ class Run extends Model
         return $this->belongsTo('App\Organizer');
     }
 
-    public function getStartDatetimeAttribute($value)
+    public function getStartDatetimeAttribute()
     {
         return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
+    }
+
+    public function getSlugAttribute()
+    {
+        if (strpos($this->attributes['name'], $this->attributes['town']) !== false) {
+            $string = $this->attributes['name'];
+        } else {
+            $string = $this->attributes['name'] . ' ' . $this->attributes['town'];
+        }
+
+        $slug = Str::slug($string, '-') . '/' . $this->attributes['id'];
+
+        return '/lopp/' . $slug;
     }
 
 }
