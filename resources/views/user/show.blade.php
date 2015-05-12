@@ -2,7 +2,7 @@
 
 @section('title', $user->name)
 
-@section('current_url', 'http://'.getenv('APP_URL').$_REQUEST['QUERY_STRING'] );
+@section('current_url', 'http://'.getenv('APP_URL').$_REQUEST['QUERY_STRING'] )
 
 @section('content')
 

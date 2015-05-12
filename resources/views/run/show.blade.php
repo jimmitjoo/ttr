@@ -2,7 +2,7 @@
 
 @section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
 
-@section('current_url', 'http://'.getenv('APP_URL').$run->slug );
+@section('current_url', 'http://'.getenv('APP_URL').$run->slug )
 
 @section('share_image', 'http://'.getenv('APP_URL').'/images/cover.png')
 
