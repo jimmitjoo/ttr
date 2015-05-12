@@ -31,7 +31,7 @@
     <meta property="og:url" content="{{ "http://timetorun.se$_SERVER[REQUEST_URI]" }}" />
     <meta property="og:description" content="@yield('description')" />
     <meta property="fb:app_id" content="{{ getenv('FACEBOOK_CLIENT') }}" />
-    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:locale" content="sv_SE" />
     <meta property="og:image" content="@yield('share_image')" />
 
     <link rel="icon" type="image/png" href="/images/favicon.png" />
