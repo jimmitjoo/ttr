@@ -37,6 +37,7 @@ h1.big, h2.big {
     font-weight: 900;
     margin: 4px;
     letter-spacing: -1px;
+    color: #0087ff;
 }
 h2.large {
     font-size: 300%;
@@ -61,13 +62,13 @@ p {
     color: gray;
 }
 a {
-    color: #2395ff;
+    color: #0087ff;
     transition: color .2s linear;
     -webkit-transition: color .2s linear;
     -moz-transition: color .2s linear;
 }
 a:hover, a:active {
-    color: #4f287a;
+    color: #1a429f;
     text-decoration: none;
 }
 .text-title {
@@ -102,25 +103,24 @@ a:hover, a:active {
  * Splash
  */
 .splash {
-    background: url('/images/unsplash.jpg');
+    background: url('/images/unsplash-green.jpg');
     background-position: center center;
     background-size: cover;
     height: 82%;
 }
 .splash h1 {
-    font-size: 720%;
+    font-size: 760%;
     /*font-size: 10vw;*/
     line-height: 1.2;
-    font-weight: 900;
+    font-weight: 700;
     margin: 4px;
-    letter-spacing: -3px;
+    letter-spacing: -4px;
     color: #fff716;
     color: #4f287a;
     color: #fff;
 }
 .splash h2 {
     font-size: 250%;
-
     /*font-size: 4vw;*/
     line-height: 1.2;
     font-weight: 700;
@@ -128,7 +128,11 @@ a:hover, a:active {
     letter-spacing: 0px;
     color: #fff;
 }
-
+.splash a.promo-link {
+	background: #0087ff;
+	color: white;
+	padding: 10px 25px;
+}
 
 /* 
  * Header and topnavigation
@@ -142,6 +146,7 @@ header {
     padding: 0;
     color: white;
     background: #0087ff;
+    background: rgba(255,255,255,1);
 }
 header .logo {
 	cursor: pointer;
@@ -159,6 +164,22 @@ header a.link-topnav {
 }
 header a.link-topnav:hover {
 	opacity: .7;
+}
+header .search-topnav {
+	border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius:  0px !important;
+	border: 1px solid #fff !important;
+	height: 34px;
+	color: #111 !important;
+	margin-top: 14px;
+	width: 140px !important;
+	padding: 0 0 0 10px !important;
+	float: right;
+	font-size: 90% !important;
+}
+header .search-topnav:focus {
+	background: white !important;
 }
 .header-subpage {
     padding: 10px 0;
@@ -189,7 +210,7 @@ header a.link-topnav:hover {
 }
 .search-icon {
     position: absolute;
-    top: 18px;
+    top: 15px;
     left: 20px;
 }
 .search-field {
@@ -234,8 +255,11 @@ header a.link-topnav:hover {
     margin-bottom: -6px;
 }
 .list-item:hover .list-btn {
-	border: 2px solid #111;
-	color: #111 !important;
+	border: 2px solid #0087ff;
+	color: #0087ff !important;
+}
+.list-item:hover a {
+	color: #0087ff;
 }
 
 /* 

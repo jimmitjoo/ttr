@@ -2,7 +2,9 @@
 
 @section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
 
-@section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/cover.png')
+@section('description', 'Hitta lopp och tävlingar att springa - i Sverige och världen. Löpkläder och skor för effektivare träning och tävling - Timetorun.se' )
+
+@section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/fb_cover.png')
 
 @section('content')
 

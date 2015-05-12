@@ -29,10 +29,10 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6" style="height: 54px;">
+                    <div class="col-lg-6 col-md-6" style="height: 62px;">
                         <div class="table">
                             <div class="table-cell">
-                                <a href="/"><img class="logo" src="/images/timetorun-white.png" style="height: 38px;"></a>
+                                <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
                                 <a class="link-topnav" href="#"></a>
                             </div>
                         </div>
@@ -40,10 +40,16 @@
                     <div class="col-lg-6 col-md-6" style="height: 54px;">
                         <div class="table">
                             <div class="table-cell text-right">
+                            	<!--
                             	<form>
-                            		<input type="text" placeholder="sök">
+                            		<input type="text" class="search-topnav" placeholder="sök">
                             	</form>
+                            	-->
+                                <!--
+                                  -- User
+                                  --
                                 <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
+                                -->
                             </div>
                         </div>
                     </div>
@@ -57,8 +63,8 @@
                     <div class="table">
                         <div class="table-cell text-center">
                             <h1>Älska att springa</h1>
-
-                            <h2>Hitta lopp och löptävlingar - i Sverige och världen.</h2>
+                            <h2>Lopp och tävlingar - i Sverige och världen.</h2>
+                            <p style="margin-top: 20px;"><a class="promo-link" href="#">Blodomloppet Malmö</a> &nbsp;&nbsp; <a class="promo-link" href="#">Stockholm Urban Mile</a></p>
                         </div>
                     </div>
                 </div>
@@ -66,14 +72,13 @@
         </div>
     </div>
 
-
     <div class="block block-border-bottom">
         <div class="container">
 
             <div class="row">
 
                 <div class="col-lg-12 text-center" style="padding-bottom: 50px;">
-                    <h2 class="text-title big">Hitta lopp och tävlingar</h2>
+                    <h2 class="text-title big">Sök lopp och tävlingar</h2>
 
                     <p style="font-weight: 500;">-i närheten eller på annan plats i Sverige och världen.</p>
                 </div>
