@@ -72,7 +72,7 @@ class Run extends Model
             $linktext = $run->name;
         }
 
-        return '<a class="' . $class .'" href="' . self::getLink('40') . '">' . $linktext . '</a>';
+        return '<a class="' . $class .'" href="http://' . self::getLink('40') . '">' . $linktext . '</a>';
 
     }
 
