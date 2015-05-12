@@ -24,7 +24,7 @@
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
 
-    <link rel="canonical" href="{{ "http://timetorun.se/$_SERVER[REQUEST_URI]" }}" />
+    <link rel="canonical" href="{{ "http://timetorun.se$_SERVER[REQUEST_URI]" }}" />
 
     <meta property="og:site_name" content="Timetorun.se"/>
     <meta property="og:title" content="@yield('title')" />
