@@ -12027,6 +12027,7 @@ section button.disabled {
     }
     .splash h1 {
     	font-size: 260%;
+    	letter-spacing: -2px;
     }
     .splash h2 {
     	font-size: 120%;
