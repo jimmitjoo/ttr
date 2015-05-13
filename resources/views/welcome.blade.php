@@ -78,7 +78,7 @@
                                  * multiple, just put a space between them.
                                 */
                                 ?>
-                                <?php echo \App\Run::printRunLink('68', 'Toughest, Umeå', 'promo-link'); ?><?php echo \App\Run::printRunLink('619', 'Lidingöloppet', 'promo-link'); ?><a class="promo-link" href="http://timetorun.se/lopp/lidingoloppet-30km/619"></a>
+                                <?php echo \App\Run::printRunLink('68', 'Toughest, Umeå', 'promo-link'); ?><?php echo \App\Run::printRunLink('619', 'Lidingöloppet', 'promo-link'); ?>
                             </p>
                             </div>
                         </div>
