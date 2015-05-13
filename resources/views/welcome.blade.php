@@ -32,7 +32,9 @@
                         <div class="table">
                             <div class="table-cell">
                                 <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
+                                <!--
                                 <a class="link-topnav" href="#"></a>
+                                -->
                             </div>
                         </div>
                     </div>
