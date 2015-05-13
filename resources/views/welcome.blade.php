@@ -38,22 +38,18 @@
                             </div>
                         </div>
                     </div>
+                    <!--
                     <div class="col-lg-6 col-md-6">
                         <div class="table">
                             <div class="table-cell text-right">
-                            	<!--
                             	<form>
                             		<input type="text" class="search-topnav" placeholder="sök">
                             	</form>
-                            	-->
-                                <!--
-                                  -- User
-                                  --
                                 <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
-                                -->
                             </div>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </header>
