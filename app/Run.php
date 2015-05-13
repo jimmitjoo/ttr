@@ -59,4 +59,21 @@ class Run extends Model
         return '/lopp/' . $slug;
     }
 
+    public static function getLink($id)
+    {
+        $run = self::find($id);
+        return getenv('APP_URL') . $run->slug;
+    }
+
+    public static function printRunLink($id, $linktext = null, $class = '')
+    {
+        if ($linktext == null || $linktext == '') {
+            $run = self::find($id);
+            $linktext = $run->name;
+        }
+
+        return '<a class="' . $class .'" href="http://' . self::getLink($id) . '">' . $linktext . '</a>';
+
+    }
+
 }

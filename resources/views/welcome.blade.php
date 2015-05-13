@@ -64,7 +64,22 @@
                             <h1>Älska att springa</h1>
                             <h2>Lopp och tävlingar - i Sverige och världen.</h2>
                             <div style="margin: auto;">
-                            <p style="margin-top: 20px;"><a class="promo-link" href="http://timetorun.se/lopp/toughest-8km-umea/68">Toughest, Umeå</a><a class="promo-link" href="http://timetorun.se/lopp/lidingoloppet-30km/619">Lidingöloppet</a></p>
+                            <p style="margin-top: 20px;">
+                            	<?php
+                                /*
+                                 * First parameter is the id (last part of race url) and is required.
+                                 * Check what the id is on the live-site since it may not be the same
+                                 * in your local environment.
+                                 *
+                                 * Second parameter in printPromoLink is not required, will use the
+                                 * name of the run from database in that case it is empty or not set.
+                                 *
+                                 * Third parameter is the class that should be set on the link, if
+                                 * multiple, just put a space between them.
+                                */
+                                ?>
+                                <?php echo \App\Run::printRunLink('68', 'Toughest, Umeå', 'promo-link'); ?><?php echo \App\Run::printRunLink('619', 'Lidingöloppet', 'promo-link'); ?><a class="promo-link" href="http://timetorun.se/lopp/lidingoloppet-30km/619"></a>
+                            </p>
                             </div>
                         </div>
                     </div>
