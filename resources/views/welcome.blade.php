@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6" style="height: 54px;">
+                    <div class="col-lg-6 col-md-6">
                         <div class="table">
                             <div class="table-cell text-right">
                             	<!--
@@ -63,7 +63,9 @@
                         <div class="table-cell text-center">
                             <h1>Älska att springa</h1>
                             <h2>Lopp och tävlingar - i Sverige och världen.</h2>
-                            <p style="margin-top: 20px;"><a class="promo-link" href="#">Blodomloppet Malmö</a> &nbsp;&nbsp; <a class="promo-link" href="#">Stockholm Urban Mile</a></p>
+                            <div style="margin: auto;">
+                            <p style="margin-top: 20px;"><a class="promo-link" href="http://timetorun.se/lopp/toughest-8km-umea/68">Toughest, Umeå</a><a class="promo-link" href="http://timetorun.se/lopp/lidingoloppet-30km/619">Lidingöloppet</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
