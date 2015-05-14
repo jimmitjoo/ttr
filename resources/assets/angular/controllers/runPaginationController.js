@@ -42,6 +42,7 @@ app.controller('runPaginationController', function ($scope, $http) {
     $('.search-clear').on('click', function(){
         $('.search-field').val('');
         $scope.searchQuery = '';
+        $scope.races = [];
         $scope.loadData();
     });
 
