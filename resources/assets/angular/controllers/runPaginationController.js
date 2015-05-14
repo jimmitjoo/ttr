@@ -11,11 +11,13 @@ app.controller('runPaginationController', function ($scope, $http) {
 
     $scope.loadData = function() {
 
+        $('#paginateSpinner').show();
+
         if ($('#runTown').length > 0) {
             $scope.searchQuery = $('#runTown').val();
         }
 
-        $http.get(apiEndpoint + '/' + $scope.searchQuery + '?page=' + $scope.page, { cache: true})
+        $http.get(apiEndpoint + '/' + $scope.searchQuery + '?page=' + $scope.page, { cache: false})
             .success(function(response){
                 $scope.last = response.last_page;
                 if ($scope.page == $scope.last) {
@@ -25,6 +27,7 @@ app.controller('runPaginationController', function ($scope, $http) {
                 }
 
                 $scope.races = $scope.races.concat(response.data);
+                $('#paginateSpinner').hide();
             });
 
     };
@@ -48,7 +51,7 @@ app.controller('runPaginationController', function ($scope, $http) {
     };
 
     $scope.loadData();
-    
+
 
 });
 
