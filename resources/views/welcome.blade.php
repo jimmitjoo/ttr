@@ -123,7 +123,7 @@
 
                 </div>
 
-                <div ng-repeat="race in filter" class="row list-item">
+                <div ng-repeat="race in races" class="row list-item">
                     <a href="@{{ race.slug }}">
                         <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.town }}</div>
                         <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.start_datetime }}</div>
@@ -141,10 +141,7 @@
                     </a>
                 </div>
 
-
-                <pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm"
-                            boundary-links="true" rotate="true"></pagination>
-
+                <div class="show-more" ng-click="showMore()">Visa fler</div>
 
             </div>
 
