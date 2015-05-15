@@ -108,8 +108,10 @@
     		<div class="col-lg-6 col-md-6 block bg-blue">
     			<h3 class="large">Time<span style="font-weight:500">to</span>run<br/>- Älska att springa</h3>
     			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare och roligare.</p>
-    			<a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med facebook</a>
-    		</div>
+                @if (!Auth::check())
+                <a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med facebook</a>
+    		    @endif
+            </div>
     		<div class="col-lg-6 col-md-6 block hide-mobile">
     			<a href="http://track.adtraction.com/t/t?a=435656443&amp;as=1087597488&amp;t=2&amp;tk=1&amp;url=http://www.outnorth.se/garmin/vivoactive" target="_blank" style="display: block;">
     				<img src="images/products/outnorth-garmin-vivoactive.jpg" style="width: 100%; outline: 0;"/>
