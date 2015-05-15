@@ -36,28 +36,30 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
 
         $user = User::where('facebook_provider_id', $userObject->id)->first();
-        if (!$user) {
-            $user = User::where('email', $userObject->email)->first();
-            $user->facebook_provider_id = $userObject->id;
+        if (!$user) $user = User::where('email', $userObject->email)->first();
+
+        if ($user) {
+            if (empty($user->facebook_provider_id)) $user->facebook_provider_id = $userObject->id;
             if (empty($user->name)) $user->name = $userObject->name;
             if (empty($user->avatar)) $user->avatar = $userObject->avatar;
 
             $user->save();
+
+            return $user;
         }
 
-        if (!$user) {
-            $user = new User;
+        // If user doesn't exists, create a new one
+        $user = new User;
 
-            $user->name = $userObject->name;
-            $user->email = $userObject->email;
-            $user->facebook_provider_id = $userObject->id;
-            $user->avatar = $userObject->avatar;
+        $user->name = $userObject->name;
+        $user->email = $userObject->email;
+        $user->facebook_provider_id = $userObject->id;
+        $user->avatar = $userObject->avatar;
 
-            $user->save();
+        $user->save();
 
-            event(new UserHasRegistered($user));
-        }
-        
+        event(new UserHasRegistered($user));
+
         return $user;
     }
 
