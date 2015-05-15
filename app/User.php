@@ -39,8 +39,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         if (!$user) {
             $user = User::where('email', $userObject->email)->first();
             $user->facebook_provider_id = $userObject->id;
-            if (!isset($user->name) || empty($user->name)) $user->name = $userObject->name;
-            if (!isset($user->avatar) || empty($user->avatar)) $user->avatar = $userObject->avatar;
+            if (empty($user->name)) $user->name = $userObject->name;
+            if (empty($user->avatar)) $user->avatar = $userObject->avatar;
 
             $user->save();
         }
