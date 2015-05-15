@@ -43,8 +43,8 @@
 
 
     <div>
-        <div class="block" style="padding-top: 80px; padding-bottom: 80px;">
-            <div class="container">
+        <div class="max-width container-fluid block bg-white">
+            <div>
 
                 <div class="row">
                     <div class="col-lg-12">

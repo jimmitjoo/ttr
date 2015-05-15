@@ -20,14 +20,63 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #111;
+    background: #ededed;
     /*
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     */
 }
+
+
+/* 
+ * Global settings
+ *
+ */
+ 
+.max-width {
+	max-width: 1440px;
+	margin: auto;
+}
+.block {
+    padding: 100px;
+}
+.block-top {
+    padding-top: 80px;
+}
+.block-center {
+    float: none;
+    margin: auto;
+}
+.block-border-bottom {
+    border-bottom: 1px solid #ededed;
+}
+
+
+/* 
+ * Backgrounds and colors
+ *
+ */
+ 
+.bg-white {
+	background: white;
+}
+.bg-blue {
+	background: #0087ff;
+	color: white;
+}
+.bg-purple {
+    background: #282b49;
+    color: #fff;
+}
+
+
+/* Headings
+ --------------------------------------------- */
+h1, h2, h3 {
+	font-weight: 700;
+}
 h2 {
     font-size: 350%;
-    font-weight: 700;
     line-height: 1.2;
     letter-spacing: -1px;
     margin-bottom: 20px;
@@ -47,10 +96,15 @@ h2.large {
 }
 h3 {
     font-size: 150%;
-    font-weight: 700;
+}
+h3.large {
+    font-size: 200%;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 p {
     font-size: 120%;
+    line-height: 1.7;
 }
 .medium {
     font-weight: 700;
@@ -106,7 +160,7 @@ a:hover, a:active {
     background: url('/images/unsplash-green.jpg');
     background-position: center center;
     background-size: cover;
-    height: 82%;
+    height: 76%;
 }
 .splash h1 {
     font-size: 760%;
@@ -133,27 +187,22 @@ a:hover, a:active {
 	color: white;
 	padding: 10px 25px;
 	display: inline-block;
-	margin: 7px;
+	margin-top: 40px; 
+	font-weight: 700;
 }
 
 /* 
  * Header and topnavigation
  */
 header {
-    position: absolute;
-    z-index: 5000;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 0;
     color: white;
-    background: #0087ff;
-    background: rgba(255,255,255,1);
 }
 header .logo {
 	cursor: pointer;
 	border: 0;
 	padding-right: 10px;
+	height: 38px;
+	margin-left: 20px;
 }
 header a.link-topnav {
 	opacity: 1;
@@ -267,40 +316,26 @@ header .search-topnav:focus {
 /* 
  * Footer
  */
-footer {
-    color: #999;
-    padding: 60px 0;
-    background: #f2f2f2;
+.footer a {
+    color: #fff;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
 }
-footer a {
-    color: #999;
+.footer a:hover {
+    color: #0087ff;
 }
-footer ul {
+.footer ul {
     list-style: none;
     padding: 0;
     margin: 20px 0;
     font-weight: 700;
 }
-footer li {
+.footer li {
     padding-bottom: 4px;
 }
 
-/* Block
- --------------------------------------------- */
-.block-top {
-    padding-top: 80px;
-}
-.block-center {
-    float: none;
-    margin: auto;
-}
-.block {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.block-border-bottom {
-    border-bottom: 1px solid #ededed;
-}
+
 
 
 /* Form and inputs
@@ -401,8 +436,8 @@ section button.disabled {
  * Symbols and badges
  */
 .social-badge {
-    background-color: #ccc;
-    color: white;
+    background-color: #fff;
+    color: #0087ff !important;
     text-align: center;
     height: 44px;
     width: 44px;
@@ -414,11 +449,19 @@ section button.disabled {
     -moz-transition: all .3s ease;
 }
 .social-badge:hover {
-    background-color: #008aff;
-    color: white;
+    background-color: #0087ff;
+    color: white !important;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+}
+.btn-facebook {
+	background: #3a5999;
+	color: white !important;
+	margin-top: 40px;
+	padding: 15px 20px;
+	display: inline-block;
+	font-weight: 700;
 }
 
 
@@ -426,35 +469,45 @@ section button.disabled {
  * Upsells
  */
 .product-label {
-    background: rgba(0,186,255,.92);
+    background: rgba(70,40,122,.92);
+    background: rgba(17,17,17,.92);
+    background: rgba(255,255,255,.92);
+    background: rgba(0,135,255,.92);
+    color: #0087ff;
     color: white;
-    padding: 6px 10px;
+    font-weight: 700;
+    padding: 6px 15px;
     display: block;
     float: left;
 }
 .product-pricetag {
-    background-color: #69e16c;
+    background-color: rgba(105,225,108,.94);
     color: white;
-    padding: 5px 10px 8px;
+    padding: 5px 15px 8px;
     font-weight: 700;
     display: block;
     float: left;
 }
 .product-pricetag-shop {
-	background-color: #000;
+	background: rgba(0,135,255,.92);
+	background: rgba(17,17,17,.92);
 	color: white;
-	padding: 10px 10px 10px;
+	padding: 10px 15px 10px;
 	display: block;
 	float: left;
+	font-weight: 700;
 } 
 .single {
 	font-size: 180%;
 } 
 
+
+
+    
 /*
  * Mobile
  */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     p {
     	font-size: 100%;
     }
@@ -485,7 +538,16 @@ section button.disabled {
 	    padding-bottom: 60px;
     }
 }
-@media screen and (max-width: 990px) {
+
+
+/* 
+ * Tablets
+ *
+ */
+@media (max-width: 1023px) {
+	.block {
+		padding: 40px;
+	}
     .hide-mobile {
         display: none;
     }

@@ -8,61 +8,59 @@
 @section('content')
 
 
-    <!--
-    -- New
-    --
-    -->
-    <div class="topnav" style="padding: 10px 0;">
-        <div class="container">
+    <div class="topnav">
+        <div class="container-fluid max-width">
             <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <a href="/"><img src="/images/timetorun.png" style="margin-top: -2px; border: 0;"></a>
+                <div class="col-lg-12 col-md-12" style="height: 62px;">
+                	<div class="table">
+                        <div class="table-cell">
+	                        <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
+                        </div>
+                	</div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="splash">
-
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6" style="height: 62px;">
-                        <div class="table">
-                            <div class="table-cell">
-                                <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
-                                <!--
-                                <a class="link-topnav" href="#"></a>
-                                -->
-                            </div>
+    
+    
+    <header>
+        <div class="container-fluid max-width" style="background: white;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6" style="height: 82px;">
+                    <div class="table">
+                        <div class="table-cell">
+                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+                            <!--
+                            <a class="link-topnav" href="#"></a>
+                            -->
                         </div>
                     </div>
-                    <!--
-                    <div class="col-lg-6 col-md-6">
-                        <div class="table">
-                            <div class="table-cell text-right">
-                            	<form>
-                            		<input type="text" class="search-topnav" placeholder="sök">
-                            	</form>
-                                <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                 </div>
+                <!--
+                <div class="col-lg-6 col-md-6">
+                    <div class="table">
+                        <div class="table-cell text-right">
+                        	<form>
+                        		<input type="text" class="search-topnav" placeholder="sök">
+                        	</form>
+                            <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+                -->
             </div>
-        </header>
+        </div>
+    </header>
 
+
+    <div class="splash max-width">
         <div class="container-fluid height-full">
             <div class="row height-full">
-                <div class="col-lg-12 col-md-12 height-full">
+                <div class="col-lg-12 col-md-12 height-full block">
                     <div class="table">
-                        <div class="table-cell text-center">
-                            <h1>Älska att springa</h1>
-                            <h2>Lopp och tävlingar - i Sverige och världen.</h2>
-                            <div style="margin: auto;">
-                            <p style="margin-top: 20px;">
+                        <div class="table-cell">
+                            <h1>Älska<br/>att springa</h1>
+                            <p>
                             	<?php
                                 /*
                                  * First parameter is the id (last part of race url) and is required.
@@ -76,9 +74,8 @@
                                  * multiple, just put a space between them.
                                 */
                                 ?>
-                                <?php echo \App\Run::printRunLink('68', 'Toughest, Umeå', 'promo-link'); ?><?php echo \App\Run::printRunLink('619', 'Lidingöloppet', 'promo-link'); ?>
+                                <?php echo \App\Run::printRunLink('131', 'Drottning Margaretaloppet, Kalmar', 'promo-link'); ?>
                             </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,17 +83,36 @@
         </div>
     </div>
 
-    <div class="block block-border-bottom">
-        <div class="container">
-
+    
+    <div class="max-width container-fluid bg-white block-border-bottom">
+    	<div class="row">
+    		<div class="col-lg-6 col-md-6 col-sm-6 block bg-blue">
+    			<h3 class="large">Timetorun, älska att springa - i Sverige och världen.</h3>
+    			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare.</p>
+    			<a class="btn-facebook" target="_blank" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på facebook</a>
+    		</div>
+    		<div class="col-lg-6 col-md-6 col-sm-6 block">
+    			<a href="http://track.adtraction.com/t/t?a=435656443&amp;as=1087597488&amp;t=2&amp;tk=1&amp;url=http://www.outnorth.se/garmin/vivoactive" target="_blank" style="display: block;">
+    				<img src="images/products/outnorth-garmin-vivoactive.jpg" style="width: 100%; outline: 0;"/>
+    				<div style="position: absolute; bottom: 200px;">
+					<div class="clear"><span class="product-label single">Garmin - Vivoactive</span></div>
+					<div class="clear"><span class="product-pricetag single">2.395;-</span></div>
+					<div class="clear"><span class="product-pricetag-shop">Handla här</span></div>
+    				</div>
+    			</a>
+    		</div>
+    	</div>
+    </div>
+    
+    
+    <div class="max-width block block-border-bottom bg-white">
+    
             <div class="row">
-
                 <div class="col-lg-12 text-center" style="padding-bottom: 50px;">
                     <h2 class="text-title big">Sök lopp och tävlingar</h2>
 
                     <p style="font-weight: 500;">-i närheten eller på annan plats i Sverige och världen.</p>
                 </div>
-
             </div>
 
             <div data-ng-controller="runPaginationController">
@@ -114,13 +130,11 @@
                 </form>
 
                 <div class="row">
-
                     <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
                     <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
                     <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
                     <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
                     <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
-
                 </div>
 
                 <div ng-repeat="race in filter" class="row list-item">
@@ -148,7 +162,6 @@
 
             </div>
 
-        </div>
     </div>
 
     @include('ads.upsells-single')

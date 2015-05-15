@@ -1,4 +1,5 @@
-<div class="container block" style="padding-top: 80px; padding-bottom: 60px;">
+<div class="max-width container-fluid block bg-white" style="padding-top: 80px; padding-bottom: 60px;">
+	<div class="container">
 	<div class="row">
 		
 		<a href="http://track.adtraction.com/t/t?a=435656443&as=1087597488&t=2&tk=1&url=http://www.outnorth.se/2xu/men-s-elite-compression-tight" target="_blank" style="display: block;">
@@ -19,5 +20,6 @@
 		</div>
 		</a>
 		
+	</div>
 	</div>
 </div>

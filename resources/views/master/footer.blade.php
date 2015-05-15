@@ -1,6 +1,5 @@
 <footer>
-    <div class="container-fluid">
-
+    <div class="max-width container-fluid block footer bg-purple">
         <div class="row">
             <div class="col-lg-12">
                 <div class="col-lg-12">
@@ -20,7 +19,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </footer>
 
