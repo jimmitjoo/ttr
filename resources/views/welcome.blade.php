@@ -23,13 +23,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
+                	<a class="login" href="#">
+                		<div class="table">
+                    		<div class="table-cell">
+                        		<i class="fa fa-user"></i> &nbsp;Logga in
+                        	</div>
+                        </div>
+                	</a> 
+                </div>
             </div>
         </div>
     	</div>
     
         <div class="max-width container-fluid" style="background: white;">
             <div class="row">
-                <div class="col-lg-6 col-md-6" style="height: 82px;">
+                <div class="col-lg-6 col-md-6 col-xs-6" style="height: 82px;">
                     <div class="table">
                         <div class="table-cell">
                             <a href="/"><img class="logo" src="/images/timetorun.png"></a>
@@ -39,18 +48,24 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                <div class="col-lg-6 col-md-6">
-                    <div class="table">
-                        <div class="table-cell text-right">
+                
+                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 82px;">
+                    
+                        	<!--
                         	<form>
                         		<input type="text" class="search-topnav" placeholder="sök">
                         	</form>
-                            <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
-                        </div>
-                    </div>
+                        	-->
+                        	<a class="login" href="#">
+                        		<div class="table">
+	                        		<div class="table-cell">
+		                        		<i class="fa fa-user"></i> &nbsp;Logga in
+		                        	</div>
+		                        </div>
+                        	</a>
+                        
                 </div>
-                -->
+                
             </div>
         </div>
     </header>
@@ -61,7 +76,7 @@
             <div class="col-lg-12 col-md-12 height-full">
                 <div class="table">
                     <div class="table-cell">
-                        <span class="title">Älska</span><br/><span>att springa</span>
+                        <span class="title">Drottning</span><br/><span>Margaretaloppet</span>
                         <p>
                         	<?php
                             /*
@@ -76,7 +91,7 @@
                              * multiple, just put a space between them.
                             */
                             ?>
-                            <?php echo \App\Run::printRunLink('131', 'Drottning Margaretaloppet, 27 maj i Kalmar', 'click click-blue'); ?>
+                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-green'); ?>
                         </p>
                     </div>
                 </div>
@@ -88,9 +103,9 @@
     <div class="max-width container-fluid bg-white block-border-bottom">
     	<div class="row">
     		<div class="col-lg-6 col-md-6 block bg-blue">
-    			<h3 class="large">Timetorun, älska att springa - i Sverige och världen.</h3>
-    			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare.</p>
-    			<a class="btn-facebook" target="_blank" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på facebook</a>
+    			<h3 class="large">Time<span style="font-weight:500">to</span>run<br/>- Älska att springa</h3>
+    			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare och roligare.</p>
+    			<a class="btn-facebook" target="_blank" href="https://www.facebook.com/pages/Timetorun/700137680097229">Registrera dig med facebook</a>
     		</div>
     		<div class="col-lg-6 col-md-6 block hide-mobile">
     			<a href="http://track.adtraction.com/t/t?a=435656443&amp;as=1087597488&amp;t=2&amp;tk=1&amp;url=http://www.outnorth.se/garmin/vivoactive" target="_blank" style="display: block;">
@@ -98,7 +113,7 @@
     				<div style="position: absolute; bottom: 200px;">
 					<div class="clear"><span class="product-label single">Garmin - Vivoactive</span></div>
 					<div class="clear"><span class="product-pricetag single">2.395;-</span></div>
-					<div class="clear"><span class="product-pricetag-shop">Handla här</span></div>
+					<div class="clear"><span class="click click-black product-pricetag-shop">Handla här</span></div>
     				</div>
     			</a>
     		</div>
