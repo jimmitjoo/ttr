@@ -11826,6 +11826,7 @@ header a.login {
 }
 header a.logout {
     background: #ff0000;
+
 }
 header a.link-topnav {
 	opacity: 1;
@@ -12178,7 +12179,7 @@ section button.disabled {
     	height: 70%;
     }
     .canvas span {
-    	font-size: 280%;
+    	font-size: 220%;
     	letter-spacing: -2px;
     }
     h1.big, h2.big {
@@ -12186,6 +12187,9 @@ section button.disabled {
     }
     h2.large {
     	font-size: 170%;
+    }
+    h3.large {
+	    font-size: 170%;
     }
     .single {
 	    font-size: 120%;
