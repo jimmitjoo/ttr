@@ -1,5 +1,6 @@
 <?php namespace App;
 
+use App\Events\UserHasRegistered;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -45,6 +46,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             $user->avatar = $userObject->avatar;
 
             $user->save();
+
+            event(new UserHasRegistered($user));
         }
         
         return $user;

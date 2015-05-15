@@ -1,5 +1,6 @@
 <?php namespace App\Services;
 
+use App\Events\UserHasRegistered;
 use App\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
@@ -29,11 +30,15 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		return User::create([
-			'name' => $data['name'],
-			'email' => $data['email'],
-			'password' => bcrypt($data['password']),
-		]);
+        $user = User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password']),
+        ]);
+
+        event(new UserHasRegistered($user));
+
+        return $user;
 	}
 
 }

@@ -115,6 +115,7 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
             <div data-ng-controller="runPaginationController">
 
                 <form>
@@ -161,6 +162,9 @@
 
 
             </div>
+=======
+            @include('race.list-with-search')
+>>>>>>> origin/master
 
     </div>
 

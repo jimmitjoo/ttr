@@ -59,6 +59,21 @@ class Run extends Model
         return '/lopp/' . $slug;
     }
 
+    public static function getList($query)
+    {
+        if (strlen($query) > 0) {
+            $runs = self::where('name', 'LIKE', '%' . $query . '%')
+                ->where('start_datetime', '>=', date('Y-m-d'))
+
+                ->orWhere('town', 'LIKE', '%' . $query . '%')
+                ->where('start_datetime', '>=', date('Y-m-d'));
+        } else {
+            $runs = self::where('start_datetime', '>=', date('Y-m-d'));
+        }
+
+        return $runs;
+    }
+
     public static function getLink($id)
     {
         $run = self::find($id);
