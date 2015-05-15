@@ -10,13 +10,6 @@
     <a class="auth" href="#">
         <div class="table">
             <div class="table-cell">
-                {{ Auth::user()->location }}
-            </div>
-        </div>
-    </a>
-    <a class="auth" href="#">
-        <div class="table">
-            <div class="table-cell">
                 @if (!empty(Auth::user()->avatar))
                     <img src="{{ Auth::user()->avatar }}" height="50" style="margin-right: 20px">
                 @endif
