@@ -34,6 +34,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public static function socialUser($userObject)
     {
+        dd($userObject);
+
         $user = User::where('facebook_provider_id', $userObject->id)->first();
         if (!$user) $user = User::where('email', $userObject->email)->first();
 
