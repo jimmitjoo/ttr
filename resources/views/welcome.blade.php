@@ -24,13 +24,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
-                	<a class="login" href="#">
+                    @if (!Auth::check())
+                	<a class="login" href="{{ url('auth/login') }}">
                 		<div class="table">
                     		<div class="table-cell">
                         		<i class="fa fa-user"></i> &nbsp;Logga in
                         	</div>
                         </div>
-                	</a> 
+                	</a>
+                    @endif
                 </div>
             </div>
         </div>
@@ -56,14 +58,15 @@
                         		<input type="text" class="search-topnav" placeholder="sök">
                         	</form>
                         	-->
-                        	<a class="login" href="{{ url('auth/login') }}">
-                        		<div class="table">
-	                        		<div class="table-cell">
-		                        		<i class="fa fa-user"></i> &nbsp;Logga in
-		                        	</div>
-		                        </div>
-                        	</a>
-                        
+                            @if (!Auth::check())
+                                <a class="login" href="{{ url('auth/login') }}">
+                                    <div class="table">
+                                        <div class="table-cell">
+                                            <i class="fa fa-user"></i> &nbsp;Logga in
+                                        </div>
+                                    </div>
+                                </a>
+                            @endif
                 </div>
                 
             </div>
