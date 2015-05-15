@@ -34,8 +34,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public static function socialUser($userObject)
     {
-        dd($userObject);
-
         $user = User::where('facebook_provider_id', $userObject->id)->first();
         if (!$user) $user = User::where('email', $userObject->email)->first();
 
@@ -44,6 +42,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             if (empty($user->name)) $user->name = $userObject->name;
             if (empty($user->avatar)) $user->avatar = $userObject->avatar;
             if ($user->gender == null) $user->gender = $userObject->user['gender'];
+            if (empty($user->location)) $user->location = $userObject->user['location'];
 
             $user->save();
 
@@ -58,6 +57,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $user->facebook_provider_id = $userObject->id;
         $user->avatar = $userObject->avatar;
         $user->gender = $userObject->user['gender'];
+        $user->location = $userObject->user['location'];
 
         $user->save();
 
