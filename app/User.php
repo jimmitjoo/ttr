@@ -42,6 +42,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             if (empty($user->facebook_provider_id)) $user->facebook_provider_id = $userObject->id;
             if (empty($user->name)) $user->name = $userObject->name;
             if (empty($user->avatar)) $user->avatar = $userObject->avatar;
+            if (empty($user->gender) && self::checkValidGender($userObject)) $user->gender = $userObject->gender;
 
             $user->save();
 
@@ -55,12 +56,22 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $user->email = $userObject->email;
         $user->facebook_provider_id = $userObject->id;
         $user->avatar = $userObject->avatar;
+        if (self::checkValidGender($userObject)) $user->gender = $userObject->gender;
 
         $user->save();
 
         event(new UserHasRegistered($user));
 
         return $user;
+    }
+
+    /**
+     * @param $object
+     * @return bool
+     */
+    public static function checkValidGender($object)
+    {
+        return $object->gender == 'female' || $object->gender == 'male';
     }
 
 }
