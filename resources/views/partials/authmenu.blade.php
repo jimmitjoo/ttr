@@ -7,7 +7,14 @@
         </div>
     </a>
 @else
-    <a class="logout auth" href="#">
+    <a class="auth" href="#">
+        <div class="table">
+            <div class="table-cell">
+                {{ Auth::user()->location }}
+            </div>
+        </div>
+    </a>
+    <a class="auth" href="#">
         <div class="table">
             <div class="table-cell">
                 @if (!empty(Auth::user()->avatar))
