@@ -251,7 +251,6 @@ header a.login {
 	background: #0087ff;
 	background: #111;
 	background: #5ce060;
-<<<<<<< HEAD
 	background: #3a5999;
 	padding: 0 25px;
 	font-weight: 700;
@@ -260,11 +259,9 @@ header a.login {
 	height: 100%;
 	cursor: pointer;
 	outline: 0;
-=======
 }
 header a.logout {
     background: #ff0000;
->>>>>>> origin/master
 }
 header a.link-topnav {
 	opacity: 1;
