@@ -11,7 +11,7 @@
         <div class="table">
             <div class="table-cell">
                 @if (!empty(Auth::user()->avatar))
-                    <img src="{{ Auth::user()->avatar }}" height="50">
+                    <img src="{{ Auth::user()->avatar }}" height="50" style="margin-right: 20px">
                 @endif
                 {{ Auth::user()->name }}
             </div>
