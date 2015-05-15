@@ -12101,38 +12101,7 @@ section button.disabled {
 
 
 
-    
-/*
- * Mobile
- */
-@media (max-width: 767px) {
-    p {
-    	font-size: 100%;
-    }
-    .canvas {
-    	height: 70%;
-    }
-    .canvas span {
-    	font-size: 320%;
-    	letter-spacing: -2px;
-    }
-    h1.big, h2.big {
-    	font-size: 200%;
-    }
-    h2.large {
-    	font-size: 180%;
-    }
-    .single {
-	    font-size: 120%;
-    }
-    .list-btn {
-	    opacity: 1;
-    }
-    .block {
-	    padding-top: 60px;
-	    padding-bottom: 60px;
-    }
-}
+ 
 
 
 /* 
@@ -12148,6 +12117,37 @@ section button.disabled {
     }
     .list-btn {
 	    opacity: 1;
+    }
+}
+
+/*
+ * Mobile
+ */
+@media (max-width: 767px) {
+    p {
+    	font-size: 100%;
+    }
+    .canvas {
+    	height: 70%;
+    }
+    .canvas span {
+    	font-size: 300%;
+    	letter-spacing: -2px;
+    }
+    h1.big, h2.big {
+    	font-size: 200%;
+    }
+    h2.large {
+    	font-size: 170%;
+    }
+    .single {
+	    font-size: 120%;
+    }
+    .list-btn {
+	    opacity: 1;
+    }
+    .block {
+	    padding: 20px;
     }
 }
 /*# sourceMappingURL=build.css.map */
