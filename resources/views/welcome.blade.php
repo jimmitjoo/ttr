@@ -14,26 +14,29 @@
     <header>
     
     	<div class="topnav">
-    	<div class="max-width container-fluid" style="background: rgba(255,255,255,.97);">
-            <div class="row">
-                <div class="col-lg-6 col-md-6" style="height: 62px;">
-                    <div class="table">
-                        <div class="table-cell">
-                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
-                	<a class="login" href="#">
-                		<div class="table">
-                    		<div class="table-cell">
-                        		<i class="fa fa-user"></i> &nbsp;Logga in
-                        	</div>
-                        </div>
-                	</a> 
-                </div>
-            </div>
-        </div>
+	    	<div class="max-width container-fluid" style="background: rgba(255,255,255,.97);">
+	            <div class="row">
+	                <div class="col-lg-6 col-md-6" style="height: 62px;">
+	                    <div class="table">
+	                        <div class="table-cell">
+	                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
+	                	<a class="login" href="#">
+	                		<div class="table">
+	                    		<div class="table-cell">
+	                        		<!--
+		                        	-- Disabled
+			                        <i class="fa fa-user"></i> &nbsp-->
+			                        Logga in med Facebook
+	                        	</div>
+	                        </div>
+	                	</a> 
+	                </div>
+	            </div>
+	        </div>
     	</div>
     
         <div class="max-width container-fluid" style="background: white;">
@@ -59,7 +62,10 @@
                         	<a class="login" href="#">
                         		<div class="table">
 	                        		<div class="table-cell">
-		                        		<i class="fa fa-user"></i> &nbsp;Logga in
+	                        			<!--
+	                        			-- Disabled
+		                        		<i class="fa fa-user"></i> &nbsp-->
+		                        		Logga in med Facebook
 		                        	</div>
 		                        </div>
                         	</a>
@@ -91,7 +97,7 @@
                              * multiple, just put a space between them.
                             */
                             ?>
-                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-green'); ?>
+                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-blue'); ?>
                         </p>
                     </div>
                 </div>
@@ -113,7 +119,7 @@
     				<div style="position: absolute; bottom: 200px;">
 					<div class="clear"><span class="product-label single">Garmin - Vivoactive</span></div>
 					<div class="clear"><span class="product-pricetag single">2.395;-</span></div>
-					<div class="clear"><span class="click click-black product-pricetag-shop">Handla här</span></div>
+					<div class="clear"><span class="click click-shop product-pricetag-shop">Handla här</span></div>
     				</div>
     			</a>
     		</div>

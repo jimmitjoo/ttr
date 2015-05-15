@@ -2,21 +2,25 @@
     <div class="max-width container-fluid block footer bg-purple">
         <div class="row">
             <div class="col-lg-12">
-                <div class="col-lg-12">
-                    <strong>Timetorun.se</strong> – Älska att springa
-                </div>
+            	<strong>Timetorun.se</strong> – Älska att springa
             </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 col-md-6 small">
+                <ul>
+                    <li><a href="/">Start</a></li>
+                    <li><a href="/omoss">Om oss</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 text-right">
+                <a class="btn-facebook" style="margin-top: 0;" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på Facebook</a>
+            </div>
+        </div>
+        
+        <div class="row">
             <div class="col-lg-12 small">
-                <div class="col-lg-8 col-md-8 col-xs-12">
-                    <ul>
-                        <li><a href="/">Start</a></li>
-                        <li><a href="/omoss">Om oss</a></li>
-                    </ul>
-                    <span class="small">© 2015 Timetorun.se</span>
-                </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 text-right">
-                    <a class="social-badge" href="https://www.facebook.com/pages/Timetorun/700137680097229"><i class="fa fa-facebook"></i></a>
-                </div>
+            	<span class="small">© 2015 Timetorun.se &nbsp;&nbsp; Beta</span>
             </div>
         </div>
     </div>

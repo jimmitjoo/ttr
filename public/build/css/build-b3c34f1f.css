@@ -11650,7 +11650,6 @@ h1.big, h2.big {
     font-weight: 900;
     margin: 4px;
     letter-spacing: -1px;
-    color: #0087ff;
 }
 h2.large {
     font-size: 300%;
@@ -11662,7 +11661,7 @@ h3 {
     font-size: 150%;
 }
 h3.large {
-    font-size: 200%;
+    font-size: 240%;
     line-height: 1.5;
     margin-bottom: 30px;
 }
@@ -11728,12 +11727,12 @@ a:hover, a:active {
     height: 68%;
 }
 .canvas span {
-	font-size: 580%;
+	font-size: 450%;
 	font-weight: 700;
 	letter-spacing: -4px;
 	color: white;
 	display: inline-block;
-	background: #0087ff;
+	background: #1a429f;
 	padding: 10px 25px;
 }
 .canvas span.title {
@@ -11753,6 +11752,8 @@ a:hover, a:active {
 	transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
+    cursor: pointer;
+	outline: 0;
 }
 .click-blue {
 	background: #0087ff;
@@ -11768,6 +11769,14 @@ a:hover, a:active {
 }
 .click-green:hover {
 	background: #5ce060;
+	color: white;
+}
+.click-shop {
+	background: #ab2394;
+	color: white;
+}
+.click-shop:hover {
+	background: #ab2394;
 	color: white;
 }
 .click-black {
@@ -11799,11 +11808,14 @@ header a.login {
 	background: #0087ff;
 	background: #111;
 	background: #5ce060;
+	background: #3a5999;
 	padding: 0 25px;
 	font-weight: 700;
 	display: inline-block;
 	margin-right: -15px;
 	height: 100%;
+	cursor: pointer;
+	outline: 0;
 }
 header a.link-topnav {
 	opacity: 1;
