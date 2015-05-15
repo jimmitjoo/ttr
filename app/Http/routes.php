@@ -13,6 +13,7 @@
 
 use App\User;
 
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
@@ -32,7 +33,7 @@ Route::get('partials/race-list', 'OrganizersController@listRaces');
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
 
 Route::get('login/facebook', function(){
-    return Socialize::with('facebook')->scopes(['email'])->redirect();
+    return Socialize::with('facebook')->scopes(['email', 'user_location'])->redirect();
 });
 
 Route::get('receive/facebook', function(){
@@ -42,7 +43,7 @@ Route::get('receive/facebook', function(){
 
     Auth::login($user);
 
-    return Redirect::to('/hem');
+    return Redirect::to('/');
 
 });
 
@@ -52,3 +53,7 @@ Route::get('indexing', 'OrganizersController@apiCreateRequest');
 
 Route::get('race/list/', 'RunsController@apiGetList');
 Route::get('race/list/{query}', 'RunsController@apiGetList');
+Route::get('race/page/', 'RunsController@apiGetPaginated');
+Route::get('race/page/{query}', 'RunsController@apiGetPaginated');
+
+Route::get('villkor', 'PagesController@terms');

@@ -8,132 +8,122 @@
 @section('content')
 
 
-    <!--
-    -- New
-    --
-    -->
-    <div class="topnav" style="padding: 10px 0;">
-        <div class="container">
+	
+    
+    
+    <header>
+    
+    	<div class="topnav">
+    	<div class="max-width container-fluid" style="background: rgba(255,255,255,.97);">
             <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <a href="/"><img src="/images/timetorun.png" style="margin-top: -2px; border: 0;"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="splash">
-
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6" style="height: 62px;">
-                        <div class="table">
-                            <div class="table-cell">
-                                <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
-                                <a class="link-topnav" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="height: 54px;">
-                        <div class="table">
-                            <div class="table-cell text-right">
-                            	<!--
-                            	<form>
-                            		<input type="text" class="search-topnav" placeholder="sök">
-                            	</form>
-                            	-->
-                                <!--
-                                  -- User
-                                  --
-                                <a class="link-topnav" href="#"><i class="fa fa-user"></i></a>
-                                -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="container-fluid height-full">
-            <div class="row height-full">
-                <div class="col-lg-12 col-md-12 height-full">
+                <div class="col-lg-6 col-md-6" style="height: 62px;">
                     <div class="table">
-                        <div class="table-cell text-center">
-                            <h1>Älska att springa</h1>
-                            <h2>Lopp och tävlingar - i Sverige och världen.</h2>
-                            <p style="margin-top: 20px;"><a class="promo-link" href="#">Blodomloppet Malmö</a> &nbsp;&nbsp; <a class="promo-link" href="#">Stockholm Urban Mile</a></p>
+                        <div class="table-cell">
+                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
+                    @include('partials.authmenu')
+                </div>
+            </div>
+        </div>
+    	</div>
+    
+        <div class="max-width container-fluid" style="background: white;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6" style="height: 82px;">
+                    <div class="table">
+                        <div class="table-cell">
+                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+                            <!--
+                            <a class="link-topnav" href="#"></a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 82px;">
+
+                    <!--
+                    <form>
+                        <input type="text" class="search-topnav" placeholder="sök">
+                    </form>
+                    -->
+
+                    @include('partials.authmenu')
+                    
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+
+    <div class="max-width container-fluid block canvas">
+        <div class="row height-full">
+            <div class="col-lg-12 col-md-12 height-full">
+                <div class="table">
+                    <div class="table-cell">
+                        <span class="title">Drottning</span><br/><span>Margaretaloppet</span>
+                        <p>
+                        	<?php
+                            /*
+                             * First parameter is the id (last part of race url) and is required.
+                             * Check what the id is on the live-site since it may not be the same
+                             * in your local environment.
+                             *
+                             * Second parameter in printPromoLink is not required, will use the
+                             * name of the run from database in that case it is empty or not set.
+                             *
+                             * Third parameter is the class that should be set on the link, if
+                             * multiple, just put a space between them.
+                            */
+                            ?>
+                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-blue'); ?>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="block block-border-bottom">
-        <div class="container">
-
+    
+    <div class="max-width container-fluid bg-white block-border-bottom">
+    	<div class="row">
+    		<div class="col-lg-6 col-md-6 block bg-blue">
+    			<h3 class="large">Time<span style="font-weight:500">to</span>run<br/>- Älska att springa</h3>
+    			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare och roligare.</p>
+                @if (!Auth::check())
+                <a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med facebook</a>
+    		    @endif
+            </div>
+    		<div class="col-lg-6 col-md-6 block hide-mobile">
+    			<a href="http://track.adtraction.com/t/t?a=435656443&amp;as=1087597488&amp;t=2&amp;tk=1&amp;url=http://www.outnorth.se/garmin/vivoactive" target="_blank" style="display: block;">
+    				<img src="images/products/outnorth-garmin-vivoactive.jpg" style="width: 100%; outline: 0;"/>
+    				<div style="position: absolute; bottom: 200px;">
+					<div class="clear"><span class="product-label single">Garmin - Vivoactive</span></div>
+					<div class="clear"><span class="product-pricetag single">2.395;-</span></div>
+					<div class="clear"><span class="click click-shop product-pricetag-shop">Handla här</span></div>
+    				</div>
+    			</a>
+    		</div>
+    	</div>
+    </div>
+    
+    
+    <div class="max-width block block-border-bottom bg-white">
+    
             <div class="row">
-
                 <div class="col-lg-12 text-center" style="padding-bottom: 50px;">
                     <h2 class="text-title big">Sök lopp och tävlingar</h2>
 
                     <p style="font-weight: 500;">-i närheten eller på annan plats i Sverige och världen.</p>
                 </div>
-
             </div>
 
-            <div data-ng-controller="runPaginationController">
+            @include('race.list-with-search')
 
-                <form>
-                    <div class="search-box">
-                        <div class="search-icon">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="search-clear">
-                            <i class="fa fa-times"></i>
-                        </div>
-                        <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
-                    </div>
-                </form>
-
-                <div class="row">
-
-                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
-                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
-                    <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
-                    <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
-                    <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
-
-                </div>
-
-                <div ng-repeat="race in filter" class="row list-item">
-                    <a href="@{{ race.slug }}">
-                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.town }}</div>
-                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.start_datetime }}</div>
-                        <div class="col-lg-4 col-md-4 col-xs-9">@{{ race.name }}</div>
-                        <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile">@{{ race.distance / 1000 }} km</div>
-                        <div class="col-lg-2 col-md-2 col-xs-3 text-right">
-                            <a class="list-btn" href="@{{ race.slug }}">
-                                <div class="table">
-                                    <div class="table-cell text-center">
-                                        <i class="fa fa-long-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </a>
-                </div>
-
-
-                <pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm"
-                            boundary-links="true" rotate="true"></pagination>
-
-
-            </div>
-
-        </div>
     </div>
 
     @include('ads.upsells-single')

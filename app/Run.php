@@ -59,4 +59,36 @@ class Run extends Model
         return '/lopp/' . $slug;
     }
 
+    public static function getList($query)
+    {
+        if (strlen($query) > 0) {
+            $runs = self::where('name', 'LIKE', '%' . $query . '%')
+                ->where('start_datetime', '>=', date('Y-m-d'))
+
+                ->orWhere('town', 'LIKE', '%' . $query . '%')
+                ->where('start_datetime', '>=', date('Y-m-d'));
+        } else {
+            $runs = self::where('start_datetime', '>=', date('Y-m-d'));
+        }
+
+        return $runs;
+    }
+
+    public static function getLink($id)
+    {
+        $run = self::find($id);
+        return getenv('APP_URL') . $run->slug;
+    }
+
+    public static function printRunLink($id, $linktext = null, $class = '')
+    {
+        if ($linktext == null || $linktext == '') {
+            $run = self::find($id);
+            $linktext = $run->name;
+        }
+
+        return '<a class="' . $class .'" href="http://' . self::getLink($id) . '">' . $linktext . '</a>';
+
+    }
+
 }

@@ -1,63 +1,57 @@
 app.controller('runPaginationController', function ($scope, $http) {
 
-    $scope.filter = [];
-    $scope.currentPage = 1;
-    $scope.numPerPage = 10;
-    $scope.maxSize = 10;
-    $scope.totalItems = 100;
+    $scope.page = 1;
+    $scope.last = null;
     $scope.searchQuery = '';
+    $scope.races = [];
 
 
-    $scope.makeList = function () {
-        $scope.races = [];
+    var apiEndpoint = '/race/page';
+
+
+    $scope.loadData = function() {
+
+        $('#paginateSpinner').show();
 
         if ($('#runTown').length > 0) {
             $scope.searchQuery = $('#runTown').val();
         }
 
-        $http.get("/race/list/" + $scope.searchQuery, { cache: true})
-            .success(function (response) {
-
-                for (var i = 0; i < response.length; i++) {
-                    $scope.races.push({
-                        id: response[i].id,
-                        name: response[i].name,
-                        slug: response[i].slug,
-                        town: response[i].town,
-                        distance: response[i].distance,
-                        start_datetime: response[i].start_datetime,
-                        done: false
-                    });
+        $http.get(apiEndpoint + '/' + $scope.searchQuery + '?page=' + $scope.page, { cache: false})
+            .success(function(response){
+                $scope.last = response.last_page;
+                if ($scope.page == $scope.last) {
+                    $('.show-more').hide();
+                } else {
+                    $('.show-more').show();
                 }
 
-                $scope.totalItems = $scope.races.length;
-
+                $scope.races = $scope.races.concat(response.data);
+                $('#paginateSpinner').hide();
             });
+
     };
-    $scope.makeList();
 
     $('.search-field').on('keyup', function(){
         delay(function(){
-            $scope.makeList();
-        }, 200 );
+            $scope.races = [];
+            $scope.loadData();
+        }, 250 );
     });
 
     $('.search-clear').on('click', function(){
         $('.search-field').val('');
         $scope.searchQuery = '';
-        $scope.makeList();
+        $scope.races = [];
+        $scope.loadData();
     });
 
-    $scope.$watch("currentPage + numPerPage + races + searchQuery", function () {
-        var begin = (($scope.currentPage - 1) * $scope.numPerPage),
-            end = begin + $scope.numPerPage;
+    $scope.showMore = function() {
+        $scope.page += 1;
+        $scope.loadData();
+    };
 
-        $scope.numPages = function () {
-            return Math.ceil($scope.races.length / $scope.numPerPage);
-        };
-
-        $scope.filter = $scope.races.slice(begin, end);
-    });
+    $scope.loadData();
 
 
 });

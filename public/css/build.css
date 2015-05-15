@@ -11584,14 +11584,63 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #111;
+    background: #ededed;
     /*
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     */
 }
+
+
+/* 
+ * Global settings
+ *
+ */
+ 
+.max-width {
+	max-width: 1440px;
+	margin: auto;
+}
+.block {
+    padding: 100px;
+}
+.block-center {
+    float: none;
+    margin: auto;
+}
+.block-border-bottom {
+    border-bottom: 1px solid #ededed;
+}
+
+
+/* 
+ * Backgrounds and colors
+ *
+ */
+ 
+.bg-white {
+	background: white;
+}
+.bg-blue {
+	background: #0087ff;
+	color: white;
+}
+.bg-purple {
+    background: #282b49;
+    color: #fff;
+}
+.bg-yellow {
+	background: #eef362;
+}
+
+
+/* Headings
+ --------------------------------------------- */
+h1, h2, h3 {
+	font-weight: 700;
+}
 h2 {
     font-size: 350%;
-    font-weight: 700;
     line-height: 1.2;
     letter-spacing: -1px;
     margin-bottom: 20px;
@@ -11601,7 +11650,6 @@ h1.big, h2.big {
     font-weight: 900;
     margin: 4px;
     letter-spacing: -1px;
-    color: #0087ff;
 }
 h2.large {
     font-size: 300%;
@@ -11611,10 +11659,15 @@ h2.large {
 }
 h3 {
     font-size: 150%;
-    font-weight: 700;
+}
+h3.large {
+    font-size: 240%;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 p {
     font-size: 120%;
+    line-height: 1.7;
 }
 .medium {
     font-weight: 700;
@@ -11632,7 +11685,7 @@ a {
     -moz-transition: color .2s linear;
 }
 a:hover, a:active {
-    color: #1a429f;
+    color: #0073e6;
     text-decoration: none;
 }
 .text-title {
@@ -11664,58 +11717,116 @@ a:hover, a:active {
 }
 
 /* 
- * Splash
+ * Canvas
+ *
  */
-.splash {
+.canvas {
     background: url('/images/unsplash-green.jpg');
     background-position: center center;
     background-size: cover;
-    height: 82%;
+    height: 68%;
 }
-.splash h1 {
-    font-size: 760%;
-    /*font-size: 10vw;*/
-    line-height: 1.2;
-    font-weight: 700;
-    margin: 4px;
-    letter-spacing: -4px;
-    color: #fff716;
-    color: #4f287a;
-    color: #fff;
-}
-.splash h2 {
-    font-size: 250%;
-    /*font-size: 4vw;*/
-    line-height: 1.2;
-    font-weight: 700;
-    margin: 4px;
-    letter-spacing: 0px;
-    color: #fff;
-}
-.splash a.promo-link {
-	background: #0087ff;
+.canvas span {
+	font-size: 450%;
+	font-weight: 700;
+	letter-spacing: -4px;
 	color: white;
+	display: inline-block;
+	background: #1a429f;
 	padding: 10px 25px;
 }
+.canvas span.title {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
 
+
+/* 
+ * Buttons
+ *
+ */
+.click {
+	padding: 15px 25px;
+	display: inline-block;
+	font-weight: 700;
+	transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    cursor: pointer;
+	outline: 0;
+}
+.click-blue {
+	background: #0087ff;
+	color: white;
+}
+.click-blue:hover {
+	background: #0073e6;
+	color: white;
+}
+.click-green {
+	background: #5ce060;
+	color: white;
+}
+.click-green:hover {
+	background: #5ce060;
+	color: white;
+}
+.click-shop {
+	background: #ab2394;
+	color: white;
+}
+.click-shop:hover {
+	background: #ab2394;
+	color: white;
+}
+.click-black {
+	background: #111;
+	color: white;
+}
+.click-black:hover {
+	background: #111;
+	color: white;
+}
+ 
+ 
+ 
 /* 
  * Header and topnavigation
  */
 header {
-    position: absolute;
-    z-index: 5000;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 0;
     color: white;
-    background: #0087ff;
-    background: rgba(255,255,255,1);
 }
 header .logo {
 	cursor: pointer;
 	border: 0;
 	padding-right: 10px;
+	height: 38px;
+	margin-left: 20px;
+}
+header a.auth {
+    padding: 0 25px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: -15px;
+    height: 100%;
+}
+header a.login {
+    color: white;
+    background: #0087ff;
+	background: #111;
+	background: #5ce060;
+	background: #3a5999;
+	padding: 0 25px;
+	font-weight: 700;
+	display: inline-block;
+	margin-right: -15px;
+	height: 100%;
+	cursor: pointer;
+	outline: 0;
+}
+header a.logout {
+    color: white;
+    background: #ff0000;
 }
 header a.link-topnav {
 	opacity: 1;
@@ -11753,11 +11864,7 @@ header .search-topnav:focus {
 .topnav {
 	display: none;
 	position: fixed;
-	top: 0;
 	width: 100%;
-	padding: 0;
-	margin: 0;
-	background: rgba(255,255,255,.97);
 	z-index: 6000;
 }
 
@@ -11825,44 +11932,35 @@ header .search-topnav:focus {
 .list-item:hover a {
 	color: #0087ff;
 }
+.show-more {
+	margin-top: 40px;
+	border: 0;
+	-webkit-appearance: none;
+}
 
 /* 
  * Footer
  */
-footer {
-    color: #999;
-    padding: 60px 0;
-    background: #f2f2f2;
+.footer a {
+    color: #fff;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
 }
-footer a {
-    color: #999;
+.footer a:hover {
+    color: #0087ff;
 }
-footer ul {
+.footer ul {
     list-style: none;
     padding: 0;
     margin: 20px 0;
     font-weight: 700;
 }
-footer li {
+.footer li {
     padding-bottom: 4px;
 }
 
-/* Block
- --------------------------------------------- */
-.block-top {
-    padding-top: 80px;
-}
-.block-center {
-    float: none;
-    margin: auto;
-}
-.block {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.block-border-bottom {
-    border-bottom: 1px solid #ededed;
-}
+
 
 
 /* Form and inputs
@@ -11963,8 +12061,8 @@ section button.disabled {
  * Symbols and badges
  */
 .social-badge {
-    background-color: #ccc;
-    color: white;
+    background-color: #fff;
+    color: #0087ff !important;
     text-align: center;
     height: 44px;
     width: 44px;
@@ -11976,11 +12074,41 @@ section button.disabled {
     -moz-transition: all .3s ease;
 }
 .social-badge:hover {
-    background-color: #008aff;
-    color: white;
+    background-color: #0087ff;
+    color: white !important;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+}
+.btn-facebook {
+	background: #3a5999;
+	color: white !important;
+	margin-top: 40px;
+	padding: 15px 20px;
+	display: inline-block;
+	font-weight: 700;
+}
+
+/*
+ * Loading icon
+ */
+#paginateSpinner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 150px;
+    text-align: center;
+    z-index: 100;
+    background: rgba(0,0,0,.25);
+}
+#paginateSpinner .fa {
+    position: relative;
+    top: 50%;
+    margin-top: -150px;
+    display: block;
+    color: #FFFFFF;
 }
 
 
@@ -11988,24 +12116,30 @@ section button.disabled {
  * Upsells
  */
 .product-label {
-    background: rgba(0,186,255,.92);
+	background: rgba(0,135,255,.92);
+	background: rgba(26,66,159,.92);
+	background: rgba(255,255,255,.92);
+	background: rgba(17,17,17,.92);
+    background: rgba(70,40,122,.92);
+    
+    
+    color: #0087ff;
     color: white;
-    padding: 6px 10px;
+    font-weight: 700;
+    padding: 6px 15px;
     display: block;
     float: left;
 }
 .product-pricetag {
-    background-color: #69e16c;
+    background: rgba(105,225,108,.94);
+    background: rgba(70,40,122,.92);
     color: white;
-    padding: 5px 10px 8px;
+    padding: 5px 15px 8px;
     font-weight: 700;
     display: block;
     float: left;
 }
 .product-pricetag-shop {
-	background-color: #000;
-	color: white;
-	padding: 10px 10px 10px;
 	display: block;
 	float: left;
 } 
@@ -12013,27 +12147,49 @@ section button.disabled {
 	font-size: 180%;
 } 
 
+
+
+ 
+
+
+/* 
+ * Tablets
+ *
+ */
+@media (max-width: 1023px) {
+	.block {
+		padding: 40px;
+	}
+    .hide-mobile {
+        display: none;
+    }
+    .list-btn {
+	    opacity: 1;
+    }
+}
+
 /*
  * Mobile
  */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     p {
     	font-size: 100%;
     }
-    .splash {
-    	height: 90%;
+    .canvas {
+    	height: 70%;
     }
-    .splash h1 {
-    	font-size: 300%;
-    }
-    .splash h2 {
-    	font-size: 160%;
+    .canvas span {
+    	font-size: 220%;
+    	letter-spacing: -2px;
     }
     h1.big, h2.big {
     	font-size: 200%;
     }
     h2.large {
-    	font-size: 180%;
+    	font-size: 170%;
+    }
+    h3.large {
+	    font-size: 170%;
     }
     .single {
 	    font-size: 120%;
@@ -12041,13 +12197,8 @@ section button.disabled {
     .list-btn {
 	    opacity: 1;
     }
-}
-@media screen and (max-width: 990px) {
-    .hide-mobile {
-        display: none;
-    }
-    .list-btn {
-	    opacity: 1;
+    .block {
+	    padding: 20px;
     }
 }
 /*# sourceMappingURL=build.css.map */

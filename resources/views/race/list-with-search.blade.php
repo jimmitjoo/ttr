@@ -1,10 +1,16 @@
 <div data-ng-controller="runPaginationController">
 
-    @if ($run->town)
     <form>
-        <input type="hidden" ng-model="searchQuery" id="runTown" value="{{ $run->town }}"/>
+        <div class="search-box">
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="search-clear">
+                <i class="fa fa-times"></i>
+            </div>
+            <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
+        </div>
     </form>
-    @endif
 
     <div class="row">
 
@@ -33,8 +39,10 @@
             </div>
         </a>
     </div>
-
-    <button class="show-more" ng-click="showMore()">Visa fler</button>
+    
+    <div class="text-center">
+    	<button class="show-more click click-blue" ng-click="showMore()">Visa fler</button>
+    </div>
     <div id="paginateSpinner"><i class="fa fa-spinner fa-spin"></i></div>
 
 </div>
