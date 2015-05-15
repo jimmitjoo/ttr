@@ -56,7 +56,7 @@
                         		<input type="text" class="search-topnav" placeholder="sök">
                         	</form>
                         	-->
-                        	<a class="login" href="#">
+                        	<a class="login" href="{{ url('auth/login') }}">
                         		<div class="table">
 	                        		<div class="table-cell">
 		                        		<i class="fa fa-user"></i> &nbsp;Logga in
@@ -105,7 +105,7 @@
     		<div class="col-lg-6 col-md-6 block bg-blue">
     			<h3 class="large">Time<span style="font-weight:500">to</span>run<br/>- Älska att springa</h3>
     			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare och roligare.</p>
-    			<a class="btn-facebook" target="_blank" href="https://www.facebook.com/pages/Timetorun/700137680097229">Registrera dig med facebook</a>
+    			<a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med facebook</a>
     		</div>
     		<div class="col-lg-6 col-md-6 block hide-mobile">
     			<a href="http://track.adtraction.com/t/t?a=435656443&amp;as=1087597488&amp;t=2&amp;tk=1&amp;url=http://www.outnorth.se/garmin/vivoactive" target="_blank" style="display: block;">

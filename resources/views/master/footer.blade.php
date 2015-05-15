@@ -15,7 +15,7 @@
                     <span class="small">© 2015 Timetorun.se</span>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-12 text-right">
-                    <a class="social-badge" href="https://www.facebook.com/pages/Timetorun/700137680097229"><i class="fa fa-facebook"></i></a>
+                    <a class="social-badge" target="_blank" href="https://www.facebook.com/pages/Timetorun/700137680097229"><i class="fa fa-facebook"></i></a>
                 </div>
             </div>
         </div>
