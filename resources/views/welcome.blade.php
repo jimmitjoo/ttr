@@ -8,23 +8,26 @@
 @section('content')
 
 
-    <div class="topnav">
-        <div class="container-fluid max-width">
-            <div class="row">
-                <div class="col-lg-12 col-md-12" style="height: 62px;">
-                	<div class="table">
-                        <div class="table-cell">
-	                        <a href="/"><img class="logo" src="/images/timetorun.png" style="height: 38px;"></a>
-                        </div>
-                	</div>
-                </div>
-            </div>
-        </div>
-    </div>
+	
     
     
     <header>
-        <div class="container-fluid max-width" style="background: white;">
+    
+    	<div class="topnav">
+    	<div class="max-width container-fluid" style="background: rgba(255,255,255,.97);">
+            <div class="row">
+                <div class="col-lg-6 col-md-6" style="height: 62px;">
+                    <div class="table">
+                        <div class="table-cell">
+                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	</div>
+    
+        <div class="max-width container-fluid" style="background: white;">
             <div class="row">
                 <div class="col-lg-6 col-md-6" style="height: 82px;">
                     <div class="table">
@@ -53,30 +56,28 @@
     </header>
 
 
-    <div class="splash max-width">
-        <div class="container-fluid height-full">
-            <div class="row height-full">
-                <div class="col-lg-12 col-md-12 height-full block">
-                    <div class="table">
-                        <div class="table-cell">
-                            <h1>Älska<br/>att springa</h1>
-                            <p>
-                            	<?php
-                                /*
-                                 * First parameter is the id (last part of race url) and is required.
-                                 * Check what the id is on the live-site since it may not be the same
-                                 * in your local environment.
-                                 *
-                                 * Second parameter in printPromoLink is not required, will use the
-                                 * name of the run from database in that case it is empty or not set.
-                                 *
-                                 * Third parameter is the class that should be set on the link, if
-                                 * multiple, just put a space between them.
-                                */
-                                ?>
-                                <?php echo \App\Run::printRunLink('131', 'Drottning Margaretaloppet, Kalmar', 'promo-link'); ?>
-                            </p>
-                        </div>
+    <div class="max-width container-fluid block canvas">
+        <div class="row height-full">
+            <div class="col-lg-12 col-md-12 height-full">
+                <div class="table">
+                    <div class="table-cell">
+                        <span class="title">Älska</span><br/><span>att springa</span>
+                        <p>
+                        	<?php
+                            /*
+                             * First parameter is the id (last part of race url) and is required.
+                             * Check what the id is on the live-site since it may not be the same
+                             * in your local environment.
+                             *
+                             * Second parameter in printPromoLink is not required, will use the
+                             * name of the run from database in that case it is empty or not set.
+                             *
+                             * Third parameter is the class that should be set on the link, if
+                             * multiple, just put a space between them.
+                            */
+                            ?>
+                            <?php echo \App\Run::printRunLink('131', 'Drottning Margaretaloppet, 27 maj i Kalmar', 'click click-blue'); ?>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -86,12 +87,12 @@
     
     <div class="max-width container-fluid bg-white block-border-bottom">
     	<div class="row">
-    		<div class="col-lg-6 col-md-6 col-sm-6 block bg-blue">
+    		<div class="col-lg-6 col-md-6 block bg-blue">
     			<h3 class="large">Timetorun, älska att springa - i Sverige och världen.</h3>
     			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare.</p>
     			<a class="btn-facebook" target="_blank" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på facebook</a>
     		</div>
-    		<div class="col-lg-6 col-md-6 col-sm-6 block">
+    		<div class="col-lg-6 col-md-6 block hide-mobile">
     			<a href="http://track.adtraction.com/t/t?a=435656443&amp;as=1087597488&amp;t=2&amp;tk=1&amp;url=http://www.outnorth.se/garmin/vivoactive" target="_blank" style="display: block;">
     				<img src="images/products/outnorth-garmin-vivoactive.jpg" style="width: 100%; outline: 0;"/>
     				<div style="position: absolute; bottom: 200px;">
@@ -115,56 +116,7 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
-            <div data-ng-controller="runPaginationController">
-
-                <form>
-                    <div class="search-box">
-                        <div class="search-icon">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="search-clear">
-                            <i class="fa fa-times"></i>
-                        </div>
-                        <input class="search-field" type="text" ng-model="searchQuery" placeholder="Sök">
-                    </div>
-                </form>
-
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Plats</h3></div>
-                    <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile"><h3>Datum</h3></div>
-                    <div class="col-lg-4 col-md-4 col-xs-7"><h3>Lopp</h3></div>
-                    <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile"><h3>Distans</h3></div>
-                    <div class="col-lg-2 col-md-2 col-xs-5 text-right"><h3></h3></div>
-                </div>
-
-                <div ng-repeat="race in filter" class="row list-item">
-                    <a href="@{{ race.slug }}">
-                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.town }}</div>
-                        <div class="col-lg-2 col-md-2 col-xs-2 hide-mobile">@{{ race.start_datetime }}</div>
-                        <div class="col-lg-4 col-md-4 col-xs-9">@{{ race.name }}</div>
-                        <div class="col-lg-2 col-md-2 col-xs-3 hide-mobile">@{{ race.distance / 1000 }} km</div>
-                        <div class="col-lg-2 col-md-2 col-xs-3 text-right">
-                            <a class="list-btn" href="@{{ race.slug }}">
-                                <div class="table">
-                                    <div class="table-cell text-center">
-                                        <i class="fa fa-long-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </a>
-                </div>
-
-
-                <pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm"
-                            boundary-links="true" rotate="true"></pagination>
-
-
-            </div>
-=======
             @include('race.list-with-search')
->>>>>>> origin/master
 
     </div>
 

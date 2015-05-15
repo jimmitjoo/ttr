@@ -1,4 +1,4 @@
-<div class="container-fluid block-border-bottom block" style="padding-top: 80px; padding-bottom: 60px;">
+<div class="max-width container-fluid  block block-border-bottom bg-white">
 
     <div class="row">
 
