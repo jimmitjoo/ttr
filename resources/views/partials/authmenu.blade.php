@@ -2,7 +2,7 @@
     <a class="login auth" href="{{ url('auth/login') }}">
         <div class="table">
             <div class="table-cell">
-                <i class="fa fa-user"></i> &nbsp;Logga in
+                Logga in med Facebook
             </div>
         </div>
     </a>
@@ -10,7 +10,7 @@
     <a class="logout auth" href="{{ url('auth/logout') }}">
         <div class="table">
             <div class="table-cell">
-                <i class="fa fa-user"></i> &nbsp;Logga ut
+                Logga ut
             </div>
         </div>
     </a>

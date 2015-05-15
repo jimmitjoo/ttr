@@ -52,6 +52,7 @@
                     -->
 
                     @include('partials.authmenu')
+                    
                 </div>
                 
             </div>
@@ -79,7 +80,7 @@
                              * multiple, just put a space between them.
                             */
                             ?>
-                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-green'); ?>
+                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-blue'); ?>
                         </p>
                     </div>
                 </div>
@@ -103,7 +104,7 @@
     				<div style="position: absolute; bottom: 200px;">
 					<div class="clear"><span class="product-label single">Garmin - Vivoactive</span></div>
 					<div class="clear"><span class="product-pricetag single">2.395;-</span></div>
-					<div class="clear"><span class="click click-black product-pricetag-shop">Handla här</span></div>
+					<div class="clear"><span class="click click-shop product-pricetag-shop">Handla här</span></div>
     				</div>
     			</a>
     		</div>
