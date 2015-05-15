@@ -1,5 +1,5 @@
 @if (!Auth::check())
-    <a class="login auth" href="{{ url('auth/login') }}">
+    <a class="login auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
                 Logga in med Facebook
@@ -7,7 +7,7 @@
         </div>
     </a>
 @else
-    <a class="logout auth" href="{{ url('auth/logout') }}">
+    <a class="logout auth" href="{{ url('/auth/logout') }}">
         <div class="table">
             <div class="table-cell">
                 Logga ut
