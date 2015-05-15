@@ -14,7 +14,7 @@
                 </ul>
             </div>
             <div class="col-lg-6 col-md-6 text-right">
-                <a class="btn-facebook" style="margin-top: 0;" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på Facebook</a>
+                <a class="btn-facebook" target="_blank" style="margin-top: 0;" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på Facebook</a>
             </div>
         </div>
         
