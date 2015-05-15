@@ -241,6 +241,9 @@ header a.login {
 	margin-right: -15px;
 	height: 100%;
 }
+header a.logout {
+    background: #ff0000;
+}
 header a.link-topnav {
 	opacity: 1;
 	color: white;

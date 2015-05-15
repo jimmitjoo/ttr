@@ -24,15 +24,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
-                    @if (!Auth::check())
-                	<a class="login" href="{{ url('auth/login') }}">
-                		<div class="table">
-                    		<div class="table-cell">
-                        		<i class="fa fa-user"></i> &nbsp;Logga in
-                        	</div>
-                        </div>
-                	</a>
-                    @endif
+                    @include('partials.authmenu');
                 </div>
             </div>
         </div>
@@ -52,21 +44,14 @@
                 </div>
                 
                 <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 82px;">
-                    
-                        	<!--
-                        	<form>
-                        		<input type="text" class="search-topnav" placeholder="sök">
-                        	</form>
-                        	-->
-                            @if (!Auth::check())
-                                <a class="login" href="{{ url('auth/login') }}">
-                                    <div class="table">
-                                        <div class="table-cell">
-                                            <i class="fa fa-user"></i> &nbsp;Logga in
-                                        </div>
-                                    </div>
-                                </a>
-                            @endif
+
+                    <!--
+                    <form>
+                        <input type="text" class="search-topnav" placeholder="sök">
+                    </form>
+                    -->
+
+                    @include('partials.authmenu')
                 </div>
                 
             </div>
