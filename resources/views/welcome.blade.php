@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
-                    @include('partials.authmenu');
+                    @include('partials.authmenu')
                 </div>
             </div>
         </div>
