@@ -10,6 +10,9 @@
     <a class="logout auth" href="#">
         <div class="table">
             <div class="table-cell">
+                @if (!empty(Auth::user()->avatar))
+                    <img src="{{ Auth::user()->avatar }}" height="50">
+                @endif
                 {{ Auth::user()->name }}
             </div>
         </div>
