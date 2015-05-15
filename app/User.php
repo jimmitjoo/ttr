@@ -43,6 +43,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             if (empty($user->name)) $user->name = $userObject->name;
             if (empty($user->avatar)) $user->avatar = $userObject->avatar;
             if ($user->gender == null) {
+                dd($userObject);
                 $user->gender = $userObject->gender;
             }
 
