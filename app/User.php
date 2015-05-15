@@ -23,7 +23,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'email', 'password'];
+	protected $fillable = ['username', 'gender', 'name', 'email', 'password'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -35,8 +35,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public static function socialUser($userObject)
     {
 
-        dd($userObject);
-        
         $user = User::where('facebook_provider_id', $userObject->id)->first();
         if (!$user) $user = User::where('email', $userObject->email)->first();
 
