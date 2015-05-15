@@ -11795,6 +11795,7 @@ header .logo {
 	margin-left: 20px;
 }
 header a.auth {
+    color: white;
     padding: 0 25px;
     font-weight: 700;
     display: inline-block;
@@ -11802,7 +11803,6 @@ header a.auth {
     height: 100%;
 }
 header a.login {
-	color: white;
 	background: #0087ff;
 	background: #111;
 	background: #5ce060;
