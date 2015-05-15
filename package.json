@@ -2,9 +2,10 @@
   "private": true,
   "devDependencies": {
     "gulp": "^3.8.8",
+    "gulp-uglify": "^1.2.0",
     "laravel-elixir": "*",
-    "laravel-elixir-imagemin": "^0.1.6",
     "laravel-elixir-angular": "~0.1.1",
+    "laravel-elixir-imagemin": "^0.1.6",
     "q": "~1.4.0"
   }
 }
