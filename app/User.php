@@ -42,7 +42,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             if (empty($user->name)) $user->name = $userObject->name;
             if (empty($user->avatar)) $user->avatar = $userObject->avatar;
             if ($user->gender == null) $user->gender = $userObject->user['gender'];
-            if (empty($user->location)) $user->location = $userObject->user['location'];
+            if (empty($user->location)) $user->location = $userObject->user['location']['name'];
 
             $user->save();
 
@@ -57,7 +57,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $user->facebook_provider_id = $userObject->id;
         $user->avatar = $userObject->avatar;
         $user->gender = $userObject->user['gender'];
-        $user->location = $userObject->user['location'];
+        $user->location = $userObject->user['location']['name'];
 
         $user->save();
 
