@@ -1,3 +1,7 @@
+/*
+ * Fade in topnav when scrolling
+ *
+ */
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 750) {
@@ -28,7 +32,10 @@ if (window.location.hash && window.location.hash == '#_=_') {
  *
  */
  $(".user").click(function() {
-	$(".user-menu").show(); 
+	$(".user-menu").show("fast");
+		$(".user").click(function() {
+		$(".user-menu").hide("fast");
+	});	
  });
  
  
