@@ -634,6 +634,6 @@ section button.disabled {
 	    opacity: 1;
     }
     .block {
-	    padding: 20px;
+	    padding: 40px 20px;
     }
 }
