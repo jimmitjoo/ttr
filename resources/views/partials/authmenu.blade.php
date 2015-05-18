@@ -10,7 +10,7 @@
 @else
 
 	<div class="user">
-	    <a class="auth" href="#">
+	    <a class="auth" href="/">
 	        <div class="table">
 	            <div class="table-cell">
 	                @if (!empty(Auth::user()->avatar))

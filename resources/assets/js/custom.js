@@ -35,10 +35,9 @@ if (window.location.hash && window.location.hash == '#_=_') {
 	$(".user-menu").toggle();	
  });
  $(document).click(function(e) {
-	console.log(e.target);
-	if(!e.target.classList.contains('user-menu') && !e.target.classList.contains('user')) {
-		$(".user-menu").hide();
-	}	
+ 	if(!$(event.target).hasClass('.user')) {
+	 	$(".user-menu").hide();
+ 	}	
  });
  
  
