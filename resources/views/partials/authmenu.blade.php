@@ -17,7 +17,7 @@
             </div>
         </div>
     </a>
-    <a class="logout auth" href="{{ url('/auth/logout') }}">
+    <a class="test logout auth" href="{{ url('/auth/logout') }}">
         <div class="table">
             <div class="table-cell">
                 Logga ut

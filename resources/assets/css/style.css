@@ -270,7 +270,7 @@ header a.logout {
 header a.login:hover {
 	text-decoration: none;
 }
-header a.auth:hover > header a.logout {
+header .test:hover > header a.logout {
     display: block;
 }
 header a.link-topnav {
