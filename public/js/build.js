@@ -11565,7 +11565,7 @@ if (window.location.hash && window.location.hash == '#_=_') {
  });
  $(document).click(function(e) {
 	console.log(e.target);
-	if(!e.target.classList.contains('user-menu')) {
+	if(!e.target.classList.contains('user-menu') && !e.target.classList.contains('user')) {
 		$(".user-menu").hide();
 	}	
  });
