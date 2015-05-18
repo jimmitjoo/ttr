@@ -34,7 +34,7 @@ if (window.location.hash && window.location.hash == '#_=_') {
  $(".user").click(function() {
 	$(".user-menu").toggle();	
  });
- $(document).click(function(e) {
+ $(document).click(function(event) {
  	if(!$(event.target).hasClass('.user')) {
 	 	$(".user-menu").hide();
  	}	
