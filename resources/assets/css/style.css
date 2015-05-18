@@ -270,10 +270,11 @@ header .user-menu {
 header .user:hover + .user-menu, 
 header .user-menu:hover {
     display: block;
-    background: rgba(255,255,255,.95);
 }
 header a.logout {
 	font-weight: 500;
+	padding: 15px 25px;
+	background: rgba(255,255,255,.95);
 }
 header a.link-topnav {
 	opacity: 1;
