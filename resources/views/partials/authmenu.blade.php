@@ -16,7 +16,7 @@
 	                @if (!empty(Auth::user()->avatar))
 	                    <img src="{{ Auth::user()->avatar }}" height="50" style="margin-right: 20px">
 	                @endif
-	                {{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i>
+	                <span class="hide-mobile">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
 	            </div>
 	        </div>
 	    </a>
