@@ -21,6 +21,11 @@ class RunsController extends Controller {
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
+    public function apiGetRun(Request $request, $id)
+    {
+        $json = Run::find($id);
+        return response()->json($json)->setCallback($request->input('callback'));
+    }
 
 	/**
 	 * Display a listing of the resource.
