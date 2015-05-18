@@ -2,7 +2,7 @@
     <a class="login auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
-                Logga in med Facebook
+                <i class="fa fa-user"></i> &nbsp;Logga in
             </div>
         </div>
     </a>
@@ -13,7 +13,7 @@
                 @if (!empty(Auth::user()->avatar))
                     <img src="{{ Auth::user()->avatar }}" height="50" style="margin-right: 20px">
                 @endif
-                {{ Auth::user()->name }}
+                {{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i>
             </div>
         </div>
     </a>

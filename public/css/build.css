@@ -11738,6 +11738,7 @@ a:hover, a:active {
 .canvas span.title {
 	padding-bottom: 0;
 	margin-bottom: -25px;
+	position: relative;
 }
 
 
@@ -11815,7 +11816,6 @@ header a.login {
     background: #0087ff;
 	background: #111;
 	background: #5ce060;
-	background: #3a5999;
 	padding: 0 25px;
 	font-weight: 700;
 	display: inline-block;
@@ -11827,6 +11827,9 @@ header a.login {
 header a.logout {
     color: white;
     background: #ff0000;
+}
+header a.login:hover {
+	text-decoration: none;
 }
 header a.link-topnav {
 	opacity: 1;
