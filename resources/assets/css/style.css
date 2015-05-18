@@ -247,6 +247,9 @@ header a.auth {
     margin-right: -15px;
     height: 100%;
 }
+header a.auth:hover a.logout {
+    display: block;
+}
 header a.login {
     color: white;
     background: #0087ff;
@@ -261,8 +264,8 @@ header a.login {
 	outline: 0;
 }
 header a.logout {
-    color: white;
-    background: #ff0000;
+	display: none;
+    background: rgba()255,255,255,.95;
 }
 header a.login:hover {
 	text-decoration: none;
