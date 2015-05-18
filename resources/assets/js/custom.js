@@ -32,8 +32,7 @@ if (window.location.hash && window.location.hash == '#_=_') {
  *
  */
  $(".user").click(function() {
-	$(".user-menu").toggle();
-	});	
+	$(".user-menu").toggle();	
  });
  
  
