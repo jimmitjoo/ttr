@@ -51,10 +51,11 @@ Route::get('indexing', 'OrganizersController@apiCreateRequest');
 
 
 
-Route::get('race/list/', 'RunsController@apiGetList');
-Route::get('race/list/{query}', 'RunsController@apiGetList');
-Route::get('race/page/', 'RunsController@apiGetPaginated');
-Route::get('race/page/{query}', 'RunsController@apiGetPaginated');
-Route::get('race/{id}', 'RunsController@apiGetRun');
+Route::get('api/race/list/', 'RunsController@apiGetList');
+Route::get('api/race/list/{query}', 'RunsController@apiGetList');
+Route::get('api/race/page/', 'RunsController@apiGetPaginated');
+Route::get('api/race/page/{query}', 'RunsController@apiGetPaginated');
+Route::get('api/race/{id}', 'RunsController@apiGetById');
+Route::get('api/organizer/{id}', 'OrganizersController@apiGetById');
 
 Route::get('villkor', 'PagesController@terms');

@@ -21,9 +21,9 @@ class RunsController extends Controller {
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
-    public function apiGetRun(Request $request, $id)
+    public function apiGetById(Request $request, $id)
     {
-        $json = Run::find($id);
+        $json = Run::where('id', '=', $id)->first();
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
