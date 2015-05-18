@@ -11553,6 +11553,16 @@ if (window.location.hash && window.location.hash == '#_=_') {
 }
 
 /*
+ * Show hide user menu on click
+ *
+ */
+ $(".user").click(function() {
+	$(".user-menu").show(); 
+ });
+ 
+ 
+ 
+/*
 var scrollToTop;
 var topNav = document.getElementsByClassName('topnav');
 var topNavPosition = function () {

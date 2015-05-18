@@ -233,16 +233,28 @@ a.click-black:hover {
 header {
     color: white;
 }
+.header-default {
+	height: 82px;
+}
+.header-scroll {
+	height: 62px;
+}
+.header-default {
+	background: white;
+}
+.header-scroll {
+	background: rgba(255,255,255,.97);
+}
 header .logo {
 	cursor: pointer;
 	border: 0;
 	padding-right: 10px;
 	height: 38px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 header a.auth {
     padding: 0 25px;
-    font-weight: 700;
+    font-weight: 500;
     display: inline-block;
     margin-right: -15px;
     height: 100%;
@@ -267,13 +279,11 @@ header .user {
 header .user-menu {
 	display: none;
 }
-header .user:hover + .user-menu, 
-header .user-menu:hover {
-    display: block;
-    background: rgba(255,255,255,.95);
-}
 header a.logout {
 	font-weight: 500;
+	padding: 15px 25px;
+	margin: 0;
+	background: rgba(255,255,255,.95);
 }
 header a.link-topnav {
 	opacity: 1;
