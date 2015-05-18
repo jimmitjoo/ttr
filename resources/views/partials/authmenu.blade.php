@@ -23,7 +23,8 @@
 	</div>
 	
     <div class="user-menu">
-    	<a class="logout auth" href="{{ url('/auth/logout') }}">Logga ut</a>
+    	<a class="" href="/">Konto</a>
+    	<a class="" href="{{ url('/auth/logout') }}">Logga ut</a>
     </div>
     
 @endif
