@@ -182,7 +182,7 @@ a:hover, a:active {
  * Buttons
  *
  */
-.click {
+a.click {
 	padding: 15px 25px;
 	display: inline-block;
 	font-weight: 700;
@@ -192,35 +192,35 @@ a:hover, a:active {
     cursor: pointer;
 	outline: 0;
 }
-.click-blue {
+a.click-blue {
 	background: #0087ff;
 	color: white;
 }
-.click-blue:hover {
+a.click-blue:hover {
 	background: #0073e6;
 	color: white;
 }
-.click-green {
+a.click-green {
 	background: #5ce060;
 	color: white;
 }
-.click-green:hover {
+a.click-green:hover {
 	background: #5ce060;
 	color: white;
 }
-.click-shop {
+a.click-shop {
 	background: #ab2394;
 	color: white;
 }
-.click-shop:hover {
+a.click-shop:hover {
 	background: #ab2394;
 	color: white;
 }
-.click-black {
+a.click-black {
 	background: #111;
 	color: white;
 }
-.click-black:hover {
+a.click-black:hover {
 	background: #111;
 	color: white;
 }
@@ -267,8 +267,11 @@ header .user-menu {
 	font-weight: 500 !important;
     background: rgba(255,255,255,.95);
 }
-header .user + .user-menu {
+header .user:hover + .user-menu {
     display: block;
+}
+header a.logout {
+	
 }
 header a.link-topnav {
 	opacity: 1;
