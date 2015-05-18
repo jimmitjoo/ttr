@@ -11823,6 +11823,16 @@ header span.auth {
     margin-right: -15px;
     height: 100%;
     outline: 0;
+    color: #0087ff;
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    text-decoration: none;
+    cursor: pointer;
+}
+header span.auth {
+    color: #0073e6;
+}
 }
 header a.login {
     color: white;
