@@ -11830,9 +11830,8 @@ header span.auth {
     text-decoration: none;
     cursor: pointer;
 }
-header span.auth {
+header span.auth:hover {
     color: #0073e6;
-}
 }
 header a.login {
     color: white;
@@ -11849,9 +11848,11 @@ header a.login {
 }
 header .user {
 	height: 100%;
+	display: inline-block;
 }
 header .user-menu {
 	display: none;
+	margin-top: -5px;
 }
 header .user-menu-container {
 	display: inline-block;
