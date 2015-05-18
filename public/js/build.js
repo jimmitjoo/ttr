@@ -11561,9 +11561,7 @@ if (window.location.hash && window.location.hash == '#_=_') {
  *
  */
  $(".user").click(function() {
-	$(".user-menu").show("fast");
-		$(".user").click(function() {
-		$(".user-menu").hide("fast");
+	$(".user-menu").toggle();
 	});	
  });
  
