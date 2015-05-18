@@ -9,8 +9,8 @@
     </a>
 @else
 
-	<div class="user">
-	    <a class="auth" href="#">
+	<div class="user stay">
+	    <a class="auth stay" href="#">
 	        <div class="table">
 	            <div class="table-cell">
 	                @if (!empty(Auth::user()->avatar))
