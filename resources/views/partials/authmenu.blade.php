@@ -7,7 +7,7 @@
         </div>
     </a>
 @else
-    <a class="auth" href="#">
+    <a class="test auth" href="#">
         <div class="table">
             <div class="table-cell">
                 @if (!empty(Auth::user()->avatar))
@@ -17,7 +17,7 @@
             </div>
         </div>
     </a>
-    <a class="test logout auth" href="{{ url('/auth/logout') }}">
+    <a class="logout auth" href="{{ url('/auth/logout') }}">
         <div class="table">
             <div class="table-cell">
                 Logga ut
