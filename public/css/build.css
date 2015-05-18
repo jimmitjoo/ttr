@@ -11678,15 +11678,15 @@ p {
 .gray {
     color: gray;
 }
-a {
+a:link, a:visited {
     color: #0087ff;
     transition: color .2s linear;
     -webkit-transition: color .2s linear;
     -moz-transition: color .2s linear;
+    text-decoration: none;
 }
 a:hover, a:active {
     color: #0073e6;
-    text-decoration: none;
 }
 .text-title {
     margin-top: 0;
@@ -11834,7 +11834,7 @@ header a.logout {
 header a.login:hover {
 	text-decoration: none;
 }
-header .test:hover > header a.logout {
+header a.auth:hover + header a.logout {
     display: block;
 }
 header a.link-topnav {
