@@ -14,9 +14,9 @@
 	        <div class="table">
 	            <div class="table-cell">
 	                @if (!empty(Auth::user()->avatar))
-	                    <img src="{{ Auth::user()->avatar }}" height="50" style="margin-right: 20px">
+	                    <img src="{{ Auth::user()->avatar }}" height="50">
 	                @endif
-	                <span class="hide-mobile">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
+	                <span style="padding-left: 20px" class="hide-mobile">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
 	            </div>
 	        </div>
 	    </a>
