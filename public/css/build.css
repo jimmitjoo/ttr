@@ -11834,6 +11834,10 @@ header .user-menu {
 header .user:hover + .user-menu {
     display: block;
 }
+.user-menu:hover {
+    display: block;
+}
+
 header a.logout {
 	
 }
