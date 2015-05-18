@@ -10,7 +10,7 @@
 @else
 
 	<div class="user stay">
-	    <a class="auth" href="#">
+	    <span class="auth">
 	        <div class="table">
 	            <div class="table-cell">
 	                @if (!empty(Auth::user()->avatar))
@@ -19,7 +19,7 @@
 	                <span style="padding-left: 20px" class="hide-mobile stay">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
 	            </div>
 	        </div>
-	    </a>
+	    </span>
 	</div>
 	
     <div class="user-menu">

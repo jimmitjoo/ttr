@@ -252,7 +252,7 @@ header .logo {
 	height: 38px;
 	margin-left: 10px;
 }
-header a.auth {
+header span.auth {
     padding: 0 25px;
     font-weight: 500;
     display: inline-block;

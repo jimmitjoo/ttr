@@ -118,7 +118,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center" style="padding-bottom: 50px;">
                     <h2 class="text-title big">Sök lopp och tävlingar</h2>
-
                     <p style="font-weight: 500;">-i närheten eller på annan plats i Sverige och världen.</p>
                 </div>
             </div>
