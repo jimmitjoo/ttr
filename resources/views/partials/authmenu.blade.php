@@ -7,6 +7,7 @@
             </div>
         </div>
     </a>
+    
 @else
 
 	<div class="user stay">
@@ -16,7 +17,7 @@
 	                @if (!empty(Auth::user()->avatar))
 	                    <img class="stay" src="{{ Auth::user()->avatar }}" height="50">
 	                @endif
-	                <span style="padding-left: 20px" class="hide-mobile stay">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
+	                <span style="padding-left: 10px" class="hide-mobile stay">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
 	            </div>
 	        </div>
 	    </span>

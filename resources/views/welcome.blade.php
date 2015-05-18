@@ -66,25 +66,37 @@
             <div class="col-lg-12 col-md-12 height-full">
                 <div class="table">
                     <div class="table-cell">
-                        <span class="title">Drottning</span><br/><span>Margaretaloppet</span>
-                        <p>
-                        	<?php
-                            /*
-                             * First parameter is the id (last part of race url) and is required.
-                             * Check what the id is on the live-site since it may not be the same
-                             * in your local environment.
-                             *
-                             * Second parameter in printPromoLink is not required, will use the
-                             * name of the run from database in that case it is empty or not set.
-                             *
-                             * Third parameter is the class that should be set on the link, if
-                             * multiple, just put a space between them.
-                            */
-                            ?>
-                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-blue'); ?>
-                        </p>
+                    	<div id="fader">
+                    		<div>
+		                        <span class="title">Drottning</span><br/><span>Margaretaloppet</span>
+		                        <p>
+		                        	<?php
+		                            /*
+		                             * First parameter is the id (last part of race url) and is required.
+		                             * Check what the id is on the live-site since it may not be the same
+		                             * in your local environment.
+		                             *
+		                             * Second parameter in printPromoLink is not required, will use the
+		                             * name of the run from database in that case it is empty or not set.
+		                             *
+		                             * Third parameter is the class that should be set on the link, if
+		                             * multiple, just put a space between them.
+		                            */
+		                            ?>
+		                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-blue'); ?>
+		                        </p>
+		                    </div>
+                    		<div>
+		                    	<span>Lidingöloppet</span>
+		                        <p><?php echo \App\Run::printRunLink('619', 'Läs mer och anmäl dig här', 'click click-blue'); ?></p>
+                    		</div>
+                    		<div>
+		                    	<span>Kalmar Malkars 21</span>
+		                        <p><?php echo \App\Run::printRunLink('275', 'Läs mer och anmäl dig här', 'click click-blue'); ?></p>
+                    		</div>
+                    	</div>
                     </div>
-                </div>
+            	</div>
             </div>
         </div>
     </div>

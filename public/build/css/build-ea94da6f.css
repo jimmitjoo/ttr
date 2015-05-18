@@ -11740,6 +11740,16 @@ a:hover, a:active {
 	margin-bottom: -25px;
 	position: relative;
 }
+#fader {   
+    width: 100%; 
+    height: 100%;
+    position: relative; 
+    margin: 0;
+}
+#fader > div { 
+    position: absolute;  
+    bottom: 0; 
+}
 
 
 /* 
@@ -11772,11 +11782,13 @@ a.click-green:hover {
 	background: #5ce060;
 	color: white;
 }
-a.click-shop {
+a.click-shop,
+.click-shop {
 	background: #ab2394;
 	color: white;
 }
-a.click-shop:hover {
+a.click-shop:hover, 
+.click-shop:hover {
 	background: #ab2394;
 	color: white;
 }

@@ -19,8 +19,11 @@
         </div>
         
         <div class="row">
-            <div class="col-lg-12 small">
-            	<span class="small">© 2015 Timetorun.se &nbsp;&nbsp; Beta
+            <div class="col-lg-6 col-md-6 small">
+            	<span class="small">© 2015 Timetorun.se</span>
+            </div>
+            <div class="col-lg-6 col-md-6 small text-right" style="opacity: .3;">
+            	<span class="small">Beta
                 @if (Auth::check())
                         :: {{ Auth::user()->location }}
                 @endif</span>

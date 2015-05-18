@@ -11572,6 +11572,23 @@ if (window.location.hash && window.location.hash == '#_=_') {
  
  
 /*
+ * Slideshow
+ *
+ */
+ $("#fader > div:gt(0)").hide();
+
+ setInterval(function() { 
+	 $('#fader > div:first')
+     .fadeOut(800)
+     .next()
+     .fadeIn(800)
+     .end()
+     .appendTo('#fader');
+ },  4500);
+ 
+ 
+ 
+/*
 var scrollToTop;
 var topNav = document.getElementsByClassName('topnav');
 var topNavPosition = function () {
