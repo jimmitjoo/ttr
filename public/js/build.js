@@ -11563,10 +11563,10 @@ if (window.location.hash && window.location.hash == '#_=_') {
  $(".user").click(function() {
 	$(".user-menu").toggle();	
  });
- $(".user-menu").click(function(e) {
+ $(document).click(function(e) {
 	console.log(e.target);
-	if(e.target==$(this)) {
-		
+	if(!e.target.classList.contains('user-menu')) {
+		$(".user-menu").hide();
 	}	
  });
  
