@@ -11812,9 +11812,6 @@ header a.auth {
     height: 100%;
     outline: 0;
 }
-header a.auth:hover > a.logout {
-    display: block;
-}
 header a.login {
     color: white;
     background: #0087ff;
@@ -11836,6 +11833,9 @@ header a.logout {
 }
 header a.login:hover {
 	text-decoration: none;
+}
+header a.auth:hover > header a.logout {
+    display: block;
 }
 header a.link-topnav {
 	opacity: 1;
