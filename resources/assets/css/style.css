@@ -157,7 +157,7 @@ a:hover, a:active {
  *
  */
 .canvas {
-    background: url('/images/unsplash-green.jpg');
+    background: url('/images/unsplash.jpg');
     background-position: center center;
     background-size: cover;
     height: 68%;
