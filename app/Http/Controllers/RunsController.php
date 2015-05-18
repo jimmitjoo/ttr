@@ -23,7 +23,7 @@ class RunsController extends Controller {
 
     public function apiGetById(Request $request, $id)
     {
-        $json = Run::where('id', '=', $id)->first();
+        $json = Run::where('id', '=', $id)->with('organizer')->first();
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
