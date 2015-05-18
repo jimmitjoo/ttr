@@ -261,16 +261,13 @@ header a.login {
 	cursor: pointer;
 	outline: 0;
 }
-header a.logout {
+header .user-menu {
 	display: none;
 	margin-top: -5px;
 	font-weight: 500 !important;
     background: rgba(255,255,255,.95);
 }
-header a.login:hover {
-	text-decoration: none;
-}
-header a.auth:hover + header a.logout {
+header .user + .user-menu {
     display: block;
 }
 header a.link-topnav {
