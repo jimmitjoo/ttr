@@ -24,8 +24,12 @@
 	
     <div class="user-menu">
     	<span class="user-menu-container">
-    		<a href="/">Konto</a>
-    		<a href="{{ url('/auth/logout') }}">Logga ut</a>
+    		<div>
+    			<a href="/">Konto</a>
+    		</div>
+    		<div>
+    			<a href="{{ url('/auth/logout') }}">Logga ut</a>
+    		</div>
     	</span>
     </div>
     
