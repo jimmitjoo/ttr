@@ -180,7 +180,23 @@ class OrganizersController extends Controller
             $organizer->save();
 
             for ($x=0;$x<count($run[$i]['length']);$x++) {
-                Run::firstOrCreate([
+
+                $rrr = new Run;
+                $rrr->organizer_id = $organizer->id;
+                $rrr->name = $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . 'km';
+                $rrr->town = $run[$i]['town'];
+                $rrr->distance = $run[$i]['length'][$x];
+                $rrr->start_datetime = $run[$i]['date'];
+                $rrr->external_link = $run[$i]['external_link'];
+
+                $cRun = Run::where('name', '=', $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . 'km')
+                            ->where('start_datetime', '=', $run[$i]['date'])->first();
+
+                if (!$cRun) $rrr->save();
+
+                /*dd($rrr);
+
+                $cRun = Run::firstOrCreate([
                     'organizer_id' => $organizer->id,
                     'name' => $run[$i]['name'] . ' ' . round($run[$i]['length'][$x] / 1000, 2) . 'km',
                     'town' => $run[$i]['town'],
@@ -188,6 +204,10 @@ class OrganizersController extends Controller
                     'start_datetime' => $run[$i]['date'],
                     'external_link' => $run[$i]['external_link']
                 ]);
+                $cRun->save();
+
+                dd($cRun);
+                */
             }
 
         }
