@@ -10,13 +10,13 @@
 @else
 
 	<div class="user stay">
-	    <a class="auth stay" href="#">
+	    <a class="auth" href="#">
 	        <div class="table">
 	            <div class="table-cell">
 	                @if (!empty(Auth::user()->avatar))
 	                    <img src="{{ Auth::user()->avatar }}" height="50">
 	                @endif
-	                <span style="padding-left: 20px" class="hide-mobile">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
+	                <span style="padding-left: 20px" class="hide-mobile stay">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
 	            </div>
 	        </div>
 	    </a>
