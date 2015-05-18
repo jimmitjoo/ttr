@@ -240,7 +240,6 @@ header .logo {
 	margin-left: 20px;
 }
 header a.auth {
-    color: white;
     padding: 0 25px;
     font-weight: 700;
     display: inline-block;
@@ -248,7 +247,8 @@ header a.auth {
     height: 100%;
 }
 header a.login {
-	background: #0087ff;
+    color: white;
+    background: #0087ff;
 	background: #111;
 	background: #5ce060;
 	background: #3a5999;
@@ -261,8 +261,8 @@ header a.login {
 	outline: 0;
 }
 header a.logout {
+    color: white;
     background: #ff0000;
-
 }
 header a.link-topnav {
 	opacity: 1;

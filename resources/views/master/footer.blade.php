@@ -20,7 +20,10 @@
         
         <div class="row">
             <div class="col-lg-12 small">
-            	<span class="small">© 2015 Timetorun.se &nbsp;&nbsp; Beta</span>
+            	<span class="small">© 2015 Timetorun.se &nbsp;&nbsp; Beta
+                @if (Auth::check())
+                        :: {{ Auth::user()->location }}
+                @endif</span>
             </div>
         </div>
     </div>

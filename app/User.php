@@ -23,7 +23,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'email', 'password'];
+	protected $fillable = ['username', 'gender', 'name', 'email', 'password'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -34,7 +34,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public static function socialUser($userObject)
     {
-
         $user = User::where('facebook_provider_id', $userObject->id)->first();
         if (!$user) $user = User::where('email', $userObject->email)->first();
 
@@ -42,7 +41,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             if (empty($user->facebook_provider_id)) $user->facebook_provider_id = $userObject->id;
             if (empty($user->name)) $user->name = $userObject->name;
             if (empty($user->avatar)) $user->avatar = $userObject->avatar;
-            if (empty($user->gender) && self::checkValidGender($userObject)) $user->gender = $userObject->gender;
+            if ($user->gender == null) $user->gender = $userObject->user['gender'];
+            if (empty($user->location) && isset($userObject->user['location']['name'])) $user->location = $userObject->user['location']['name'];
 
             $user->save();
 
@@ -56,22 +56,14 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $user->email = $userObject->email;
         $user->facebook_provider_id = $userObject->id;
         $user->avatar = $userObject->avatar;
-        if (self::checkValidGender($userObject)) $user->gender = $userObject->gender;
+        $user->gender = $userObject->user['gender'];
+        if (isset($userObject->user['location']['name'])) $user->location = $userObject->user['location']['name'];
 
         $user->save();
 
         event(new UserHasRegistered($user));
 
         return $user;
-    }
-
-    /**
-     * @param $object
-     * @return bool
-     */
-    public static function checkValidGender($object)
-    {
-        return $object->gender == 'female' || $object->gender == 'male';
     }
 
 }

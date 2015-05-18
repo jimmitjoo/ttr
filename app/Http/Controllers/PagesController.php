@@ -12,4 +12,9 @@ class PagesController extends Controller {
         return view('pages.about');
 	}
 
+    public function terms()
+    {
+        return view('pages.terms');
+    }
+
 }
