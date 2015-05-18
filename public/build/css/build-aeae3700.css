@@ -11844,6 +11844,7 @@ header .user-menu {
 	display: none;
 }
 header .user-menu-container {
+	display: inline-block;
 	font-weight: 500;
 	text-align: left;
 	padding: 15px 25px;
