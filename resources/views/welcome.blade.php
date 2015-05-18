@@ -14,25 +14,25 @@
     <header>
     
     	<div class="topnav">
-    	<div class="max-width container-fluid" style="background: rgba(255,255,255,.97);">
-            <div class="row">
-                <div class="col-lg-6 col-md-6" style="height: 62px;">
-                    <div class="table">
-                        <div class="table-cell">
-                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 62px;">
-                    @include('partials.authmenu')
-                </div>
-            </div>
-        </div>
+	    	<div class="max-width container-fluid header-scroll-bg">
+	            <div class="row">
+	                <div class="col-lg-6 col-md-6 col-xs-6 header-scroll">
+	                    <div class="table">
+	                        <div class="table-cell">
+	                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-lg-6 col-md-6 col-xs-6 header-scroll text-right">
+	                    @include('partials.authmenu')
+	                </div>
+	            </div>
+	        </div>
     	</div>
     
-        <div class="max-width container-fluid" style="background: white;">
+        <div class="max-width container-fluid header-default-bg">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-6" style="height: 82px;">
+                <div class="col-lg-6 col-md-6 col-xs-6 header-default">
                     <div class="table">
                         <div class="table-cell">
                             <a href="/"><img class="logo" src="/images/timetorun.png"></a>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="height: 82px;">
+                <div class="col-lg-6 col-md-6 col-xs-6 header-default text-right">
 
                     <!--
                     <form>
