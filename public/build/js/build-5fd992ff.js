@@ -11564,7 +11564,7 @@ if (window.location.hash && window.location.hash == '#_=_') {
 	$(".user-menu").toggle();	
  });
  $(document).click(function(event) {
- 	if(!$(event.target).hasClass('.user')) {
+ 	if(!$(event.target).hasClass('user')) {
 	 	$(".user-menu").hide();
  	}	
  });
