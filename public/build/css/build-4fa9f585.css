@@ -11825,11 +11825,11 @@ header a.login {
 	cursor: pointer;
 	outline: 0;
 }
+header .user {
+	height: 100%;
+}
 header .user-menu {
 	display: none;
-	margin-top: -5px;
-	font-weight: 500 !important;
-    background: rgba(255,255,255,.95);
 }
 header .user:hover + .user-menu {
     display: block;
@@ -11837,9 +11837,9 @@ header .user:hover + .user-menu {
 .user-menu:hover {
     display: block;
 }
-
 header a.logout {
-	
+	font-weight: 500;
+	background: rgba(255,255,255,.95);
 }
 header a.link-topnav {
 	opacity: 1;

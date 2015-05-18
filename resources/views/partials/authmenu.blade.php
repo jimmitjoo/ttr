@@ -19,5 +19,13 @@
         </div>
     </a>
 	</div>
-    
+    <div class="user-menu">
+    <a class="logout auth" href="{{ url('/auth/logout') }}">
+        <div class="table">
+            <div class="table-cell">
+                Logga ut
+            </div>
+        </div>
+    </a>
+    </div>
 @endif
