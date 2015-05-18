@@ -23,8 +23,10 @@
 	</div>
 	
     <div class="user-menu">
-    	<a class="" href="/">Konto</a>
-    	<a class="" href="{{ url('/auth/logout') }}">Logga ut</a>
+    	<span class="user-menu-container">
+    		<a href="/">Konto</a>
+    		<a href="{{ url('/auth/logout') }}">Logga ut</a>
+    	</span>
     </div>
     
 @endif

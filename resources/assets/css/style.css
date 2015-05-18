@@ -279,7 +279,7 @@ header .user {
 header .user-menu {
 	display: none;
 }
-header .user-menu a {
+header .user-menu-container {
 	font-weight: 500;
 	padding: 15px 25px;
 	margin: 0;
