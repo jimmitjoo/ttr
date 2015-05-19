@@ -101,9 +101,9 @@
 
         <div class="container-fluid max-width">
             <div class="row">
-                <div class="col-lg-4 block bg-yellow purple">
+                <div class="col-lg-4 col-md-5 block bg-yellow purple">
                 	<p>Distans</p>
-                    <h2 class="big" style="font-size: 600%;">{{ $run->distance / 1000 }} km</h2>
+                    <h2 class="big">{{ $run->distance / 1000 }} km</h2>
                     
                     <!--
                     <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
@@ -112,9 +112,9 @@
                         sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
                      -->
                 </div>
-                <div class="col-lg-8 block bg-blue">
+                <div class="col-lg-8 col-md-7 block bg-blue">
                 	<p>Plats</p>
-                    <h2 class="big" style="font-size: 600%;">{{ $run->town }}</h2>
+                    <h2 class="big">{{ $run->town }}</h2>
                     
                     <!--
                     <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
