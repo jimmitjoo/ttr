@@ -3,7 +3,7 @@
 	<a class="register auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
-                Registrerar dig med Facebook
+                Registrerar dig &nbsp;<i class="fa fa-facebook-official"></i>
             </div>
         </div>
     </a>
@@ -11,7 +11,7 @@
     <a class="login auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
-                <i class="fa fa-user"></i> &nbsp;Logga in
+                Logga in<!--&nbsp;<i class="fa fa-user"></i>-->
             </div>
         </div>
     </a>

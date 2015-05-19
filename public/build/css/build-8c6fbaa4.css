@@ -11584,7 +11584,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #111;
-    background: #404758;
+    background: #072239;
     /*
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11647,7 +11647,7 @@ h2 {
 }
 h1.big, h2.big {
     font-size: 400%;
-    font-weight: 900;
+    font-weight: 700;
     margin: 4px;
     letter-spacing: -1px;
 }
@@ -11661,8 +11661,8 @@ h3 {
     font-size: 150%;
 }
 h3.large {
-    font-size: 240%;
-    line-height: 1.5;
+    font-size: 360%;
+    line-height: 1.2;
     margin-bottom: 30px;
 }
 p {
@@ -11777,11 +11777,11 @@ a.click-blue:hover {
 }
 a.click-green {
 	background: #5ce060;
-	color: white;
+	color: #1a429f;
 }
 a.click-green:hover {
 	background: #5ce060;
-	color: white;
+	color: #1a429f;
 }
 a.click-shop,
 .click-shop {
@@ -11828,6 +11828,7 @@ header .logo {
 	padding-right: 10px;
 	height: 38px;
 	margin-left: 10px;
+	margin-top: -2px;
 }
 header span.auth {
     padding: 0 25px;
@@ -11848,9 +11849,9 @@ header span.auth:hover {
 }
 header a.login {
     color: white;
-    background: #0087ff;
-	background: #111;
-	background: #5ce060;
+    background: ;
+	background: ;
+	background: #0087ff;
 	padding: 0 25px;
 	font-weight: 700;
 	display: inline-block;
@@ -11858,17 +11859,18 @@ header a.login {
 	height: 100%;
 	cursor: pointer;
 	outline: 0;
+	text-transform: uppercase;
 }
 header a.register {
-    color: white;
-    background: #39589b;
+    color: #39589b;
+    background: ;
 	padding: 0 25px;
 	font-weight: 700;
 	display: inline-block;
-	margin-right: -15px;
 	height: 100%;
 	cursor: pointer;
 	outline: 0;
+	text-transform: uppercase;
 }
 header .user {
 	height: 100%;
@@ -11889,14 +11891,15 @@ header .user-menu-container {
 header a.link-topnav {
 	opacity: 1;
 	color: #1a429f;
-	font-weight: 600;
+	font-weight: 500;
+	font-size: 110%;
 	padding-left: 15px;
 	transition: opacity .3s ease;
 	-webkit-transition: opacity .3s ease;
 	-moz-transition: opacity .3s ease;
 }
 header a.link-topnav:hover {
-	opacity: .7;
+	opacity: .85;
 }
 header .search-topnav {
 	border-radius: 0px !important;
@@ -12142,9 +12145,10 @@ section button.disabled {
 	background: #3a5999;
 	color: white !important;
 	margin-top: 40px;
-	padding: 15px 20px;
+	padding: 25px 30px;
 	display: inline-block;
 	font-weight: 700;
+	font-size: 120%;
 }
 
 /*

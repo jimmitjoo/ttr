@@ -36,9 +36,7 @@
                     <div class="table">
                         <div class="table-cell">
                             <a href="/"><img class="logo" src="/images/timetorun.png"></a>
-                            
-                            <a class="link-topnav" href="#">demo</a>
-                            
+                            <a class="link-topnav" href="#"></a>
                         </div>
                     </div>
                 </div>
@@ -83,16 +81,16 @@
 		                             * multiple, just put a space between them.
 		                            */
 		                            ?>
-		                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här', 'click click-blue'); ?>
+		                            <?php echo \App\Run::printRunLink('131', 'Läs mer och anmäl dig här &nbsp; <i class="fa fa-long-arrow-right"></i>', 'click click-green'); ?>
 		                        </p>
 		                    </div>
                     		<div>
 		                    	<span>Lidingöloppet</span>
-		                        <p><?php echo \App\Run::printRunLink('619', 'Läs mer och anmäl dig här', 'click click-blue'); ?></p>
+		                        <p><?php echo \App\Run::printRunLink('619', 'Läs mer och anmäl dig här &nbsp; <i class="fa fa-long-arrow-right"></i>', 'click click-green'); ?></p>
                     		</div>
                     		<div>
 		                    	<span>Kalmar Malkars 21</span>
-		                        <p><?php echo \App\Run::printRunLink('275', 'Läs mer och anmäl dig här', 'click click-blue'); ?></p>
+		                        <p><?php echo \App\Run::printRunLink('275', 'Läs mer och anmäl dig här &nbsp; <i class="fa fa-long-arrow-right"></i>', 'click click-green'); ?></p>
                     		</div>
                     	</div>
                     </div>
@@ -105,11 +103,11 @@
     <div class="max-width container-fluid bg-white block-border-bottom">
     	<div class="row">
     		<div class="col-lg-6 col-md-6 block bg-blue">
-    			<h3 class="large">Time<span style="font-weight:500">to</span>run<br/>- Älska att springa</h3>
-    			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning ännu effektivare och roligare.</p>
+    			<h3 class="large">Timetorun,<br/>älska<br/> att springa</h3>
+    			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning effektivare och roligare.</p>
                 
                 @if (!Auth::check())
-                <a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med facebook</a>
+                <a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med Facebook</a>
     		    @endif
     		    
             </div>
