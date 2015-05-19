@@ -9,16 +9,23 @@ use Illuminate\Http\Response;
 
 class RunsController extends Controller {
 
-    public function apiGetList($query = null)
+    public function apiGetList(Request $request, $query = null)
     {
-        return Run::getList($query)->get();
+        $json = Run::getList($query)->get();
+        return response()->json($json)->setCallback($request->input('callback'));
     }
 
-    public function apiGetPaginated($query = null)
+    public function apiGetPaginated(Request $request, $query = null)
     {
-        return Run::getList($query)->paginate(15);
+        $json = Run::getList($query)->paginate(15);
+        return response()->json($json)->setCallback($request->input('callback'));
     }
 
+    public function apiGetById(Request $request, $id)
+    {
+        $json = Run::where('id', '=', $id)->with('organizer')->first();
+        return response()->json($json)->setCallback($request->input('callback'));
+    }
 
 	/**
 	 * Display a listing of the resource.

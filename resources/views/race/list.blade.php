@@ -33,8 +33,10 @@
             </div>
         </a>
     </div>
-
-    <button class="show-more" ng-click="showMore()">Visa fler</button>
+    
+    <div class="text-center">
+    	<button class="show-more click click-blue" ng-click="showMore()">Visa fler</button>
+    </div>
     <div id="paginateSpinner"><i class="fa fa-spinner fa-spin"></i></div>
 
 </div>

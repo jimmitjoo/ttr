@@ -6,7 +6,7 @@ app.controller('runPaginationController', function ($scope, $http) {
     $scope.races = [];
 
 
-    var apiEndpoint = '/race/page';
+    var apiEndpoint = 'http://timetorun.se/api/race/page';
 
 
     $scope.loadData = function() {
@@ -17,7 +17,7 @@ app.controller('runPaginationController', function ($scope, $http) {
             $scope.searchQuery = $('#runTown').val();
         }
 
-        $http.get(apiEndpoint + '/' + $scope.searchQuery + '?page=' + $scope.page, { cache: false})
+        $http.jsonp(apiEndpoint + '/' + $scope.searchQuery + '?page=' + $scope.page + '&callback=JSON_CALLBACK', { cache: false})
             .success(function(response){
                 $scope.last = response.last_page;
                 if ($scope.page == $scope.last) {

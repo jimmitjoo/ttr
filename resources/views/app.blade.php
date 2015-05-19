@@ -1,9 +1,5 @@
 @include('master.header')
 
-<div style="position: absolute; z-index: 3; top: 0; right: 0; left: 0; height: 80px; background: rgba(0,0,0,.3);">
-    <div style="position: absolute; color: white; text-align: center; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);"><a href="/"><img src="/images/timetorun-white.png"></a></div>
-</div>
-
 <!--
 <nav class="navbar navbar-default topnav-subpage">
     <div class="container-fluid">

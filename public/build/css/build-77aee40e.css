@@ -11584,7 +11584,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #111;
-    background: #ededed;
+    background: #072239;
     /*
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11647,7 +11647,7 @@ h2 {
 }
 h1.big, h2.big {
     font-size: 400%;
-    font-weight: 900;
+    font-weight: 700;
     margin: 4px;
     letter-spacing: -1px;
 }
@@ -11661,8 +11661,8 @@ h3 {
     font-size: 150%;
 }
 h3.large {
-    font-size: 240%;
-    line-height: 1.5;
+    font-size: 360%;
+    line-height: 1.2;
     margin-bottom: 30px;
 }
 p {
@@ -11678,15 +11678,18 @@ p {
 .gray {
     color: gray;
 }
-a {
+.purple {
+	color: #4f287a;
+}
+a:link, a:visited {
     color: #0087ff;
     transition: color .2s linear;
     -webkit-transition: color .2s linear;
     -moz-transition: color .2s linear;
+    text-decoration: none;
 }
 a:hover, a:active {
     color: #0073e6;
-    text-decoration: none;
 }
 .text-title {
     margin-top: 0;
@@ -11721,12 +11724,13 @@ a:hover, a:active {
  *
  */
 .canvas {
-    background: url('/images/unsplash-green.jpg');
+    background: url('/images/unsplash.jpg');
     background-position: center center;
     background-size: cover;
     height: 68%;
 }
-.canvas span {
+.canvas span,
+.canvas h1 {
 	font-size: 450%;
 	font-weight: 700;
 	letter-spacing: -4px;
@@ -11735,9 +11739,21 @@ a:hover, a:active {
 	background: #1a429f;
 	padding: 10px 25px;
 }
-.canvas span.title {
+.canvas span.title,
+.canvas h1.title {
 	padding-bottom: 0;
 	margin-bottom: -25px;
+	position: relative;
+}
+#fader {   
+    width: 100%; 
+    height: 100%;
+    position: relative; 
+    margin: 0;
+}
+#fader > div { 
+    position: absolute;  
+    bottom: 0; 
 }
 
 
@@ -11745,6 +11761,7 @@ a:hover, a:active {
  * Buttons
  *
  */
+a.click,
 .click {
 	padding: 15px 25px;
 	display: inline-block;
@@ -11755,35 +11772,37 @@ a:hover, a:active {
     cursor: pointer;
 	outline: 0;
 }
-.click-blue {
+a.click-blue {
 	background: #0087ff;
 	color: white;
 }
-.click-blue:hover {
+a.click-blue:hover {
 	background: #0073e6;
 	color: white;
 }
-.click-green {
+a.click-green {
 	background: #5ce060;
-	color: white;
+	color: #1a429f;
 }
-.click-green:hover {
+a.click-green:hover {
 	background: #5ce060;
-	color: white;
+	color: #1a429f;
 }
+a.click-shop,
 .click-shop {
 	background: #ab2394;
 	color: white;
 }
+a.click-shop:hover, 
 .click-shop:hover {
 	background: #ab2394;
 	color: white;
 }
-.click-black {
+a.click-black {
 	background: #111;
 	color: white;
 }
-.click-black:hover {
+a.click-black:hover {
 	background: #111;
 	color: white;
 }
@@ -11796,26 +11815,48 @@ a:hover, a:active {
 header {
     color: white;
 }
+.header-default {
+	height: 82px;
+}
+.header-scroll {
+	height: 62px;
+}
+.header-default {
+	background: white;
+}
+.header-scroll {
+	background: rgba(255,255,255,.97);
+}
 header .logo {
 	cursor: pointer;
 	border: 0;
 	padding-right: 10px;
 	height: 38px;
-	margin-left: 20px;
+	margin-left: 10px;
+	margin-top: -2px;
 }
-header a.auth {
+header span.auth {
     padding: 0 25px;
-    font-weight: 700;
+    font-weight: 500;
     display: inline-block;
     margin-right: -15px;
     height: 100%;
+    outline: 0;
+    color: #0087ff;
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    text-decoration: none;
+    cursor: pointer;
+}
+header span.auth:hover {
+    color: #0073e6;
 }
 header a.login {
     color: white;
-    background: #0087ff;
-	background: #111;
-	background: #5ce060;
-	background: #3a5999;
+    background: ;
+	background: ;
+	background: #0087ff;
 	padding: 0 25px;
 	font-weight: 700;
 	display: inline-block;
@@ -11823,22 +11864,47 @@ header a.login {
 	height: 100%;
 	cursor: pointer;
 	outline: 0;
+	text-transform: uppercase;
 }
-header a.logout {
-    color: white;
-    background: #ff0000;
+header a.register {
+    color: #39589b;
+    background: ;
+	padding: 0 25px;
+	font-weight: 700;
+	display: inline-block;
+	height: 100%;
+	cursor: pointer;
+	outline: 0;
+	text-transform: uppercase;
+}
+header .user {
+	height: 100%;
+	display: inline-block;
+}
+header .user-menu {
+	display: none;
+	margin-top: -5px;
+}
+header .user-menu-container {
+	display: inline-block;
+	font-weight: 500;
+	text-align: left;
+	padding: 15px 25px;
+	margin: 0;
+	background: rgba(255,255,255,.95);
 }
 header a.link-topnav {
 	opacity: 1;
-	color: white;
-	font-weight: 600;
+	color: #1a429f;
+	font-weight: 500;
+	font-size: 110%;
 	padding-left: 15px;
 	transition: opacity .3s ease;
 	-webkit-transition: opacity .3s ease;
 	-moz-transition: opacity .3s ease;
 }
 header a.link-topnav:hover {
-	opacity: .7;
+	opacity: .85;
 }
 header .search-topnav {
 	border-radius: 0px !important;
@@ -12084,9 +12150,10 @@ section button.disabled {
 	background: #3a5999;
 	color: white !important;
 	margin-top: 40px;
-	padding: 15px 20px;
+	padding: 25px 30px;
 	display: inline-block;
 	font-weight: 700;
+	font-size: 120%;
 }
 
 /*
@@ -12114,6 +12181,7 @@ section button.disabled {
 
 /*
  * Upsells
+ *
  */
 .product-label {
 	background: rgba(0,135,255,.92);
@@ -12121,8 +12189,6 @@ section button.disabled {
 	background: rgba(255,255,255,.92);
 	background: rgba(17,17,17,.92);
     background: rgba(70,40,122,.92);
-    
-    
     color: #0087ff;
     color: white;
     font-weight: 700;
@@ -12145,11 +12211,18 @@ section button.disabled {
 } 
 .single {
 	font-size: 180%;
+}
+.upsells-slider { 
+	position: relative; overflow: auto;
+}
+.upsells-slider li {
+	list-style: none;
+}
+.upsells-slider ul li {
+	float: left;
 } 
 
 
-
- 
 
 
 /* 
@@ -12161,7 +12234,7 @@ section button.disabled {
 		padding: 40px;
 	}
     .hide-mobile {
-        display: none;
+        display: none !important;
     }
     .list-btn {
 	    opacity: 1;
@@ -12178,7 +12251,8 @@ section button.disabled {
     .canvas {
     	height: 70%;
     }
-    .canvas span {
+    .canvas span,
+    .canvas h1 {
     	font-size: 220%;
     	letter-spacing: -2px;
     }
@@ -12189,7 +12263,7 @@ section button.disabled {
     	font-size: 170%;
     }
     h3.large {
-	    font-size: 170%;
+	    font-size: 260%;
     }
     .single {
 	    font-size: 120%;
@@ -12198,7 +12272,7 @@ section button.disabled {
 	    opacity: 1;
     }
     .block {
-	    padding: 20px;
+	    padding: 40px 20px;
     }
 }
 /*# sourceMappingURL=build.css.map */

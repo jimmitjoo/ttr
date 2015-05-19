@@ -1,27 +1,45 @@
 @if (!Auth::check())
+	
+	<a class="register auth hide-mobile" href="{{ url('/login/facebook') }}">
+        <div class="table">
+            <div class="table-cell">
+                Registrerar dig &nbsp;<i class="fa fa-facebook-official"></i>
+            </div>
+        </div>
+    </a>
+    
     <a class="login auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
-                Logga in med Facebook
+                <i class="fa fa-user"></i><span class="hide-mobile"> &nbsp; Logga in</span>
             </div>
         </div>
     </a>
+    
 @else
-    <a class="auth" href="#">
-        <div class="table">
-            <div class="table-cell">
-                @if (!empty(Auth::user()->avatar))
-                    <img src="{{ Auth::user()->avatar }}" height="50" style="margin-right: 20px">
-                @endif
-                {{ Auth::user()->name }}
-            </div>
-        </div>
-    </a>
-    <a class="logout auth" href="{{ url('/auth/logout') }}">
-        <div class="table">
-            <div class="table-cell">
-                Logga ut
-            </div>
-        </div>
-    </a>
+
+	<div class="user stay">
+	    <span class="auth">
+	        <div class="table">
+	            <div class="table-cell">
+	                @if (!empty(Auth::user()->avatar))
+	                    <img class="stay" src="{{ Auth::user()->avatar }}" height="50">
+	                @endif
+	                <span style="padding-left: 10px" class="hide-mobile stay">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
+	            </div>
+	        </div>
+	    </span>
+	</div>
+	
+    <div class="user-menu">
+    	<span class="user-menu-container">
+    		<div>
+    			<a href="/">Konto</a>
+    		</div>
+    		<div>
+    			<a href="{{ url('/auth/logout') }}">Logga ut</a>
+    		</div>
+    	</span>
+    </div>
+    
 @endif

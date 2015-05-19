@@ -11527,6 +11527,10 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+/*
+ * Fade in topnav when scrolling
+ *
+ */
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 750) {
@@ -11536,6 +11540,59 @@ $(document).scroll(function() {
     }
 });
 
+
+/*
+ * Hide '#_=_' from facebook generated link
+ *
+ */
+if (window.location.hash && window.location.hash == '#_=_') {
+    if (window.history && history.pushState) {
+        window.history.pushState("", document.title, window.location.pathname);
+    } else {
+        // Prevent scrolling by storing the page's current scroll offset
+        var scroll = {
+            top: document.body.scrollTop,
+            left: document.body.scrollLeft
+        };
+        window.location.hash = '';
+        // Restore the scroll offset, should be flicker free
+        document.body.scrollTop = scroll.top;
+        document.body.scrollLeft = scroll.left;
+    }
+}
+
+/*
+ * Show hide user menu on click
+ *
+ */
+ $(".user").click(function() {
+	$(".user-menu").toggle();	
+ });
+ $(document).click(function(event) {
+ 	if(!$(event.target).hasClass('stay')) {
+	 	$(".user-menu").hide();
+ 	}
+ });
+ 
+ 
+ 
+/*
+ * Slideshow
+ *
+ */
+ $("#fader > div:gt(0)").hide();
+
+ setInterval(function() { 
+	 $('#fader > div:first')
+     .fadeOut(800)
+     .next()
+     .fadeIn(800)
+     .end()
+     .appendTo('#fader');
+ },  4000);
+
+
+ 
 /*
 var scrollToTop;
 var topNav = document.getElementsByClassName('topnav');
