@@ -99,17 +99,13 @@
         </div>
     </div>
 
-    
+    @if (!Auth::check())
     <div class="max-width container-fluid bg-white block-border-bottom">
     	<div class="row">
     		<div class="col-lg-6 col-md-6 block bg-blue">
     			<h3 class="large">Timetorun,<br/>älska<br/> att springa</h3>
     			<p>Med Timetorun är det enkelt att hitta lopp och tävlingar att springa – på mobilen, datorn eller surfplattan vart du än är. Du bestämmer förutsättningarna. Lägg upp dina träningspass och bjud in gamla och nya vänner. Få förslag och inspiration till löparskor, träningskläder och tillbehör -allt för att göra din löpning effektivare och roligare.</p>
-                
-                @if (!Auth::check())
                 <a class="btn-facebook" href="{{ url('login/facebook') }}">Registrera dig med Facebook</a>
-    		    @endif
-    		    
             </div>
     		<div class="col-lg-6 col-md-6 block hide-mobile">
     			
@@ -118,7 +114,7 @@
     		</div>
     	</div>
     </div>
-    
+    @endif
     
     <div class="max-width block block-border-bottom bg-white">
     
