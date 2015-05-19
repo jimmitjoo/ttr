@@ -11584,7 +11584,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #111;
-    background: #293d6c;
+    background: #404758;
     /*
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11859,6 +11859,17 @@ header a.login {
 	cursor: pointer;
 	outline: 0;
 }
+header a.register {
+    color: white;
+    background: #39589b;
+	padding: 0 25px;
+	font-weight: 700;
+	display: inline-block;
+	margin-right: -15px;
+	height: 100%;
+	cursor: pointer;
+	outline: 0;
+}
 header .user {
 	height: 100%;
 	display: inline-block;
@@ -11877,7 +11888,7 @@ header .user-menu-container {
 }
 header a.link-topnav {
 	opacity: 1;
-	color: white;
+	color: #1a429f;
 	font-weight: 600;
 	padding-left: 15px;
 	transition: opacity .3s ease;

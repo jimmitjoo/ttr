@@ -1,5 +1,13 @@
 @if (!Auth::check())
-
+	
+	<a class="register auth" href="{{ url('/login/facebook') }}">
+        <div class="table">
+            <div class="table-cell">
+                Registrerar dig med Facebook
+            </div>
+        </div>
+    </a>
+    
     <a class="login auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
