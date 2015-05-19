@@ -34,7 +34,7 @@
     <div class="user-menu">
     	<span class="user-menu-container">
     		<div>
-    			<a href="/">Konto</a>
+    			<a href="{{ url('/hem') }}">Konto</a>
     		</div>
     		<div>
     			<a href="{{ url('/auth/logout') }}">Logga ut</a>
