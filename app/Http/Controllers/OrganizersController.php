@@ -13,12 +13,20 @@ use App\Http\Requests\CreateRaceRequest;
 use App\Organizer;
 use App\Run;
 
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 /**
  * Class OrganizersController
  * @package App\Http\Controllers
  */
 class OrganizersController extends Controller
 {
+
+    public function apiGetById(Request $request, $id)
+    {
+        $json = Organizer::where('id', '=', $id)->first();
+        return response()->json($json)->setCallback($request->input('callback'));
+    }
 
     /**
      * @return \Illuminate\View\View

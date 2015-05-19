@@ -11,6 +11,11 @@ $(document).scroll(function() {
     }
 });
 
+
+/*
+ * Hide '#_=_' from facebook generated link
+ *
+ */
 if (window.location.hash && window.location.hash == '#_=_') {
     if (window.history && history.pushState) {
         window.history.pushState("", document.title, window.location.pathname);
@@ -41,6 +46,23 @@ if (window.location.hash && window.location.hash == '#_=_') {
  });
  
  
+ 
+/*
+ * Slideshow
+ *
+ */
+ $("#fader > div:gt(0)").hide();
+
+ setInterval(function() { 
+	 $('#fader > div:first')
+     .fadeOut(800)
+     .next()
+     .fadeIn(800)
+     .end()
+     .appendTo('#fader');
+ },  4000);
+
+
  
 /*
 var scrollToTop;

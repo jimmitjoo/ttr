@@ -41,6 +41,7 @@ class Run extends Model
         return $this->belongsTo('App\Organizer');
     }
 
+
     public function getStartDatetimeAttribute()
     {
         return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
