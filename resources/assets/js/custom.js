@@ -37,7 +37,7 @@ if (window.location.hash && window.location.hash == '#_=_') {
  $(document).click(function(event) {
  	if(!$(event.target).hasClass('stay')) {
 	 	$(".user-menu").hide();
- 	}	
+ 	}
  });
  
  
