@@ -6,7 +6,7 @@ app.controller('runPaginationController', function ($scope, $http) {
     $scope.races = [];
 
 
-    var apiEndpoint = 'http://timetorun.se/race/page';
+    var apiEndpoint = 'http://timetorun.se/api/race/page';
 
 
     $scope.loadData = function() {

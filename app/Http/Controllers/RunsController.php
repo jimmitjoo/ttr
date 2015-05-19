@@ -21,6 +21,11 @@ class RunsController extends Controller {
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
+    public function apiGetById(Request $request, $id)
+    {
+        $json = Run::where('id', '=', $id)->with('organizer')->first();
+        return response()->json($json)->setCallback($request->input('callback'));
+    }
 
 	/**
 	 * Display a listing of the resource.
