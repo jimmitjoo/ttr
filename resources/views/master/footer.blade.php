@@ -14,15 +14,15 @@
                 </ul>
             </div>
             <div class="col-lg-6 col-md-6 text-right">
-                <a class="btn-facebook" target="_blank" style="margin-top: 0;" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på Facebook</a>
+                <a class="hide-mobile btn-facebook" target="_blank" style="margin-top: 0;" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på Facebook</a>
             </div>
         </div>
         
         <div class="row">
-            <div class="col-lg-6 col-md-6 small">
+            <div class="col-lg-6 col-md-6 col-xs-6 small">
             	<span class="small">© 2015 Timetorun.se</span>
             </div>
-            <div class="col-lg-6 col-md-6 small text-right" style="opacity: .3;">
+            <div class="col-lg-6 col-md-6 col-xs-6 small text-right" style="opacity: .3;">
             	<span class="small">Beta
                 @if (Auth::check())
                         :: {{ Auth::user()->location }}

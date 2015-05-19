@@ -11,7 +11,7 @@
     <a class="login auth" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
-                Logga in<!--&nbsp;<i class="fa fa-user"></i>-->
+                <i class="fa fa-user"></i><span class="hide-mobile"> &nbsp; Logga in</span>
             </div>
         </div>
     </a>
