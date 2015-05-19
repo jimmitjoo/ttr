@@ -11678,6 +11678,9 @@ p {
 .gray {
     color: gray;
 }
+.purple {
+	color: #4f287a;
+}
 a:link, a:visited {
     color: #0087ff;
     transition: color .2s linear;
@@ -11726,7 +11729,8 @@ a:hover, a:active {
     background-size: cover;
     height: 68%;
 }
-.canvas span {
+.canvas span,
+.canvas h1 {
 	font-size: 450%;
 	font-weight: 700;
 	letter-spacing: -4px;
@@ -11735,7 +11739,8 @@ a:hover, a:active {
 	background: #1a429f;
 	padding: 10px 25px;
 }
-.canvas span.title {
+.canvas span.title,
+.canvas h1.title {
 	padding-bottom: 0;
 	margin-bottom: -25px;
 	position: relative;
@@ -12229,7 +12234,7 @@ section button.disabled {
 		padding: 40px;
 	}
     .hide-mobile {
-        display: none;
+        display: none !important;
     }
     .list-btn {
 	    opacity: 1;
@@ -12246,7 +12251,8 @@ section button.disabled {
     .canvas {
     	height: 70%;
     }
-    .canvas span {
+    .canvas span,
+    .canvas h1 {
     	font-size: 220%;
     	letter-spacing: -2px;
     }

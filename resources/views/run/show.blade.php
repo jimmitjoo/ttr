@@ -3,68 +3,107 @@
 @section('title', $run->name . ' i ' . $run->town . ' - Timetorun.se' )
 @section('description', 'Spring ' . $run->name . '! Anmäl dig via Timetorun.se, fixa bättre utrustning och hitta fler lopp att springa.' )
 @section('current_url', 'http://'.getenv('APP_URL').$run->slug )
-@section('share_image', 'http://'.getenv('APP_URL').'/images/cover.png')
+@section('share_image', 'http://'.getenv('APP_URL').'/images/fb_cover.png')
 
 
-@section('description', 'Hitta lopp och tävlingar att springa - i Sverige och världen. Löpkläder och skor för effektivare träning och tävling - Timetorun.se' )
-
-@section('share_image', 'http://'.$_SERVER['HTTP_HOST'].'/images/fb_cover.png')
-
-
-@section('content')
+@section('content')	
 	
-	<div class="topnav" style="background: black; padding: 10px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 text-center">
-					<a href="/"><img src="/images/timetorun-white.png" style="margin-top: -2px; border: 0;"></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-    <div class="max-width" style="background: url('/images/cover.png'); background-position: center center; background-size: cover; height: 460px;">
-        <div class="table">
-            <div class="table-cell text-center">
-                <div class=" text-center text-title">
-                    <h1 class="big" style="color: white; font-size: 600%;">{{ $run->title }}</h1>
+	<header>
+    
+    	<div class="topnav">
+	    	<div class="max-width container-fluid header-scroll-bg">
+	            <div class="row">
+	                <div class="col-lg-6 col-md-6 col-xs-6 header-scroll">
+	                    <div class="table">
+	                        <div class="table-cell">
+	                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-lg-6 col-md-6 col-xs-6 header-scroll text-right">
+	                    @include('partials.authmenu')
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+    
+        <div class="max-width container-fluid header-default-bg">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6 header-default">
+                    <div class="table">
+                        <div class="table-cell">
+                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
+                            <a class="link-topnav" href="#"></a>
+                        </div>
+                    </div>
                 </div>
-                <form action="{{ $run->external_link }}">
-                    <input class="green" type="submit" name="register" value="Anmäl dig här"
-                           style="max-width: 300px; margin: auto; margin-top: 20px;">
-                </form>
+                
+                <div class="col-lg-6 col-md-6 col-xs-6 header-default text-right">
+
+                    <!--
+                    <form>
+                        <input type="text" class="search-topnav" placeholder="sök">
+                    </form>
+                    -->
+
+                    @include('partials.authmenu')
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </header>
+	
+    <div class="max-width block canvas" style="background: url('/images/cover.png'); background-position: center center; background-size: cover; height: 70%; color: white;">
+        <div class="table">
+            <div class="table-cell">
+                <h1 class="title">{{ $run->purename }}</h1>
+                <div>
+                	<span>{{ $run->start_datetime }}</span>
+                </div>
+                <div>
+                	<a class="click click-green" target="_blank" href="{{ $run->external_link }}">Anmäl dig här &nbsp; <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                <div style="margin-top: 30px;">
+                	eller <a target="_blank" href="{{ $run->external_link }}">Läs mer här</a>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <div>
-        <div class="max-width container-fluid block bg-white">
+    <!--
+    <div class="bg-white">
+    	<div class="container-fluid max-width block">
 	        <div class="row">
-                <div class="col-lg-12">
-                    <ul>
-                        <li>Arrangör: {{ $run->organizer->name }}</li>
-                        <li>Stad: {{ $run->town }}</li>
-                        <!--
-                          -- Hide distanse
-                          --
-                        <li>Distans: {{ $run->distance / 1000 }}km</li>
-                        <li>Datum: {{ $run->start_datetime }}</li>
-                        <li>Länk: {{ $run->external_link }}</li>
-                        -->
-                        <li>Datum: {{ $run->start_datetime }}</li>
-                        <li>Länk: <a target="_blank" href="{{ $run->external_link }}">{{ $run->external_link }}</a></li>
-                    </ul>
-                    <p>{{ $run->description }}</p>
-                </div>
-            </div>
-        </div>
+	            <div class="col-lg-12">
+	                <ul>
+	                	<li>{{ $run->title }}</li>
+	                    <li>Arrangör: {{ $run->organizer->name }}</li>
+	                    <li>Stad: {{ $run->town }}</li>
+	                    
+	                      -- Hide distanse
+	                      --
+	                    <li>Distans: {{ $run->distance / 1000 }}km</li>
+	                    <li>Datum: {{ $run->start_datetime }}</li>
+	                    <li>Länk: {{ $run->external_link }}</li>
+	                    
+	                    <li>Datum: {{ $run->start_datetime }}</li>
+	                    
+	                    
+	                </ul>
+	                <p>{{ $run->description }}</p>
+	            </div>
+	        </div>
+    	</div>
+    </div>
+    -->
 
-        <div class="max-width container-fluid block bg-yellow">
+        <div class="container-fluid max-width">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <h2 class="big" style="font-size: 600%; color: #4f287a;">{{ $run->distance / 1000 }} km</h2>
+                <div class="col-lg-4 block bg-yellow purple">
+                	<p>Distans</p>
+                    <h2 class="big" style="font-size: 600%;">{{ $run->distance / 1000 }} km</h2>
                     
                     <!--
                     <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
@@ -73,8 +112,16 @@
                         sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
                      -->
                 </div>
-                <div class="col-lg-6 col-md-6">
-
+                <div class="col-lg-8 block bg-blue">
+                	<p>Plats</p>
+                    <h2 class="big" style="font-size: 600%;">{{ $run->town }}</h2>
+                    
+                    <!--
+                    <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
+                        Längs hela banan finns belysning i rött och gult som är Nattloppets färger och du möts
+                        av musik och andra överraskningar längs vägen. Starten går vid Larmtorget och längs
+                        sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
+                     -->
                 </div>
             </div>
         </div>
@@ -92,7 +139,6 @@
 
         </div>
 
-    </div>
 
     <script src="/js/angular/angular.js"></script>
     <script src="/js/angular/ui-bootstrap-0.11.1.js"></script>

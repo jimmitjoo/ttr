@@ -1,6 +1,6 @@
 @if (!Auth::check())
 	
-	<a class="register auth" href="{{ url('/login/facebook') }}">
+	<a class="register auth hide-mobile" href="{{ url('/login/facebook') }}">
         <div class="table">
             <div class="table-cell">
                 Registrerar dig &nbsp;<i class="fa fa-facebook-official"></i>

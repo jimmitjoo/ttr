@@ -7,10 +7,6 @@
 
 @section('content')
 
-
-	
-    
-    
     <header>
     
     	<div class="topnav">
@@ -36,7 +32,7 @@
                     <div class="table">
                         <div class="table-cell">
                             <a href="/"><img class="logo" src="/images/timetorun.png"></a>
-                            <a class="link-topnav" href="#"></a>
+                            <!--<a class="link-topnav" href="#"></a>-->
                         </div>
                     </div>
                 </div>
