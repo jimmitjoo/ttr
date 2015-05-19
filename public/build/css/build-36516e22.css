@@ -11584,7 +11584,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #111;
-    background: #ededed;
+    background: #293d6c;
     /*
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11756,7 +11756,8 @@ a:hover, a:active {
  * Buttons
  *
  */
-a.click {
+a.click,
+.click {
 	padding: 15px 25px;
 	display: inline-block;
 	font-weight: 700;
@@ -12160,6 +12161,7 @@ section button.disabled {
 
 /*
  * Upsells
+ *
  */
 .product-label {
 	background: rgba(0,135,255,.92);
@@ -12167,8 +12169,6 @@ section button.disabled {
 	background: rgba(255,255,255,.92);
 	background: rgba(17,17,17,.92);
     background: rgba(70,40,122,.92);
-    
-    
     color: #0087ff;
     color: white;
     font-weight: 700;
@@ -12191,11 +12191,18 @@ section button.disabled {
 } 
 .single {
 	font-size: 180%;
+}
+.upsells-slider { 
+	position: relative; overflow: auto;
+}
+.upsells-slider li {
+	list-style: none;
+}
+.upsells-slider ul li {
+	float: left;
 } 
 
 
-
- 
 
 
 /* 
