@@ -24,7 +24,7 @@ function first() {
 
         mix.styles([
             '../bower/bootstrap/dist/css/bootstrap.css',
-            '../bower/components-font-awesome/css/font-awesome.css',
+            'font-awesome.css',
             'animate.css',
             'style.css'
         ], 'public/css/build.css');
