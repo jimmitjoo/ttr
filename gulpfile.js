@@ -52,22 +52,4 @@ function first() {
 }
 
 
-function second() {
-
-    var deferred = Q.defer();
-
-    elixir(function(mix) {
-
-        mix.copy(
-            'resources/assets/bower/components-font-awesome/fonts',
-            'public/build/fonts'
-        );
-
-        deferred.resolve();
-
-    });
-
-    return deferred.promise;
-}
-
-first().then(second).done();
+first().done();
