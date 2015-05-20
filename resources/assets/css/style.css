@@ -331,6 +331,17 @@ header .user-menu-container {
 	padding: 15px 25px;
 	margin: 0;
 	background: rgba(255,255,255,.95);
+	background: #0087ff;
+}
+header .user-menu-container a {
+	color: white;
+	opacity: 1;
+	transition: opacity .2s ease;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+}
+header .user-menu-container a:hover {
+	opacity: .85;
 }
 header a.link-topnav {
 	opacity: 1;
