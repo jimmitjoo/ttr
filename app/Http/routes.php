@@ -32,20 +32,9 @@ Route::get('partials/race-list', 'OrganizersController@listRaces');
 
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
 
-Route::get('login/facebook', function(){
-    return Socialize::with('facebook')->scopes(['email', 'user_location'])->redirect();
-});
+Route::get('login/facebook', 'UsersController@facebook');
+Route::get('receive/facebook', 'UsersController@receive_facebook');
 
-Route::get('receive/facebook', function(){
-
-    $socialUser = Socialize::with('facebook')->user();
-    $user = User::socialUser($socialUser);
-
-    Auth::login($user);
-
-    return Redirect::to('/');
-
-});
 
 Route::get('indexing', 'OrganizersController@apiCreateRequest');
 

@@ -24,7 +24,7 @@ function first() {
 
         mix.styles([
             '../bower/bootstrap/dist/css/bootstrap.css',
-            '../bower/components-font-awesome/css/font-awesome.css',
+            'font-awesome.css',
             'animate.css',
             'style.css'
         ], 'public/css/build.css');
@@ -52,22 +52,4 @@ function first() {
 }
 
 
-function second() {
-
-    var deferred = Q.defer();
-
-    elixir(function(mix) {
-
-        mix.copy(
-            'resources/assets/bower/components-font-awesome/fonts',
-            'public/build/fonts'
-        );
-
-        deferred.resolve();
-
-    });
-
-    return deferred.promise;
-}
-
-first().then(second).done();
+first().done();
