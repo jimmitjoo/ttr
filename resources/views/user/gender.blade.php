@@ -11,6 +11,10 @@
 
 @elseif(Auth::check() && empty(Auth::user()->gender))
 
-    <!-- Vad som sker om vi inte vet vad personen har för kön -->
-    
+    <!-- Vad som sker om vi har en inloggad användare men inte vet vad personen har för kön -->
+
+@elseif(!Auth::check())
+
+    <!-- Vad som visas om det inte finns någon inloggad användare -->
+
 @endif
