@@ -117,6 +117,9 @@ p {
 .purple {
 	color: #4f287a;
 }
+.blue {
+	color: #0087ff;
+}
 a:link, a:visited {
     color: #0087ff;
     transition: color .2s linear;
@@ -319,7 +322,7 @@ header .user {
 }
 header .user-menu {
 	display: none;
-	margin-top: -5px;
+	margin-top: -6px;
 }
 header .user-menu-container {
 	display: inline-block;
