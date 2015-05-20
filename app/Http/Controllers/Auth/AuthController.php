@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Laravel\Socialite\Facades\Socialite as Socialize;
 use App\User;
+use Illuminate\Support\Facades\Redirect;
 
 
 /**
