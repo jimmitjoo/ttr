@@ -13,9 +13,11 @@
                     <li><a href="/omoss">Om oss</a></li>
                 </ul>
             </div>
+            @if (!Auth::check())
             <div class="col-lg-6 col-md-6 text-right">
                 <a class="hide-mobile btn-facebook" target="_blank" style="margin-top: 0;" href="https://www.facebook.com/pages/Timetorun/700137680097229">Följ oss på Facebook</a>
             </div>
+            @endif
         </div>
         
         <div class="row">
