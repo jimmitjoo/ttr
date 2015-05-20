@@ -20,7 +20,7 @@
                 @if (!empty($user->avatar))
                     <img src="{{ $user->avatar }}" alt="{{ $user->name }}">
                 @else
-                    <img src="http://www.gravatar.com/{{ md5($user->email) }}">
+                    <img src="http://www.gravatar.com/avatar/{{ md5($user->email) }}?d=identicon&s=50">
                 @endif
             </div>
             <div class="col-md-10">
