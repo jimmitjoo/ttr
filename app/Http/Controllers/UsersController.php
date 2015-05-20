@@ -3,10 +3,33 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\User;
+use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Facades\Auth;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class UsersController extends Controller {
+
+    /**
+     * @return Socialize
+     */
+    public function facebook()
+    {
+        return Socialite::with('facebook')->scopes(['email', 'user_location'])->redirect();
+    }
+
+    /**
+     * @return Redirect
+     */
+    public function receive_facebook()
+    {
+        $socialUser = Socialite::with('facebook')->user();
+        $user = User::socialUser($socialUser);
+
+        Auth::login($user);
+
+        return Redirect::to('/');
+    }
 
 	/**
 	 * Display a listing of the resource.

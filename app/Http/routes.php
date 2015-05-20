@@ -32,8 +32,8 @@ Route::get('partials/race-list', 'OrganizersController@listRaces');
 
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
 
-Route::get('login/facebook', 'Auth\AuthController@facebook');
-Route::get('receive/facebook', 'Auth\AuthController@receive_facebook');
+Route::get('login/facebook', 'UsersController@facebook');
+Route::get('receive/facebook', 'UsersController@receive_facebook');
 
 
 Route::get('indexing', 'OrganizersController@apiCreateRequest');
