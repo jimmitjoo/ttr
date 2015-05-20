@@ -24,7 +24,9 @@
 	            <div class="table-cell">
 	                @if (!empty(Auth::user()->avatar))
 	                    <img class="stay" src="{{ Auth::user()->avatar }}" height="50">
-	                @endif
+                    @else
+                        <img class="stay" src="http://www.gravatar.com/avatar/{{ md5(Auth::user()->email) }}?d=identicon&s=50" height="50">
+                    @endif
 	                <span style="padding-left: 10px" class="hide-mobile stay">{{ Auth::user()->name }} &nbsp;<i class="fa fa-caret-down"></i></span>
 	            </div>
 	        </div>
