@@ -4,68 +4,18 @@
 
 @section('content')
 	
-	<header>
-    
-    	<div class="topnav">
-	    	<div class="max-width container-fluid header-scroll-bg">
-	            <div class="row">
-	                <div class="col-lg-6 col-md-6 col-xs-8 header-scroll">
-	                    <div class="table">
-	                        <div class="table-cell">
-	                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-lg-6 col-md-6 col-xs-4 header-scroll text-right">
-	                    @include('partials.authmenu')
-	                </div>
-	            </div>
-	        </div>
-    	</div>
-    
-        <div class="max-width container-fluid header-default-bg">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-8 header-default">
-                    <div class="table">
-                        <div class="table-cell">
-                            <a href="/"><img class="logo" src="/images/timetorun.png"></a>
-                            <!--<a class="link-topnav" href="#"></a>-->
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 col-md-6 col-xs-4 header-default text-right">
+	@include('partials.nav')
 
-                    <!--
-                    <form>
-                        <input type="text" class="search-topnav" placeholder="sök">
-                    </form>
-                    -->
-
-                    @include('partials.authmenu')
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </header>
-
-    <div class="block-top">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">{{ Lang::get('default.welcome') }} {{ $user->name }}</div>
-
-                        <div class="panel-body">
-                            {{ Lang::get('default.you_are_signed_in') }}. <a href="/lopp/skapa">{{ Lang::get('race.create') }}</a>.
-                        </div>
-                    </div>
-                </div>
+    <div class="max-width container-fluid block">
+        <div class="row">
+            <div class="col-lg-12">
+            	<h1>Hej!</h1>
+            	<p>Här kan du ändra dina uppgifter och lägga till information om dig själv.</p>
+                <div>{{ Lang::get('default.welcome') }} {{ $user->name }}</div>
+                <div>{{ Lang::get('default.you_are_signed_in') }}. <a href="/lopp/skapa">{{ Lang::get('race.create') }}</a>.</div>
             </div>
         </div>
     </div>
+   
 
 @endsection
