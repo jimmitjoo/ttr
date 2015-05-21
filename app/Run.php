@@ -23,7 +23,8 @@ class Run extends Model
         'cover_src',
         'external_link',
         'signup_link',
-        'map_id'
+        'map_id',
+        'type'
     ];
 
     protected $appends = [
