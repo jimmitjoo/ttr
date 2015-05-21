@@ -23,7 +23,6 @@ class UsersController extends Controller {
      */
     public function receive_facebook()
     {
-        dd(Socialite::with('facebook')->user());
         $socialUser = Socialite::with('facebook')->user();
 
         if (!Auth::check()) {
@@ -34,6 +33,7 @@ class UsersController extends Controller {
         }
 
         $authUser = Auth::user();
+        dd($authUser);
         $user = User::connectFacebook($socialUser, $authUser);
 
         if (!$user) return 'Användaren har redan ett konto';
