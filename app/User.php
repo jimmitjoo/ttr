@@ -75,7 +75,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         $userHasAccount = User::where('facebook_provider_id', '=', $userObject->id)->get();
 
-        if ($userHasAccount) throw new UserAlreadyHasAccountException();
+        if ($userHasAccount && $userHasAccount->id != Auth::user()->id) throw new UserAlreadyHasAccountException();
 
         $user = User::find(Auth::user()->id);
         $user->facebook_provider_id = $userObject->id;
