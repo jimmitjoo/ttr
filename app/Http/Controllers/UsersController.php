@@ -32,9 +32,8 @@ class UsersController extends Controller {
             return Redirect::to('/');
         }
 
-        $authUser = Auth::user();
-        dd($authUser);
-        $user = User::connectFacebook($socialUser, $authUser);
+        $authUserId = Auth::user()->id;
+        $user = User::connectFacebook($socialUser, $authUserId);
 
         if (!$user) return 'Användaren har redan ett konto';
 
