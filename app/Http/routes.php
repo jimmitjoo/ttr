@@ -30,7 +30,9 @@ Route::controllers([
 
 Route::get('partials/race-list', 'OrganizersController@listRaces');
 
+
 Route::get('profil/{id}', ['as' => 'profile', 'uses' => 'UsersController@show']);
+
 
 Route::get('login/facebook', 'UsersController@facebook');
 Route::get('connect/facebook', 'UsersController@facebook');
@@ -40,10 +42,11 @@ Route::get('receive/facebook', 'UsersController@receive_facebook');
 Route::get('indexing', 'OrganizersController@apiCreateRequest');
 
 
-
-Route::get('api/race/list/', 'RunsController@apiGetList');
-Route::get('api/race/list/{query}', 'RunsController@apiGetList');
-Route::get('api/race/page/', 'RunsController@apiGetPaginated');
-Route::get('api/race/page/{query}', 'RunsController@apiGetPaginated');
-Route::get('api/race/{id}', 'RunsController@apiGetById');
-Route::get('api/organizer/{id}', 'OrganizersController@apiGetById');
+Route::group(['prefix' => 'api'], function() {
+    Route::get('race/list/', 'RunsController@apiGetList');
+    Route::get('race/list/{query}', 'RunsController@apiGetList');
+    Route::get('race/page/', 'RunsController@apiGetPaginated');
+    Route::get('race/page/{query}', 'RunsController@apiGetPaginated');
+    Route::get('race/{id}', 'RunsController@apiGetById');
+    Route::get('organizer/{id}', 'OrganizersController@apiGetById');
+});
