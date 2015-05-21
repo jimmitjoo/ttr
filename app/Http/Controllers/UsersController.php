@@ -23,6 +23,8 @@ class UsersController extends Controller {
      */
     public function receive_facebook()
     {
+        dd(Socialite::with('facebook')->user());
+
         $socialUser = Socialite::with('facebook')->user();
 
         if (!Auth::check()) {
