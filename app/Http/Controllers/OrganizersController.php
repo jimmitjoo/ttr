@@ -280,6 +280,7 @@ class OrganizersController extends Controller
         $run->entry_fee = $runArray['entry_fee'];
         $run->external_link = $runArray['external_link'];
         $run->signup_link = $runArray['signup_link'];
+        $run->start_datetime = $runArray['start_datetime'];
         $run->save();
 
         //$run = Run::create($runArray);
