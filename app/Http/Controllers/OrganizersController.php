@@ -269,8 +269,6 @@ class OrganizersController extends Controller
         $organizer = Organizer::create($postArray);
         $runArray['organizer_id'] = $organizer->id;
 
-        dd($runArray);
-
         Run::create($runArray);
 
         //return redirect(route('home'));
