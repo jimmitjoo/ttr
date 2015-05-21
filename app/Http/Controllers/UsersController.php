@@ -24,11 +24,18 @@ class UsersController extends Controller {
     public function receive_facebook()
     {
         $socialUser = Socialite::with('facebook')->user();
-        $user = User::socialUser($socialUser);
 
-        Auth::login($user);
+        if (!Auth::check()) {
+            $user = User::socialUser($socialUser);
+            Auth::login($user);
 
-        return Redirect::to('/');
+            return Redirect::to('/');
+        }
+
+        $user = User::connectFacebook($socialUser);
+
+        return Redirect::back();
+
     }
 
 	/**
