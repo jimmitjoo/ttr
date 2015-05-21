@@ -275,6 +275,7 @@ class OrganizersController extends Controller
         $run->organizer_id = $runArray['organizer_id'];
         $run->name = $runArray['name'];
         $run->description = $runArray['description'];
+        $run->distance = $runArray['distance'];
         $run->town = $runArray['town'];
         $run->entry_fee = $runArray['entry_fee'];
         $run->external_link = $runArray['external_link'];
@@ -283,10 +284,7 @@ class OrganizersController extends Controller
 
         //$run = Run::create($runArray);
 
-        print_r($runArray);
-        dd($run);
-
-        //return redirect(route('home'));
+        return redirect(route('home'));
     }
 
 
