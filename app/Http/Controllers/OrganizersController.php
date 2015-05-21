@@ -265,6 +265,8 @@ class OrganizersController extends Controller
         }
 
         //dd($postArray);
+        unset($postArray['_token']);
+
 
         $organizer = Organizer::firstOrCreate($postArray);
         $runArray['organizer_id'] = $organizer->id;
