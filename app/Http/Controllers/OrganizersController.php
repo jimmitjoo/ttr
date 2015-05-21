@@ -264,11 +264,12 @@ class OrganizersController extends Controller
             }
         }
 
-        //dd($runArray);
         //dd($postArray);
 
         $organizer = Organizer::create($postArray);
         $runArray['organizer_id'] = $organizer->id;
+
+        dd($runArray);
 
         Run::create($runArray);
 
