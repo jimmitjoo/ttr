@@ -12,6 +12,7 @@ class Run extends Model
     protected $fillable = [
         'organizer_id',
         'name',
+        'description',
         'town',
         'distance',
         'entry_fee',
