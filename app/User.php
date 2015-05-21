@@ -82,8 +82,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $user->facebook_provider_id = $userObject->id;
         $user->save();
 
-        dd($user);
-
         return $user;
     }
 
