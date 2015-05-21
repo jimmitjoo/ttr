@@ -269,7 +269,13 @@ class OrganizersController extends Controller
         $organizer = Organizer::create($postArray);
         $runArray['organizer_id'] = $organizer->id;
 
-        $run = Run::create($runArray);
+        $run = new Run;
+        $run->organizer_id = $runArray['organizer_id'];
+        $run->name = $runArray['name'];
+        $run->description = $runArray['description'];
+        $run->save();
+
+        //$run = Run::create($runArray);
 
         print_r($runArray);
         dd($run);
