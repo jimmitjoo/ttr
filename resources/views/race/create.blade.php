@@ -25,9 +25,9 @@
                     {!! Form::file('cover_src') !!}
                     {!! Form::textarea('run_description', null, ['placeholder' =>
                     Lang::get('race.description') ]) !!}
-                    {!! Form::text('external_link', null, ['placeholder' =>
+                    {!! Form::text('run_external_link', null, ['placeholder' =>
                     Lang::get('race.external_link') ]) !!}
-                    {!! Form::text('signup_link', null, ['placeholder' =>
+                    {!! Form::text('run_signup_link', null, ['placeholder' =>
                     Lang::get('race.signup_link')
                     ]) !!}
                     {!! Form::text('run_name', null, ['placeholder' =>
