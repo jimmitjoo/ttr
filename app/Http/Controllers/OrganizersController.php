@@ -271,6 +271,7 @@ class OrganizersController extends Controller
 
         $run = Run::create($runArray);
 
+        print_r($runArray);
         dd($run);
 
         //return redirect(route('home'));
