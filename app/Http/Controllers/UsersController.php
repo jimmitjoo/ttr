@@ -37,7 +37,7 @@ class UsersController extends Controller {
 
         if (!$user) return 'Användaren har redan ett konto';
 
-        return Redirect::back();
+        return Redirect::to('/hem');
 
     }
 
