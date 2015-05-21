@@ -23,8 +23,6 @@
                     !!}
                     {!! Form::file('logo_src') !!}
                     {!! Form::file('cover_src') !!}
-                    {!! Form::input('date', 'date', date('Y-m-d', strtotime('+2 months')), ['placeholder' =>
-                    Lang::get('race.date') ]) !!}
                     {!! Form::textarea('run_description', null, ['placeholder' =>
                     Lang::get('race.description') ]) !!}
                     {!! Form::text('external_link', null, ['placeholder' =>
