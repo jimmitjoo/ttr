@@ -266,13 +266,17 @@ class OrganizersController extends Controller
 
         //dd($postArray);
 
-        $organizer = Organizer::create($postArray);
+        $organizer = Organizer::firstOrCreate($postArray);
         $runArray['organizer_id'] = $organizer->id;
 
         $run = new Run;
         $run->organizer_id = $runArray['organizer_id'];
         $run->name = $runArray['name'];
         $run->description = $runArray['description'];
+        $run->town = $runArray['town'];
+        $run->entry_fee = $runArray['entry_fee'];
+        $run->external_link = $runArray['external_link'];
+        $run->signup_link = $runArray['signup_link'];
         $run->save();
 
         //$run = Run::create($runArray);
