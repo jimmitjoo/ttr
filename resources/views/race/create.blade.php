@@ -35,6 +35,9 @@
                     {!! Form::text('run_name', null, ['placeholder' =>
                     Lang::get('race.run_name')
                     ]) !!}
+                    {!! Form::text('run_town', null, ['placeholder' =>
+                    Lang::get('race.town')
+                    ]) !!}
                     {!! Form::text('run_distance', null, ['placeholder' =>
                     Lang::get('race.run_distance')
                     ]) !!}
