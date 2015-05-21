@@ -264,7 +264,7 @@ class OrganizersController extends Controller
             }
         }
 
-        dd($runArray);
+        //dd($runArray);
         dd($postArray);
 
         $organizer = Organizer::create($postArray);
