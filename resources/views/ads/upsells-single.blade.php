@@ -10,13 +10,43 @@
 		    
 		    	<!-- if gender is female -->
 		    	<!-- place code here -->
-		    	Inloggad tjej
+		    	<a href="http://track.adtraction.com/t/t?a=435656443&as=1087597488&t=2&tk=1&url=http://www.outnorth.se/suunto/ambit3-run-black-hr" target="_blank">
+					<div class="col-lg-6 col-md-6 col-xs-12">
+						<img src="images/products/outnorth-suunto-ambit3-run.jpg"/>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-12">
+						<div class="table">
+							<div class="table-cell">
+								<h2>Suunto Ambit3 Run HR -en perfekt löpupplevelse</h2>
+								<p>Suunto Ambit3 Run HR är en GPS-klocka som är optimerad för en perfekt löpupplevelse – var du än springer.</p>
+								<span class="label">Suunto Ambit3 Run</span>
+								<span class="label price">2194;- <span class="sale">Spara 15%!</span></span>
+								<span class="label-buy click click-shop">Handla här</span>
+							</div>
+						</div>
+					</div>
+				</a>
 		    
 		    @elseif(Auth::user()->gender == 'male')
 				
 				<!-- if gender is male -->
 				<!-- place code here -->  
-				Inloggad kille    
+				<a href="http://track.adtraction.com/t/t?a=435656443&as=1087597488&t=2&tk=1&url=http://www.outnorth.se/suunto/ambit3-run-black-hr" target="_blank">
+					<div class="col-lg-6 col-md-6 col-xs-12">
+						<img src="images/products/outnorth-suunto-ambit3-run.jpg"/>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-12">
+						<div class="table">
+							<div class="table-cell">
+								<h2>Suunto Ambit3 Run HR -en perfekt löpupplevelse</h2>
+								<p>Suunto Ambit3 Run HR är en GPS-klocka som är optimerad för en perfekt löpupplevelse – var du än springer.</p>
+								<span class="label">Suunto Ambit3 Run</span>
+								<span class="label price">2194;- <span class="sale">Spara 15%!</span></span>
+								<span class="label-buy click click-shop">Handla här</span>
+							</div>
+						</div>
+					</div>
+				</a>   
 		
 		    @endif
 		
@@ -53,7 +83,7 @@
 				<div class="col-lg-6 col-md-6 col-xs-12">
 					<div class="table">
 						<div class="table-cell">
-							<h2>Suunto Ambit3 Run HR för en perfekt löpupplevelse</h2>
+							<h2>Suunto Ambit3 Run HR -en perfekt löpupplevelse</h2>
 							<p>Suunto Ambit3 Run HR är en GPS-klocka som är optimerad för en perfekt löpupplevelse – var du än springer.</p>
 							<span class="label">Suunto Ambit3 Run</span>
 							<span class="label price">2194;- <span class="sale">Spara 15%!</span></span>
