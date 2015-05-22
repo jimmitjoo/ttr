@@ -61,7 +61,7 @@ class Run extends Model
     {
         if ($this->attributes['tempo'] == '00:00:00') return Lang::get('race.unknown_pace');
 
-        return substr($this->attributes['tempo'], 3);
+        return substr($this->attributes['tempo'], 3) . '/km';
     }
 
     public function getSlugAttribute()

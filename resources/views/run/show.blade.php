@@ -50,7 +50,7 @@
                     <h2 class="big">{{ $run->tempo }}</h2>
                 </div>
                 <div class="col-lg-8 col-md-7 block bg-yellow purple">
-                    <p>Tidsspann</p>
+                    <p>Tid (tim, min, sek)</p>
                     <h2 class="big">{{ $run->fortime }}</h2>
                 </div>
             </div>
