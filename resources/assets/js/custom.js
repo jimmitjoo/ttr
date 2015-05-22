@@ -94,3 +94,28 @@ var checkIfEmailIsValid = function() {
     if (validateEmail(registerEmailInput.value)) registerPasswordFieldBox.classList.remove('hidden');
 }
 if (registerEmailInput) registerEmailInput.addEventListener('keyup', checkIfEmailIsValid);
+
+
+if ($('#datetimepicker').length > 0) {
+    $('#datetimepicker').datetimepicker({
+        locale: 'sv',
+        useCurrent: true
+    });
+}
+if ($('#tempopicker').length > 0) {
+    $('#tempopicker').datetimepicker({
+        locale: 'sv',
+        format: 'mm:ss',
+        useCurrent: false,
+        stepping: 1
+    });
+}
+
+if ($('#timespanpicker').length > 0) {
+    $('#timespanpicker').datetimepicker({
+        locale: 'sv',
+        format: 'HH:mm:ss',
+        useCurrent: false,
+        stepping: 1
+    });
+}

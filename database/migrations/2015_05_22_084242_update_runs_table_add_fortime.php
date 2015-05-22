@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateRunsTableAddDescription extends Migration {
+class UpdateRunsTableAddFortime extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,9 +12,10 @@ class UpdateRunsTableAddDescription extends Migration {
 	 */
 	public function up()
 	{
-        Schema::table('runs', function(Blueprint $table)
+		Schema::table('runs', function(Blueprint $table)
         {
-            $table->text('description')->after('name');
+            $table->time('fortime')->after('start_datetime');
+            $table->time('tempo')->after('fortime');
         });
 	}
 
@@ -27,7 +28,8 @@ class UpdateRunsTableAddDescription extends Migration {
 	{
         Schema::table('runs', function(Blueprint $table)
         {
-            $table->removeColumn('description');
+            $table->dropColumn('fortime');
+            $table->dropColumn('tempo');
         });
 	}
 

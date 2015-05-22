@@ -17,11 +17,20 @@ use App\User;
 Route::get('/', 'WelcomeController@index');
 
 Route::get('hem', ['as' => 'home', 'uses' => 'HomeController@index']);
-Route::get('lopp/skapa', ['as' => 'createRace', 'uses' => 'OrganizersController@create']);
-Route::post('lopp', ['as' => 'saveRace', 'uses' => 'OrganizersController@store']);
-Route::get('lopp/{runname}/{id}', ['as' => 'race', 'uses' => 'RunsController@show']);
 Route::get('omoss', ['as' => 'about', 'uses' => 'PagesController@about']);
 Route::get('villkor', 'PagesController@terms');
+
+Route::group(['prefix' => 'lopp'], function() {
+    Route::get('skapa', ['as' => 'createRace', 'uses' => 'OrganizersController@create']);
+    Route::post('/', ['as' => 'saveRace', 'uses' => 'OrganizersController@store']);
+    Route::get('{runname}/{id}', ['as' => 'race', 'uses' => 'RunsController@show']);
+});
+
+Route::group(['prefix' => 'pass'], function(){
+    Route::get('skapa', ['as' => 'createTraining', 'uses' => 'RunsController@create']);
+    Route::post('/', ['as' => 'saveTraining', 'uses' => 'RunsController@store']);
+});
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

@@ -19,7 +19,7 @@
 
                     {!! Form::open(['method' => 'post', 'route' => 'saveRace', 'enctype' => 'multipart/form-data']) !!}
 
-                    {!! Form::text('name', null, ['placeholder' => Lang::get('race.name')])
+                    {!! Form::text('name', null, ['placeholder' => Lang::get('race.organizer')])
                     !!}
                     {!! Form::file('logo_src') !!}
                     {!! Form::file('cover_src') !!}

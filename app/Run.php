@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Jenssegers\Date\Date;
+use Illuminate\Support\Facades\Auth;
 
 class Run extends Model
 {
@@ -15,6 +16,8 @@ class Run extends Model
         'description',
         'town',
         'distance',
+        'fortime',
+        'tempo',
         'entry_fee',
         'late_entry_fee',
         'first_entry_datetime',
@@ -41,6 +44,11 @@ class Run extends Model
     public function organizer()
     {
         return $this->belongsTo('App\Organizer');
+    }
+
+    public function admins()
+    {
+        return $this->hasMany('App\RunAdministrators');
     }
 
 
@@ -94,6 +102,35 @@ class Run extends Model
 
         return '<a class="' . $class .'" href="http://' . self::getLink($id) . '">' . $linktext . '</a>';
 
+    }
+
+    public static function createTraining($params)
+    {
+        $training = new Run;
+        $training->name = $params['name'];
+        $training->town = $params['town'];
+        $training->distance = $params['distance'];
+        $training->fortime = $params['tempo'];
+        $training->fortime = $params['fortime'];
+        $training->description = $params['description'];
+        //$training->entry_fee = $params['entry_fee'];
+        $training->start_datetime = $params['start_datetime'];
+        $training->type = 'training';
+        $training->save();
+
+        self::setAdmin($training->id, $params['user_id']);
+
+        return $training;
+    }
+
+    public static function setAdmin($run_id, $user_id)
+    {
+        $admin = new RunAdministrators;
+        $admin->user_id = $user_id;
+        $admin->run_id = $run_id;
+        $admin->save();
+
+        return $admin;
     }
 
 }

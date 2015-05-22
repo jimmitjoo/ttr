@@ -36,10 +36,13 @@
     <div class="user-menu">
     	<span class="user-menu-container">
     		<div>
-    			<a href="{{ url('/hem') }}">Konto</a>
+    			<a href="{{ route('home') }}">{{ Lang::get('default.account') }}</a>
     		</div>
+            <div>
+                <a href="{{ route('createTraining') }}">{{ Lang::get('race.create_training') }}</a>
+            </div>
     		<div>
-    			<a href="{{ url('/auth/logout') }}">Logga ut</a>
+    			<a href="{{ url('/auth/logout') }}">{{ Lang::get('auth.logout') }}</a>
     		</div>
     	</span>
     </div>
