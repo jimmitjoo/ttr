@@ -177,10 +177,10 @@ a:hover, a:active {
 	display: inline-block;
 	background: #1a429f;
 	padding: 10px 25px;
+	margin-top: -10px;
 }
 .canvas span.title,
 .canvas h1.title {
-	padding-bottom: 0;
 	margin-bottom: -25px;
 	position: relative;
 }
@@ -196,6 +196,53 @@ a:hover, a:active {
 }
 
 
+/* 
+ * Upsells
+ *
+ */
+#upsells {
+	padding-top: 80px; 
+	padding-bottom: 60px;
+}
+#upsells a {
+	display: block;
+	cursor: pointer;
+}
+#upsells img {
+	width: 100%;
+	outline: none;
+}
+#upsells h2,
+#upsells p {
+	color: #111;
+}
+#upsells p {
+	margin-bottom: 30px;
+}
+#upsells .label {
+	font-size: 180%;
+	color: white;
+    font-weight: 700;
+	background: rgba(70,40,122,.92);
+	border-radius: 0;
+    padding: 25px 20px;
+    display: block;
+    float: left;
+    clear: both;
+}
+#upsells .price {
+	padding-top: 0px;
+}
+#upsells .sale {
+	color: #69e16c;
+}
+#upsells .label-buy {
+    display: block;
+    float: left;
+    clear: both;
+} 
+ 
+ 
 /* 
  * Buttons
  *
