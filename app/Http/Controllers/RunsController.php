@@ -97,7 +97,7 @@ class RunsController extends Controller {
 	{
 		$run = Run::where('id', '=', $id)->first();
 
-        if ($lastSpacePosition = strrpos($run->name, ' ') && strpos($run->name, 'km') !== false) {
+        if ($lastSpacePosition = strrpos($run->name, ' ')) {
             $run->purename = substr($run->name, 0, $lastSpacePosition);
         } else {
             $run->purename = $run->name;
