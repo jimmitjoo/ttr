@@ -83,8 +83,6 @@ class RunsController extends Controller {
 
         $run = Run::createTraining($runParams);
 
-        //$run = Run::create($runParams);
-
         return $run;
 
 	}
@@ -97,10 +95,14 @@ class RunsController extends Controller {
 	 */
 	public function show($runname, $id)
 	{
-		$run = Run::where('id', '=', $id)->with('organizer')->first();
+		$run = Run::where('id', '=', $id)->first();
 
-        $lastSpacePosition = strrpos($run->name, ' ');
-        $run->purename = substr($run->name, 0, $lastSpacePosition);
+        if ($lastSpacePosition = strrpos($run->name, ' ')) {
+            $run->purename = substr($run->name, 0, $lastSpacePosition);
+        } else {
+            $run->purename = $run->name;
+        }
+
 
         if (strpos($run->purename, $run->town) !== false) {
             $run->title = $run->purename;
@@ -108,7 +110,7 @@ class RunsController extends Controller {
             $run->title = $run->purename . ', ' . $run->town;
         }
 
-        $races = Run::where('town', '=', $run->town)->with('organizer')->paginate();
+        $races = Run::where('town', '=', $run->town)->paginate();
 
         return view('run.show')->with('run', $run)->with('races', $races);
 	}

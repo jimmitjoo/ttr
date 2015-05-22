@@ -17,44 +17,23 @@
                 <div>
                 	<span>{{ $run->start_datetime }}</span>
                 </div>
+                @if (!empty($run->external_link))
                 <div>
                 	<a class="click click-green" target="_blank" href="{{ $run->external_link }}">Anmäl dig här &nbsp; <i class="fa fa-long-arrow-right"></i></a>
                 </div>
+                @endif
+                @if (!empty($run->external_link))
                 <div style="margin-top: 30px;">
                 	eller <a target="_blank" href="{{ $run->external_link }}">Läs mer här</a>
                 </div>
+                @endif
             </div>
         </div>
     </div>
 
-    <!--
-    <div class="bg-white">
-    	<div class="container-fluid max-width block">
-	        <div class="row">
-	            <div class="col-lg-12">
-	                <ul>
-	                	<li>{{ $run->title }}</li>
-	                    <li>Arrangör: {{ $run->organizer->name }}</li>
-	                    <li>Stad: {{ $run->town }}</li>
-	                    
-	                      -- Hide distanse
-	                      --
-	                    <li>Distans: {{ $run->distance / 1000 }}km</li>
-	                    <li>Datum: {{ $run->start_datetime }}</li>
-	                    <li>Länk: {{ $run->external_link }}</li>
-	                    
-	                    <li>Datum: {{ $run->start_datetime }}</li>
-	                    
-	                    
-	                </ul>
-	                <p>{{ $run->description }}</p>
-	            </div>
-	        </div>
-    	</div>
-    </div>
-    -->
 
-        <div class="container-fluid max-width">
+
+        <div class="container-fluid max-width bg-white">
             <div class="row">
                 <div class="col-lg-4 col-md-5 block bg-yellow purple">
                 	<p>Distans</p>
@@ -79,6 +58,13 @@
                      -->
                 </div>
             </div>
+            @if (!empty($run->description))
+            <div class="row">
+                <div class="col-xs-12">
+                    <p style="font-size: 130%">{{ $run->description }}</p>
+                </div>
+            </div>
+            @endif
         </div>
 
         @include('ads.personal-ad-line')
