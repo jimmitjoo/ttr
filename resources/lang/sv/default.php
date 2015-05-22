@@ -8,5 +8,8 @@ return [
     'or' => 'eller',
     'start_now' => 'Kom igång',
 
-    'account' => 'Konto'
+    'account' => 'Konto',
+
+    'today' => 'Idag',
+    'tomorrow' => 'Imorgon'
 ];

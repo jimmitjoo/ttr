@@ -43,7 +43,7 @@ class Run extends Model
 
     public function organizer()
     {
-        return $this->belongsTo('App\Organizer');
+        if (!isset($this->attributes['organizer_id']) || $this->attributes['organizer_id'] != null) return $this->belongsTo('App\Organizer');
     }
 
     public function admins()
@@ -54,6 +54,12 @@ class Run extends Model
 
     public function getStartDatetimeAttribute()
     {
+        $thisDate = date('Y-m-d', strtotime($this->attributes['start_datetime']));
+        if ($thisDate == date('Y-m-d')) {
+            return Lang::get('default.today') . ' ' . Date::parse($this->attributes['start_datetime'])->format('H:i');
+        } else if ($thisDate == date('Y-m-d', strtotime('+1 day'))) {
+            return Lang::get('default.tomorrow') . ' ' . Date::parse($this->attributes['start_datetime'])->format('H:i');
+        }
         return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
     }
 
