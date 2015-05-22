@@ -23,19 +23,18 @@
                     !!}
                     {!! Form::file('logo_src') !!}
                     {!! Form::file('cover_src') !!}
-                    {!! Form::input('date', 'date', date('Y-m-d', strtotime('+2 months')), ['placeholder' =>
-                    Lang::get('race.date') ]) !!}
-                    {!! Form::text('town', null, ['placeholder' => Lang::get('race.town')
-                    ]) !!}
-                    {!! Form::textarea('description', null, ['placeholder' =>
+                    {!! Form::textarea('run_description', null, ['placeholder' =>
                     Lang::get('race.description') ]) !!}
-                    {!! Form::text('external_link', null, ['placeholder' =>
+                    {!! Form::text('run_external_link', null, ['placeholder' =>
                     Lang::get('race.external_link') ]) !!}
-                    {!! Form::text('signup_link', null, ['placeholder' =>
+                    {!! Form::text('run_signup_link', null, ['placeholder' =>
                     Lang::get('race.signup_link')
                     ]) !!}
                     {!! Form::text('run_name', null, ['placeholder' =>
                     Lang::get('race.run_name')
+                    ]) !!}
+                    {!! Form::text('run_town', null, ['placeholder' =>
+                    Lang::get('race.town')
                     ]) !!}
                     {!! Form::text('run_distance', null, ['placeholder' =>
                     Lang::get('race.run_distance')

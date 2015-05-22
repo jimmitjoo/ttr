@@ -12,6 +12,7 @@ class Run extends Model
     protected $fillable = [
         'organizer_id',
         'name',
+        'description',
         'town',
         'distance',
         'entry_fee',
@@ -23,7 +24,8 @@ class Run extends Model
         'cover_src',
         'external_link',
         'signup_link',
-        'map_id'
+        'map_id',
+        'type'
     ];
 
     protected $appends = [
@@ -49,10 +51,12 @@ class Run extends Model
 
     public function getSlugAttribute()
     {
-        if (strpos($this->attributes['name'], $this->attributes['town']) !== false) {
+        if (isset($this->attributes['name']) && strpos($this->attributes['name'], $this->attributes['town']) !== false) {
             $string = $this->attributes['name'];
-        } else {
+        } elseif (isset($this->attributes['name'])) {
             $string = $this->attributes['name'] . ' ' . $this->attributes['town'];
+        } else {
+            $string = 'name';
         }
 
         $slug = Str::slug($string, '-') . '/' . $this->attributes['id'];

@@ -23,7 +23,7 @@ class CreateRaceRequest extends Request {
 	{
 		return [
 			'name' => 'required',
-            'town' => 'required',
+            'run_town' => 'required',
             'run_name' => 'required',
             'run_distance' => 'required|integer',
             'run_entry_fee' => 'integer',

@@ -264,15 +264,28 @@ class OrganizersController extends Controller
             }
         }
 
-        //dd($runArray);
         //dd($postArray);
+        unset($postArray['_token']);
 
-        $organizer = Organizer::create($postArray);
-        $runArray['race_id'] = $organizer->id;
 
-        Run::create($runArray);
+        $organizer = Organizer::firstOrCreate($postArray);
+        $runArray['organizer_id'] = $organizer->id;
 
-        //return redirect(route('home'));
+        $run = new Run;
+        $run->organizer_id = $runArray['organizer_id'];
+        $run->name = $runArray['name'];
+        $run->description = $runArray['description'];
+        $run->distance = $runArray['distance'];
+        $run->town = $runArray['town'];
+        $run->entry_fee = $runArray['entry_fee'];
+        $run->external_link = $runArray['external_link'];
+        $run->signup_link = $runArray['signup_link'];
+        $run->start_datetime = $runArray['start_datetime'];
+        $run->save();
+
+        //$run = Run::create($runArray);
+
+        return redirect(route('home'));
     }
 
 

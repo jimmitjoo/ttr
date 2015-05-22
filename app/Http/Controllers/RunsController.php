@@ -11,13 +11,13 @@ class RunsController extends Controller {
 
     public function apiGetList(Request $request, $query = null)
     {
-        $json = Run::getList($query)->get();
+        $json = Run::getList($query)->orderBy('start_datetime')->get();
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
     public function apiGetPaginated(Request $request, $query = null)
     {
-        $json = Run::getList($query)->paginate(15);
+        $json = Run::getList($query)->orderBy('start_datetime')->paginate(15);
         return response()->json($json)->setCallback($request->input('callback'));
     }
 
