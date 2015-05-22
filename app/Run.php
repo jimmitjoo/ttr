@@ -55,10 +55,13 @@ class Run extends Model
     public function getStartDatetimeAttribute()
     {
         $thisDate = date('Y-m-d', strtotime($this->attributes['start_datetime']));
+        $thisTime = Date::parse($this->attributes['start_datetime'])->format('H:i');
+        if ($thisTime == '00:00') $thisTime = '';
+
         if ($thisDate == date('Y-m-d')) {
-            return Lang::get('default.today') . ' ' . Date::parse($this->attributes['start_datetime'])->format('H:i');
+            return Lang::get('default.today') . ' ' . $thisTime;
         } else if ($thisDate == date('Y-m-d', strtotime('+1 day'))) {
-            return Lang::get('default.tomorrow') . ' ' . Date::parse($this->attributes['start_datetime'])->format('H:i');
+            return Lang::get('default.tomorrow') . ' ' . $thisTime;
         }
         return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
     }
