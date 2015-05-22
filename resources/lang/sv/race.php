@@ -18,5 +18,6 @@ return [
     'create_training'           => 'Skapa träningspass',
     'create_training_textdescription' => 'Lorem ipsum...',
     'save_workout'              => 'Spara träningspass',
+    'unknown_pace'              => 'Okänt'
 
 ];

@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Jenssegers\Date\Date;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Lang;
 
 class Run extends Model
 {
@@ -38,7 +39,6 @@ class Run extends Model
     public function __construct()
     {
         Date::setLocale('sv');
-
     }
 
     public function organizer()
@@ -55,6 +55,13 @@ class Run extends Model
     public function getStartDatetimeAttribute()
     {
         return ucwords(Date::parse($this->attributes['start_datetime'])->format('D j M'));
+    }
+
+    public function getTempoAttribute()
+    {
+        if ($this->attributes['tempo'] == '00:00:00') return Lang::get('race.unknown_pace');
+
+        return substr($this->attributes['tempo'], 3);
     }
 
     public function getSlugAttribute()

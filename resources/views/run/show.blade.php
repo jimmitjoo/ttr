@@ -36,34 +36,30 @@
         <div class="container-fluid max-width bg-white">
             <div class="row">
                 <div class="col-lg-4 col-md-5 block bg-yellow purple">
-                	<p>Distans</p>
+                    <p>Distans</p>
                     <h2 class="big">{{ $run->distance / 1000 }} km</h2>
-                    
-                    <!--
-                    <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
-                        Längs hela banan finns belysning i rött och gult som är Nattloppets färger och du möts
-                        av musik och andra överraskningar längs vägen. Starten går vid Larmtorget och längs
-                        sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
-                     -->
                 </div>
                 <div class="col-lg-8 col-md-7 block bg-blue">
-                	<p>Plats</p>
+                    <p>Plats</p>
                     <h2 class="big">{{ $run->town }}</h2>
-                    
-                    <!--
-                    <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
-                        Längs hela banan finns belysning i rött och gult som är Nattloppets färger och du möts
-                        av musik och andra överraskningar längs vägen. Starten går vid Larmtorget och längs
-                        sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
-                     -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 block bg-blue">
+                    <p>Tempo</p>
+                    <h2 class="big">{{ $run->tempo }}</h2>
+                </div>
+                <div class="col-lg-8 col-md-7 block bg-yellow purple">
+                    <p>Tidsspann</p>
+                    <h2 class="big">{{ $run->fortime }}</h2>
                 </div>
             </div>
             @if (!empty($run->description))
-            <div class="row">
-                <div class="col-xs-12">
-                    <p style="font-size: 130%">{{ $run->description }}</p>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p style="font-size: 130%">{{ $run->description }}</p>
+                    </div>
                 </div>
-            </div>
             @endif
         </div>
 
