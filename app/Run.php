@@ -117,7 +117,7 @@ class Run extends Model
         $training->name = $params['name'];
         $training->town = $params['town'];
         $training->distance = $params['distance'];
-        $training->fortime = $params['tempo'];
+        $training->tempo = $params['tempo'];
         $training->fortime = $params['fortime'];
         $training->description = $params['description'];
         //$training->entry_fee = $params['entry_fee'];
