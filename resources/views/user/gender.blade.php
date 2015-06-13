@@ -1,20 +1,29 @@
-<!-- Exempel på hur man ser kön på inloggad användare -->
+
 @if (Auth::check() && !empty(Auth::user()->gender))
-
+	
+	<!-- User is logged in and we got some kind of gender -->	
+	
     @if (Auth::user()->gender == 'female')
-        <!-- Vad som visas om det är en kvinna -->
-
+    
+    	<!-- if gender is female -->
+    	<!-- place code here -->
+    
     @elseif(Auth::user()->gender == 'male')
-        <!-- Vad som visas om det är en man -->
+		
+		<!-- if gender is male -->
+		<!-- place code here -->      
 
     @endif
 
-@elseif(Auth::check() && empty(Auth::user()->gender))
 
-    <!-- Vad som sker om vi har en inloggad användare men inte vet vad personen har för kön -->
+@elseif(Auth::check())
 
-@elseif(!Auth::check())
+	<!-- The user is logged in, but we don't know the gender -->
+	<!-- place code here -->
 
-    <!-- Vad som visas om det inte finns någon inloggad användare -->
+@else
+
+    <!-- We don't know anything about the user -->
+    <!-- place code here -->
 
 @endif

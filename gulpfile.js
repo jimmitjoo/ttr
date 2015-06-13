@@ -24,6 +24,7 @@ function first() {
 
         mix.styles([
             '../bower/bootstrap/dist/css/bootstrap.css',
+            '../bower/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
             'font-awesome.css',
             'animate.css',
             'style.css'
@@ -33,7 +34,9 @@ function first() {
 
         mix.scripts([
             '../bower/jquery/dist/jquery.js',
+            'moment-with-locale.js',
             '../bower/bootstrap/dist/js/bootstrap.js',
+            'bootstrap-datetimepicker.js',
             'custom.js'
         ], 'public/js/build.js');
 

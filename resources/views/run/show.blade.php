@@ -17,68 +17,50 @@
                 <div>
                 	<span>{{ $run->start_datetime }}</span>
                 </div>
+                @if (!empty($run->external_link))
                 <div>
                 	<a class="click click-green" target="_blank" href="{{ $run->external_link }}">Anmäl dig här &nbsp; <i class="fa fa-long-arrow-right"></i></a>
                 </div>
+                @endif
+                @if (!empty($run->external_link))
                 <div style="margin-top: 30px;">
                 	eller <a target="_blank" href="{{ $run->external_link }}">Läs mer här</a>
                 </div>
+                @endif
             </div>
         </div>
     </div>
 
-    <!--
-    <div class="bg-white">
-    	<div class="container-fluid max-width block">
-	        <div class="row">
-	            <div class="col-lg-12">
-	                <ul>
-	                	<li>{{ $run->title }}</li>
-	                    <li>Arrangör: {{ $run->organizer->name }}</li>
-	                    <li>Stad: {{ $run->town }}</li>
-	                    
-	                      -- Hide distanse
-	                      --
-	                    <li>Distans: {{ $run->distance / 1000 }}km</li>
-	                    <li>Datum: {{ $run->start_datetime }}</li>
-	                    <li>Länk: {{ $run->external_link }}</li>
-	                    
-	                    <li>Datum: {{ $run->start_datetime }}</li>
-	                    
-	                    
-	                </ul>
-	                <p>{{ $run->description }}</p>
-	            </div>
-	        </div>
-    	</div>
-    </div>
-    -->
 
-        <div class="container-fluid max-width">
+
+        <div class="container-fluid max-width bg-white">
             <div class="row">
                 <div class="col-lg-4 col-md-5 block bg-yellow purple">
-                	<p>Distans</p>
+                    <p>Distans</p>
                     <h2 class="big">{{ $run->distance / 1000 }} km</h2>
-                    
-                    <!--
-                    <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
-                        Längs hela banan finns belysning i rött och gult som är Nattloppets färger och du möts
-                        av musik och andra överraskningar längs vägen. Starten går vid Larmtorget och längs
-                        sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
-                     -->
                 </div>
                 <div class="col-lg-8 col-md-7 block bg-blue">
-                	<p>Plats</p>
+                    <p>Plats</p>
                     <h2 class="big">{{ $run->town }}</h2>
-                    
-                    <!--
-                    <p style="font-size: 130%;">Nattloppet i Kalmar är ett av sydöstra Sveriges häftigaste lopp.
-                        Längs hela banan finns belysning i rött och gult som är Nattloppets färger och du möts
-                        av musik och andra överraskningar längs vägen. Starten går vid Larmtorget och längs
-                        sträckan passerar löparna flera vackra Kalmarmiljöer.</p>
-                     -->
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 block bg-blue">
+                    <p>Tempo</p>
+                    <h2 class="big">{{ $run->tempo }}</h2>
+                </div>
+                <div class="col-lg-8 col-md-7 block bg-yellow purple">
+                    <p>Tid (tim, min, sek)</p>
+                    <h2 class="big">{{ $run->fortime }}</h2>
+                </div>
+            </div>
+            @if (!empty($run->description))
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p style="font-size: 130%">{{ $run->description }}</p>
+                    </div>
+                </div>
+            @endif
         </div>
 
         @include('ads.personal-ad-line')

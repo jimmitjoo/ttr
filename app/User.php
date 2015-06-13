@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Auth;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
@@ -62,6 +63,24 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $user->save();
 
         event(new UserHasRegistered($user));
+
+        return $user;
+    }
+
+    /**
+     * @param $userObject
+     * @return \Illuminate\Support\Collection|null|static
+     * @throws UserAlreadyHasAccountException
+     */
+    public static function connectFacebook($userObject, $authUserId)
+    {
+        $userHasAccount = User::where('facebook_provider_id', '=', $userObject->id)->first();
+
+        if ($userHasAccount && $userHasAccount->id != $authUserId) return false;
+
+        $user = User::find($authUserId);
+        $user->facebook_provider_id = $userObject->id;
+        $user->save();
 
         return $user;
     }
