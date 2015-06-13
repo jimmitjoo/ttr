@@ -51,18 +51,8 @@ Route::get('receive/facebook', 'UsersController@receive_facebook');
 Route::get('indexing', 'OrganizersController@apiCreateRequest');
 
 
-<<<<<<< HEAD
-
-Route::get('api/race/list/', 'RunsController@apiGetList');
-Route::get('api/race/list/{query}', 'RunsController@apiGetList');
-Route::get('api/race/page/', 'RunsController@apiGetPaginated');
-Route::get('api/race/page/{query}', 'RunsController@apiGetPaginated');
-Route::get('api/race/{id}', 'RunsController@apiGetById');
-Route::get('api/organizer/{id}', 'OrganizersController@apiGetById');
-Route::get('api/user/{id}', 'UsersController@getById');
-
 Route::get('villkor', 'PagesController@terms');
-=======
+
 Route::group(['prefix' => 'api'], function() {
     Route::get('race/list/', 'RunsController@apiGetList');
     Route::get('race/list/{query}', 'RunsController@apiGetList');
@@ -70,5 +60,5 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('race/page/{query}', 'RunsController@apiGetPaginated');
     Route::get('race/{id}', 'RunsController@apiGetById');
     Route::get('organizer/{id}', 'OrganizersController@apiGetById');
+    Route::get('user/{id}', 'UsersController@getById');
 });
->>>>>>> 1428170504b53b1839352f7a6368438fc5c1b277
