@@ -31,6 +31,11 @@ class UsersController extends Controller {
         return Redirect::to('/');
     }
 
+    public function getById($id)
+    {
+        return User::find($id);
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *

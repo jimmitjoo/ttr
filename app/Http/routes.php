@@ -46,5 +46,6 @@ Route::get('api/race/page/', 'RunsController@apiGetPaginated');
 Route::get('api/race/page/{query}', 'RunsController@apiGetPaginated');
 Route::get('api/race/{id}', 'RunsController@apiGetById');
 Route::get('api/organizer/{id}', 'OrganizersController@apiGetById');
+Route::get('api/user/{id}', 'UsersController@getById');
 
 Route::get('villkor', 'PagesController@terms');
