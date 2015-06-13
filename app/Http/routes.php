@@ -61,4 +61,6 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('race/{id}', 'RunsController@apiGetById');
     Route::get('organizer/{id}', 'OrganizersController@apiGetById');
     Route::get('user/{id}', 'UsersController@getById');
+    Route::get('user/email/{email}', 'UsersController@getByEmail');
+    Route::get('user/facebook/{id}', 'UsersController@getByFacebookProviderId');
 });

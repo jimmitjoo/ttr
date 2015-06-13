@@ -1,6 +1,9 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\User;
 use Laravel\Socialite\Facades\Socialite;
@@ -41,9 +44,22 @@ class UsersController extends Controller {
 
     }
 
-    public function getById($id)
+    public function getById(Request $request, $id)
     {
-        return User::find($id);
+        $json = User::find($id);
+        return response()->json($json)->setCallback($request->input('callback'));
+    }
+
+    public function getByFacebookProviderId(Request $request, $id)
+    {
+        $json = User::where('facebook_provider_id', '=', $id)->first();
+        return response()->json($json)->setCallback($request->input('callback'));
+    }
+
+    public function getByEmail(Request $request, $email)
+    {
+        $json = User::where('email', '=', $email)->first();
+        return response()->json($json)->setCallback($request->input('callback'));
     }
 
 	/**
