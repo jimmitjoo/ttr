@@ -59,8 +59,13 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('race/page/', 'RunsController@apiGetPaginated');
     Route::get('race/page/{query}', 'RunsController@apiGetPaginated');
     Route::get('race/{id}', 'RunsController@apiGetById');
+
     Route::get('organizer/{id}', 'OrganizersController@apiGetById');
+
     Route::get('user/{id}', 'UsersController@getById');
     Route::get('user/email/{email}', 'UsersController@getByEmail');
     Route::get('user/facebook/{id}', 'UsersController@getByFacebookProviderId');
+
+    Route::post('location/create', 'LocationsController@store');
+    Route::get('location/{id}', 'LocationsController@getById');
 });
