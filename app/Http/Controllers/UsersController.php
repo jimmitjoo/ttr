@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 
+use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
@@ -87,9 +88,30 @@ class UsersController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$user = User::where('email', '=', $request->input('email'));
+
+        if (!$user) $user = User::where('username', '=', $request->input('username'));
+
+        if (!$user) {
+            $user = new User;
+
+            $user->username = $request->input('username');
+            $user->email = $request->input('email');
+            $user->gender = $request->input('gender');
+            $user->town = $request->input('town');
+            $user->password = Hash::make($request->input('password'));
+            $user->save();
+
+            return response()->json($user);
+        } else {
+
+            return false;
+
+        }
+
+
 	}
 
 	/**
