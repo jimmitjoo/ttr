@@ -44,6 +44,7 @@
                     <h2 class="big">{{ $run->town }}</h2>
                 </div>
             </div>
+            @if (isset($run->tempo) || isset($run->fortime))
             <div class="row">
                 <div class="col-lg-4 col-md-5 block bg-blue">
                     <p>Tempo</p>
@@ -54,6 +55,8 @@
                     <h2 class="big">{{ $run->fortime }}</h2>
                 </div>
             </div>
+            @endif
+
             @if (!empty($run->description))
                 <div class="row">
                     <div class="col-xs-12">

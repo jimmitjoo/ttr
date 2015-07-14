@@ -68,6 +68,8 @@ class Run extends Model
 
     public function getTempoAttribute()
     {
+        if (!isset($this->attributes['tempo'])) return;
+
         if ($this->attributes['tempo'] == '00:00:00') return Lang::get('race.unknown_pace');
 
         return substr($this->attributes['tempo'], 3) . '/km';

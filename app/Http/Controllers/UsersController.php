@@ -70,7 +70,7 @@ class UsersController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return redirect('/');
 	}
 
 	/**
@@ -80,16 +80,19 @@ class UsersController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('user.create');
 	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param Request $request
+     * @return Response
+     */
 	public function store(Request $request)
 	{
+        dd($request);
+
 		$user = User::where('email', '=', $request->input('email'));
 
         if (!$user) $user = User::where('username', '=', $request->input('username'));

@@ -47,6 +47,13 @@ Route::get('login/facebook', 'UsersController@facebook');
 Route::get('connect/facebook', 'UsersController@facebook');
 Route::get('receive/facebook', 'UsersController@receive_facebook');
 
+Route::group(['prefix' => 'user'],  function(){
+
+    Route::get('/', 'UsersController@index');
+    Route::get('create', 'UsersController@create');
+
+});
+
 
 Route::get('indexing', 'OrganizersController@apiCreateRequest');
 
