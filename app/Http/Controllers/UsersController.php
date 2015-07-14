@@ -91,26 +91,31 @@ class UsersController extends Controller {
      */
 	public function store(Request $request)
 	{
-        dd($request);
+        //dd($request);
 
-		$user = User::where('email', '=', $request->input('email'));
+		$user = User::where('email', '=', $request->input('email'))->first();
 
-        if (!$user) $user = User::where('username', '=', $request->input('username'));
+        if (!$user) $user = User::where('username', '=', $request->input('username'))->first();
 
         if (!$user) {
             $user = new User;
 
             $user->username = $request->input('username');
+            $user->name = $request->input('name');
             $user->email = $request->input('email');
             $user->gender = $request->input('gender');
-            $user->town = $request->input('town');
+            $user->location = $request->input('town');
             $user->password = Hash::make($request->input('password'));
             $user->save();
 
             return response()->json($user);
         } else {
 
-            return 'wannabe!!';
+            $error = [
+                'status' => 'error',
+                'message' => 'USER_ALREADY_EXISTS'
+            ];
+            return response()->json($error, 409);
 
         }
 
